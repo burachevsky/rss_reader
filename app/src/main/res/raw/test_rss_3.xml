@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="2.0">
+    <channel>
+        <title>vc.ru: Популярное за все время</title>
+        <description>vc.ru — бизнес, технологии, идеи, модели роста</description>
+        <link>https://vc.ru/</link>
+        <image>
+            <url>https://leonardo.osnova.io/9ce7981b-220c-8dcc-df1e-54fe516a1198</url>
+            <title>vc.ru: Популярное за все время</title>
+            <link>https://vc.ru/</link>
+        </image>
+        <generator>RSS for Osnova</generator>
+
+        <lastBuildDate>Fri, 05 Feb 2021 19:53:46 +0300</lastBuildDate>
+
+        <atom:link
+            href="http://vc.ru/rss/all"
+            rel="self"
+            type="application/rss+xml" />
+        <pubDate>Fri, 05 Feb 2021 18:37:14 +0300</pubDate>
+        <copyright><![CDATA[© 2018 ИД «Комитет»]]></copyright>
+        <language><![CDATA[ru-RU]]></language>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <ttl>10</ttl>
+
+        <item>
+            <title>
+                <![CDATA[Telegram обошёл TikTok и стал в январе самым скачиваемым неигровым приложением в мире — SensorTower]]></title>
+            <description><![CDATA[Мессенджер загрузили 63 млн раз, у TikTok 62 млн установок.]]>
+                &lt;img src=&quot;https://leonardo.osnova.io/97d80761-4c68-53e6-993d-b50c534eb82f/-/resize/1300/&quot;
+                width=&quot;1280&quot; height=&quot;864&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/services/205203-telegram-oboshel-tiktok-i-stal-v-yanvare-samym-skachivaemym-neigrovym-prilozheniem-v-mire-sensortower?from=rss
+            </link>
+
+            <guid isPermaLink="false">205203</guid>
+
+            <dc:creator><![CDATA[Рая Хачатрян]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 18:37:14 +0300</pubDate>
+            <comments>
+                https://vc.ru/services/205203-telegram-oboshel-tiktok-i-stal-v-yanvare-samym-skachivaemym-neigrovym-prilozheniem-v-mire-sensortower?from=rss?comments
+            </comments>
+
+            <author>Рая Хачатрян</author>
+
+            <enclosure
+                length="386402"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/97d80761-4c68-53e6-993d-b50c534eb82f/" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[SMM-менеджера Aviasales Романа Бордунова арестовали на 13 суток]]></title>
+            <description>
+                <![CDATA[Его признали виновным в участии в митинге, повлекшем помехи инфраструктуре.]]>
+            </description>
+
+            <link>
+                https://vc.ru/media/205044-smm-menedzhera-aviasales-romana-bordunova-arestovali-na-13-sutok?from=rss
+            </link>
+
+            <guid isPermaLink="false">205044</guid>
+
+            <dc:creator><![CDATA[Новости TJ]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 13:35:36 +0300</pubDate>
+            <comments>
+                https://vc.ru/media/205044-smm-menedzhera-aviasales-romana-bordunova-arestovali-na-13-sutok?from=rss?comments
+            </comments>
+
+            <author>Новости TJ</author>
+
+
+        </item>
+        <item>
+            <title>
+                <![CDATA[«В сафари через бетонные джунгли»: «2ГИС» добавил в навигатор записи голосов Николая Дроздова, AcademeG и других]]></title>
+            <description><![CDATA[«Кто хочет селфи с зеброй?»]]> &lt;img src=&quot;https://leonardo.osnova.io/8b45438d-18e4-50c4-9a21-2f39e992cf3b/-/resize/1300/&quot;
+                width=&quot;1280&quot; height=&quot;720&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/marketing/204866-v-safari-cherez-betonnye-dzhungli-2gis-dobavil-v-navigator-zapisi-golosov-nikolaya-drozdova-academeg-i-drugih?from=rss
+            </link>
+
+            <guid isPermaLink="false">204866</guid>
+
+            <dc:creator><![CDATA[Таня Боброва]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 09:32:49 +0300</pubDate>
+            <comments>
+                https://vc.ru/marketing/204866-v-safari-cherez-betonnye-dzhungli-2gis-dobavil-v-navigator-zapisi-golosov-nikolaya-drozdova-academeg-i-drugih?from=rss?comments
+            </comments>
+
+            <author>Таня Боброва</author>
+
+            <enclosure
+                type="video/x-ms-af"
+                url="https://www.youtube.com/embed/J9Udf5kby-Y?start=0" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Сбер» начал тестировать подписку на автомобили на срок от шести месяцев до трёх лет]]></title>
+            <description>
+                <![CDATA[Lada Vesta обойдётся в сумму от 14 950 рублей в месяц при аренде на три года, а Range Rover Velar — от 105 259 рублей.]]>
+                &lt;img src=&quot;https://leonardo.osnova.io/265cade2-3831-5d9b-91ea-c8de5079bd1b/-/resize/1300/&quot;
+                width=&quot;913&quot; height=&quot;630&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/transport/205133-sber-nachal-testirovat-podpisku-na-avtomobili-na-srok-ot-shesti-mesyacev-do-treh-let?from=rss
+            </link>
+
+            <guid isPermaLink="false">205133</guid>
+
+            <dc:creator><![CDATA[Рая Хачатрян]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 16:57:32 +0300</pubDate>
+            <comments>
+                https://vc.ru/transport/205133-sber-nachal-testirovat-podpisku-na-avtomobili-na-srok-ot-shesti-mesyacev-do-treh-let?from=rss?comments
+            </comments>
+
+            <author>Рая Хачатрян</author>
+
+            <enclosure
+                length="105695"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/265cade2-3831-5d9b-91ea-c8de5079bd1b/" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Российский рынок неплохо бы защитить от Didi»: спустя полтора года «Яндекс.Такси» нашла способ купить «Везёт»]]></title>
+            <description>
+                <![CDATA[«Яндекс.Такси» собирается купить колл-центры и бизнес по грузоперевозкам одного из крупнейших конкурентов за $178 млн. ФАС уже блокировала сделку, но теперь в ней изменились условия, а «Везёт», по словам аналитиков, стал убыточным.]]>
+                &lt;img src=&quot;https://leonardo.osnova.io/9af257f8-78f7-508d-95a5-35d5ed5f21e8/-/resize/1300/&quot;
+                width=&quot;600&quot; height=&quot;412&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/transport/204634-rossiyskiy-rynok-neploho-by-zashchitit-ot-didi-spustya-poltora-goda-yandeks-taksi-nashla-sposob-kupit-vezet?from=rss
+            </link>
+
+            <guid isPermaLink="false">204634</guid>
+
+            <dc:creator><![CDATA[Лиана Липанова]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 19:30:48 +0300</pubDate>
+            <comments>
+                https://vc.ru/transport/204634-rossiyskiy-rynok-neploho-by-zashchitit-ot-didi-spustya-poltora-goda-yandeks-taksi-nashla-sposob-kupit-vezet?from=rss?comments
+            </comments>
+
+            <author>Лиана Липанова</author>
+
+            <enclosure
+                length="6254"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/e8e876e4-303a-5b5c-9363-47f88ad532e1/" />
+            <enclosure
+                length="121297"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/9af257f8-78f7-508d-95a5-35d5ed5f21e8/" />
+            <enclosure
+                length="34960"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/d2477216-a5f9-54b2-8cbf-05be553ae647/" />
+            <enclosure
+                length="84555"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/b6f740f2-9349-5cc6-a215-dc15a1ec4db4/" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[Xiaomi показала смартфон с экраном вместо граней, без физических кнопок и портов]]></title>
+            <description>
+                <![CDATA[Это концептуальное устройство, которое может не поступить на массовый рынок.]]>
+                &lt;img src=&quot;https://leonardo.osnova.io/60c2a58a-3d10-5731-a9c4-d9c19532c9b8/-/resize/1300/&quot;
+                width=&quot;1024&quot; height=&quot;576&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/tech/205006-xiaomi-pokazala-smartfon-s-ekranom-vmesto-graney-bez-fizicheskih-knopok-i-portov?from=rss
+            </link>
+
+            <guid isPermaLink="false">205006</guid>
+
+            <dc:creator><![CDATA[Таня Боброва]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 12:38:08 +0300</pubDate>
+            <comments>
+                https://vc.ru/tech/205006-xiaomi-pokazala-smartfon-s-ekranom-vmesto-graney-bez-fizicheskih-knopok-i-portov?from=rss?comments
+            </comments>
+
+            <author>Таня Боброва</author>
+
+            <enclosure
+                length="26577"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/60c2a58a-3d10-5731-a9c4-d9c19532c9b8/" />
+            <enclosure
+                type="video/x-ms-af"
+                url="https://www.youtube.com/embed/fB-66gTRFcc?start=0" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[SpaceX отчиталась о 10 тысячах пользователей спутникового интернета Starlink за три месяца]]></title>
+            <description>
+                <![CDATA[Публичное тестирование спутникового интернета запустили в октябре 2020 года.]]>
+            </description>
+
+            <link>
+                https://vc.ru/future/205021-spacex-otchitalas-o-10-tysyachah-polzovateley-sputnikovogo-interneta-starlink-za-tri-mesyaca?from=rss
+            </link>
+
+            <guid isPermaLink="false">205021</guid>
+
+            <dc:creator><![CDATA[Евгения Евсеева]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 13:13:31 +0300</pubDate>
+            <comments>
+                https://vc.ru/future/205021-spacex-otchitalas-o-10-tysyachah-polzovateley-sputnikovogo-interneta-starlink-za-tri-mesyaca?from=rss?comments
+            </comments>
+
+            <author>Евгения Евсеева</author>
+
+
+        </item>
+        <item>
+            <title>
+                <![CDATA[Google добавит функцию измерения пульса и частоты дыхания в приложении на смартфонах Pixel]]></title>
+            <description><![CDATA[В планах включить её и на других устройствах с Android.]]> &lt;img
+                src=&quot;https://leonardo.osnova.io/240e92a7-7777-5908-a665-31dfe0c1eb6a/-/resize/1300/&quot;
+                width=&quot;1108&quot; height=&quot;900&quot; alt /&gt;
+            </description>
+
+            <link>
+                https://vc.ru/tech/205073-google-dobavit-funkciyu-izmereniya-pulsa-i-chastoty-dyhaniya-v-prilozhenii-na-smartfonah-pixel?from=rss
+            </link>
+
+            <guid isPermaLink="false">205073</guid>
+
+            <dc:creator><![CDATA[Евгения Евсеева]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 14:52:02 +0300</pubDate>
+            <comments>
+                https://vc.ru/tech/205073-google-dobavit-funkciyu-izmereniya-pulsa-i-chastoty-dyhaniya-v-prilozhenii-na-smartfonah-pixel?from=rss?comments
+            </comments>
+
+            <author>Евгения Евсеева</author>
+
+            <enclosure
+                length="693343"
+                type="image/jpeg"
+                url="https://leonardo.osnova.io/240e92a7-7777-5908-a665-31dfe0c1eb6a/-/format/jpg/" />
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Вкусвилл» начал поставлять готовую еду в частные детские сады и школы Москвы]]></title>
+            <description>
+                <![CDATA[Так ритейлер может увеличить ежедневный сбыт продукции и повысить лояльность аудитории.]]>
+            </description>
+
+            <link>
+                https://vc.ru/trade/204959-vkusvill-nachal-postavlyat-gotovuyu-edu-v-chastnye-detskie-sady-i-shkoly-moskvy?from=rss
+            </link>
+
+            <guid isPermaLink="false">204959</guid>
+
+            <dc:creator><![CDATA[Таня Боброва]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 10:41:34 +0300</pubDate>
+            <comments>
+                https://vc.ru/trade/204959-vkusvill-nachal-postavlyat-gotovuyu-edu-v-chastnye-detskie-sady-i-shkoly-moskvy?from=rss?comments
+            </comments>
+
+            <author>Таня Боброва</author>
+
+
+        </item>
+        <item>
+            <title>
+                <![CDATA[«Кинопоиск HD» рассказал о рекордных 3 млн смотрящих подписчиков в январе]]></title>
+            <description><![CDATA[В марте у видеосервиса было 1,5 млн смотрящих подписчиков.]]>
+            </description>
+
+            <link>
+                https://vc.ru/media/205039-kinopoisk-hd-rasskazal-o-rekordnyh-3-mln-smotryashchih-podpischikov-v-yanvare?from=rss
+            </link>
+
+            <guid isPermaLink="false">205039</guid>
+
+            <dc:creator><![CDATA[Таня Боброва]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 13:57:35 +0300</pubDate>
+            <comments>
+                https://vc.ru/media/205039-kinopoisk-hd-rasskazal-o-rekordnyh-3-mln-smotryashchih-podpischikov-v-yanvare?from=rss?comments
+            </comments>
+
+            <author>Таня Боброва</author>
+
+
+        </item>
+        <item>
+            <title>
+                <![CDATA[Власти Барселоны задумали запретить краткосрочную сдачу квартир туристам — это влияет на цены и мешает местным]]></title>
+            <description><![CDATA[В Airbnb заявили, что проект может «зайти слишком далеко».]]>
+            </description>
+
+            <link>
+                https://vc.ru/offline/205104-vlasti-barselony-zadumali-zapretit-kratkosrochnuyu-sdachu-kvartir-turistam-eto-vliyaet-na-ceny-i-meshaet-mestnym?from=rss
+            </link>
+
+            <guid isPermaLink="false">205104</guid>
+
+            <dc:creator><![CDATA[Рая Хачатрян]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 15:19:28 +0300</pubDate>
+            <comments>
+                https://vc.ru/offline/205104-vlasti-barselony-zadumali-zapretit-kratkosrochnuyu-sdachu-kvartir-turistam-eto-vliyaet-na-ceny-i-meshaet-mestnym?from=rss?comments
+            </comments>
+
+            <author>Рая Хачатрян</author>
+
+
+        </item>
+        <item>
+            <title>
+                <![CDATA[Пользователи «1С» рассказали о блокировке из-за проверки лицензий — она задела даже «чистые» программы]]></title>
+            <description>
+                <![CDATA[В компании говорят, что если всё лицензионное, «проблем возникнуть не должно».]]>
+            </description>
+
+            <link>
+                https://vc.ru/services/205128-polzovateli-1s-rasskazali-o-blokirovke-iz-za-proverki-licenziy-ona-zadela-dazhe-chistye-programmy?from=rss
+            </link>
+
+            <guid isPermaLink="false">205128</guid>
+
+            <dc:creator><![CDATA[Евгения Евсеева]]></dc:creator>
+
+            <pubDate>Fri, 05 Feb 2021 18:10:33 +0300</pubDate>
+            <comments>
+                https://vc.ru/services/205128-polzovateli-1s-rasskazali-o-blokirovke-iz-za-proverki-licenziy-ona-zadela-dazhe-chistye-programmy?from=rss?comments
+            </comments>
+
+            <author>Евгения Евсеева</author>
+
+
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    version="2.0">
+    <channel>
+        <atom:link
+            href="https://www.eurosport.ru/rss.xml"
+            rel="self"
+            type="application/rss+xml" />
+        <title>Eurosport - Новости с главной страницы</title>
+        <description>Eurosport - Главные новости</description>
+        <link>https://www.eurosport.ru</link>
+        <image>
+            <title>Eurosport - Новости с главной страницы</title>
+            <url>https://layout.eurosport.com/i/v8/logo/logo-esp-rss-wen.gif</url>
+            <link>https://www.eurosport.ru</link>
+        </image>
+        <item>
+            <category>Хоккей</category>
+            <category>НХЛ</category>
+            <category>Кирилл Капризов</category>
+            <category>Миннесота</category>
+            <category>Eurosport</category>
+            <title>Капризов – будущее России в НХЛ. Дебют круче Панарина и Кузнецова</title>
+            <link>https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099296.shtml</link>
+            <comments>
+                https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099296.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985148-61258697-640-360.jpg" align="center" />]]>
+                "Хоккей. После нескольких сезонов в России форвард Кирилл Капризов улетел за океан в
+                «Миннесоту Уайлд». Теперь он главный претендент на звание лучшего новичка НХЛ."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 08:58:41 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099296</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Eurosport</category>
+            <title>«Сити» высушит «Ливерпуль», «Реал» устроит шоу. Ставки на уикенд</title>
+            <link>https://www.eurosport.ru/football/story_sto8100740.shtml</link>
+            <comments>https://www.eurosport.ru/football/story_sto8100740.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/11/08/2931465-60223277-640-360.jpg" align="center" />]]>
+                "Ставки и прогнозы на футбол. В чемпионате Англии пройдет матч, по итогам которого
+                «Ливерпуль» может выпасть из гонки за сохранение титула. А в чемпионате Испании свои
+                встречи проведут «Барселона» и «Реал»: гранды Примеры еще не теряют надежды догнать
+                убежавший «Атлетико»."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 15:01:53 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100740</guid>
+        </item>
+        <item>
+            <category>Смешанные боевые искусства</category>
+            <category>Eurosport</category>
+            <title>Соперник Волкова на UFC: легенда, богач, бьет русских</title>
+            <link>https://www.eurosport.ru/mixed-martial-arts/story_sto8100096.shtml</link>
+            <comments>
+                https://www.eurosport.ru/mixed-martial-arts/story_sto8100096.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985414-61264017-640-360.jpg" align="center" />]]>
+                "На турнире UFC Fight Night 184 российский боец Александр Волков подерется с
+                голландцем Алистаром Оверимом, настоящей легендой промоушна и одним из самых
+                высокооплачиваемых спортсменов в его истории. 40-летний Оверим хочет завоевать пояс
+                чемпиона, а затем завершить карьеру, но за последние годы проиграл всем основным
+                претендентам. Несмотря на это, в его карьере куча интересных хайлайтов."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 10:59:28 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100096</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Англии</category>
+            <category>Жозе Моуринью</category>
+            <category>Томас Тухель</category>
+            <category>Матео Ковачич</category>
+            <category>Антонио Рюдигер</category>
+            <category>Челси</category>
+            <category>Тоттенхэм</category>
+            <category>Eurosport</category>
+            <title>«Челси» был неидеален против «Тоттенхэма». Дело в атаке</title>
+            <link>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8099716.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8099716.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985232-61260377-640-360.jpg" align="center" />]]>
+                "«Тоттенхэм» проиграл «Челси» в чемпионате Англии со счетом 0:1. Команда Жозе
+                Моуринью страдала от численного меньшинства в прессинге и отсутствия комбинаций в
+                атаке. Благодаря первому фактору «Челси» уверенно продвигал мяч, а эффект второго
+                улучшила надежная игра защиты. Правда, игрокам Томаса Тухеля не хватало
+                эффективности в финальной трети."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 06:52:48 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099716</guid>
+        </item>
+        <item>
+            <category>Все виды спорта</category>
+            <category>Eurosport</category>
+            <title>Прохоров тратил миллионы на футбол, НБА и биатлон. Почему перестал?</title>
+            <link>https://www.eurosport.ru/all-sports/story_sto8098881.shtml</link>
+            <comments>https://www.eurosport.ru/all-sports/story_sto8098881.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984952-61254797-640-360.jpg" align="center" />]]>
+                "В 2002-м компания «Норильский Никель» приобрела футбольный клуб «Торпедо-ЗИЛ».
+                Учитывая мощь корпорации, из перспективного союза вполне мог вырасти новый «Зенит».
+                За сделкой стоял Михаил Прохоров, которому вскоре футбол наскучил. Позже он работал
+                президентом СБР и рулил клубом НБА «Бруклин Нетс». И везде искал выгоду."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 16:06:09 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098881</guid>
+        </item>
+        <item>
+            <category>Все виды спорта</category>
+            <category>Eurosport</category>
+            <title>Теннисисты в деле, Кокорин – в заявке. Все спортивные события дня</title>
+            <link>https://is.gd/NlZ2pL</link>
+            <comments>https://is.gd/NlZ2pL#disqus_thread</comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985583-61267397-640-360.jpg" align="center" />]]>
+                "Все главные спортивные события дня"
+            </description>
+            <pubDate>Fri, 05 Feb 2021 13:24:37 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-7895600</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Eurosport</category>
+            <title>⛸ Женщины обошли мужчин на 55 баллов в прыжковом турнире</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8100489.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8100489.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/03/2984538-61246517-640-360.jpg" align="center" />]]>
+                "Прыжковый турнир на Кубке Первого канала, текстовая трансляция, онлайн-трансляция."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 13:48:53 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100489</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Кубок Испании</category>
+            <category>Роберто Сольдадо</category>
+            <category>Роналд Куман</category>
+            <category>Барселона</category>
+            <category>Гранада</category>
+            <category>Eurosport</category>
+            <title>Сольдадо назвал Кумана «дебилом» и «клоуном» в 1/4 финала Кубка</title>
+            <link>https://www.eurosport.ru/football/copa-del-rey/2020-2021/story_sto8100812.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/copa-del-rey/2020-2021/story_sto8100812.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985660-61268937-640-360.jpg" align="center" />]]>
+                "Футбол. Бывший нападающий «Реала» и «Тоттенхэма» Роберто Сольдадо жестко оскорбил
+                главного тренера «Барселоны» Роналда Кумана. В четвертьфинальном матче Кубка Испании
+                Сольдадо, который сейчас выступает за «Гранаду», назвал Кумана «дебилом» и «клоуном»
+                из-за того, что тренер активно праздновал голы каталонцев."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 16:01:46 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100812</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Eurosport</category>
+            <title>Судьи перепутали квад с тройным прыжком на ЮЧР. ТАТ в гневе</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8100127.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8100127.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985443-61264597-640-360.jpg" align="center" />]]>
+                "Фигурное катание. Беспрецедентная ситуация произошла в произвольной программе
+                юношей на Первенстве России: судейская бригада посчитала четверной сальхов Егора
+                Рухина тройным, и сперва фигурист лишился бронзовой медали. Татьяна Тарасова и Елена
+                Буянова раскритиковали команду рефери, где техническим специалистом был
+                вице-президент ISU Александр Лакерник."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 10:12:04 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100127</guid>
+        </item>
+        <item>
+            <category>Пауэрлифтинг</category>
+            <category>Eurosport</category>
+            <title>Российский пауэрлифтер попал в Книгу рекордов Гиннесса</title>
+            <link>https://www.eurosport.ru/powerlifting/story_sto8100868.shtml</link>
+            <comments>https://www.eurosport.ru/powerlifting/story_sto8100868.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/07/22/2853822-58822477-640-360.jpg" align="center" />]]>
+                "Пауэрлифтинг. Сергей Скольский установил рекорд, который попал в Книгу рекордов
+                Гиннесса. Российский пауэрлифтер сделал больше всех приседаний с собственным
+                дополнительным весом. Скольский присел 37 раз – это на 3 повторения больше, чем у
+                предыдущего рекордсмена, индуса Капила Кумара. Все самого Скольского при этом равен
+                95 кг."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 16:46:39 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100868</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Евгения Медведева</category>
+            <category>Алина Загитова</category>
+            <category>Eurosport</category>
+            <title>Загитова и Медведева сами выбрали составы на Кубке Первого канала</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8100743.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8100743.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/01/30/2765727-57136559-640-360.jpg" align="center" />]]>
+                "Фигурное катание. Российские фигуристки Алина Загитова и Евгения Медведева выбрали
+                составы команд на Кубке Первого канала. Вместо традиционной жеребьевки девушки
+                выбирали участников своих команд по очереди. С Медведевой будут выступать Анна
+                Щербакова и Дмитрий Алиев, с Загитовой – Александра Трусова и Михаил Коляда."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 14:44:36 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100743</guid>
+        </item>
+        <item>
+            <category>Биатлон</category>
+            <category>Eurosport</category>
+            <title>Тихонов оценил деятельность Прохорова во главе СБР</title>
+            <link>https://www.eurosport.ru/biathlon/story_sto8099305.shtml</link>
+            <comments>https://www.eurosport.ru/biathlon/story_sto8099305.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2017/07/17/2129303-44543479-640-360.jpg" align="center" />]]>
+                "Биатлон. Александр Тихонов оценил деятельность Михаила Прохорова во главе СБР. По
+                его словам, бизнесмен и политик сделал выбор в пользу не тех людей. Главное
+                достижение: у организации в эпоху Прохорова не было проблем с финансированием. Но
+                легенда биатлона считает, что Прохорову не хватило грамотной команды управленцев."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 20:37:19 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099305</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Испании</category>
+            <category>Жерар Пике</category>
+            <category>Реал Мадрид</category>
+            <category>Барселона</category>
+            <category>Eurosport</category>
+            <title>Пике грозит серьезный бан. Он сказал, что 85% судей – за «Реал»</title>
+            <link>https://www.eurosport.ru/football/liga/2020-2021/story_sto8100660.shtml</link>
+            <comments>
+                https://www.eurosport.ru/football/liga/2020-2021/story_sto8100660.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/07/06/2845642-58658877-640-360.jpg" align="center" />]]>
+                "Футбол. Жерар Пике рискует пропустить ближайшие матчи «Барселоны», если Королевская
+                испанская футбольная федерация посчитает, что его слова об арбитрах были достаточно
+                неуместными, чтобы дисквалифицировать футболиста. Пике заявил, что большинство судей
+                в Испании поддерживает «Реал», и за это ему грозит от 4 до 12 матчей."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 13:43:10 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100660</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Ирака</category>
+            <category>Алешандре Пато</category>
+            <category>Eurosport</category>
+            <title>Пато потребовал от нового клуба особняк с бассейном</title>
+            <link>https://www.eurosport.ru/football/iraqi-league/2020-2021/story_sto8100703.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/iraqi-league/2020-2021/story_sto8100703.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985603-61267797-640-360.jpg" align="center" />]]>
+                "Футбол. Алешандре Пато находится в поиске клуба с июля 2020 года, с тех пор, как
+                покинул «Сан-Пауло». Сейчас футболист ведет переговоры с клубом чемпионата Ирака
+                «Аль-Дивания», но требования бразильца кажутся неподъемными даже президенту. Пато
+                хочет от 15-й команды лиги большой особняк с бассейном и гарантированную
+                безопасность для себя и жены."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 14:28:40 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100703</guid>
+        </item>
+        <item>
+            <category>Хоккей</category>
+            <category>Eurosport</category>
+            <title>На ЧМ по хоккею вместо гимна России включат «Катюшу» (ТАСС)</title>
+            <link>https://www.eurosport.ru/ice-hockey/story_sto8100435.shtml</link>
+            <comments>https://www.eurosport.ru/ice-hockey/story_sto8100435.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/12/20/2958837-60732677-640-360.jpg" align="center" />]]>
+                "На чемпионате мира 2021 года по хоккею с шайбой, который пройдет в Риге, российские
+                хоккеисты не смогут выступить под национальным флагом и услышать национальный гимн.
+                В Федерации хоккея России сообщили, что после побед команды организаторы будут
+                включать песню «Катюша» – ранее такой вариант предложила комиссия спортсменов для
+                Олимпиад."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 12:50:42 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100435</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Голландии</category>
+            <category>Андре Онана</category>
+            <category>Аякс</category>
+            <category>Eurosport</category>
+            <title>Вратарь «Аякса» Онана дисквалифицирован на год за допинг</title>
+            <link>https://www.eurosport.ru/football/eredivisie/2020-2021/story_sto8100378.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/eredivisie/2020-2021/story_sto8100378.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985519-61266117-640-360.jpg" align="center" />]]>
+                "Футбол, чемпионат Нидерландов. Основной голкипер «Аякса» Андре Онана получил
+                12-месячную дисквалификацию за употребление запрещенного препарата – в его
+                допинг-пробе нашли фуросемид. В течение года вратарю запрещено участвовать в играх
+                амстердамского клуба и сборной Камеруна. Футболист готовится подать апелляцию в
+                CAS."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 11:53:57 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100378</guid>
+        </item>
+        <item>
+            <category>Горные лыжи</category>
+            <category>Eurosport</category>
+            <title>Второе адское падение в Германии: теперь пострадал француз</title>
+            <link>https://www.eurosport.ru/alpine-skiing/video_vid1415350.shtml</link>
+            <comments>https://www.eurosport.ru/alpine-skiing/video_vid1415350.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985572-61267177-640-360.jpg" align="center" />]]>
+                "Брис Роже поскользнулся и влетел в сетку в Гармиш-Партенкирхене."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 13:57:49 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100701</guid>
+        </item>
+        <item>
+            <category>Биатлон</category>
+            <category>Чемпионат мира</category>
+            <category>Eurosport</category>
+            <title>ВАДА допустило Логинова и остальных русских биатлонистов до ЧМ</title>
+            <link>
+                https://www.eurosport.ru/biathlon/world-championships/2020-2021/story_sto8100325.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/biathlon/world-championships/2020-2021/story_sto8100325.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/02/24/2783428-57452579-640-360.jpg" align="center" />]]>
+                "Биатлон. В Международном союзе биатлонистов (IBU) подтвердили, что все попавшие в
+                заявку на чемпионат мира российские биатлонисты допущены до участия в турнире. Из-за
+                санкций, наложенных на российский спорт, состав необходимо утверждать в ВАДА. Из-за
+                допингового прошлого получить отказ мог Александр Логинов."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 10:52:08 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100325</guid>
+        </item>
+        <item>
+            <category>Смешанные боевые искусства</category>
+            <category>Eurosport</category>
+            <title>Петр Ян: «Жизнь в России становится ненормальной»</title>
+            <link>https://www.eurosport.ru/mixed-martial-arts/story_sto8100266.shtml</link>
+            <comments>
+                https://www.eurosport.ru/mixed-martial-arts/story_sto8100266.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/07/12/2848831-58722657-640-360.jpg" align="center" />]]>
+                "Смешанные единоборства. Боец MMA Петр Ян, владеющий чемпионским поясом UFC в
+                легчайшем весе, высказался о тяжелой ситуации в России: он заявил, что жизнь в
+                стране становится ненормальной, а граждане имеют право высказываться и требовать от
+                власти улучшения условий. Ян добавил, что его семья живет, преодолевая установленный
+                государством сложности."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 11:27:49 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100266</guid>
+        </item>
+        <item>
+            <category>Горные лыжи</category>
+            <category>Eurosport</category>
+            <title>Немец жестким падением оставил трассу без заградительной сетки</title>
+            <link>https://www.eurosport.ru/alpine-skiing/video_vid1415291.shtml</link>
+            <comments>https://www.eurosport.ru/alpine-skiing/video_vid1415291.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985536-61266457-640-360.jpg" align="center" />]]>
+                "Йозеф Ферстль завалил выступление на домашней трассе в Гармиш-Партенкирхене."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 12:52:13 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100606</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Испании</category>
+            <category>Зинедин Зидан</category>
+            <category>Эден Азар</category>
+            <category>Флорентино Перес</category>
+            <category>Реал Мадрид</category>
+            <category>Eurosport</category>
+            <title>«Реал» тратил бездарно. Вот главные ошибки Переса и Зизу</title>
+            <link>https://www.eurosport.ru/football/liga/2020-2021/story_sto8098451.shtml</link>
+            <comments>
+                https://www.eurosport.ru/football/liga/2020-2021/story_sto8098451.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984846-61252677-640-360.jpg" align="center" />]]>
+                "Финансовый менеджмент «Реала» последних лет проводился на уровне трехлетнего
+                ребенка. Мадридский клуб по вине Флорентино Переса и Зинедина Зидана бездарно тратил
+                деньги на трансферы, а теперь у мадридцев нет средств на усиление состава из-за
+                кризиса, связанного с пандемией коронавируса."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 12:59:22 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098451</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>Australian Open</category>
+            <category>Eurosport</category>
+            <title>Медведев и Рублев попали в половину Надаля и узнали соперников</title>
+            <link>https://www.eurosport.ru/tennis/australian-open/2021/story_sto8099819.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/australian-open/2021/story_sto8099819.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985350-61262737-640-360.jpg" align="center" />]]>
+                "Теннис, Australian Open. В Мельбурне состоялась жеребьевка первого в сезоне-2021
+                турнира «Большого шлема». Лучшие российские теннисисты Даниил Медведев, Андрей
+                Рублев и Карен Хачанов попали в половину испанца Рафаэля Надаля. В первом круге
+                Медведев сыграет с Вашеком Поспишилом, Рублев – с Янником Ханфманом, Хачанов – с
+                Александром Вукичем."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 06:34:30 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099819</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>Eurosport</category>
+            <title>Хачанов выиграл два матча за сутки, следи за результатами тут</title>
+            <link>https://is.gd/BEVXCO</link>
+            <comments>https://is.gd/BEVXCO#disqus_thread</comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985387-61263477-640-360.jpg" align="center" />]]>
+                "Все теннисные результаты"
+            </description>
+            <pubDate>Fri, 05 Feb 2021 07:38:12 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100001</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>WTA Мельбурн</category>
+            <category>Eurosport</category>
+            <title>Мощь! Александрова вслед за Швёнтек сокрушила и Халеп</title>
+            <link>https://www.eurosport.ru/tennis/wta-melbourne/2021/video_vid1415189.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/wta-melbourne/2021/video_vid1415189.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985425-61264237-640-360.jpg" align="center" />]]>
+                "Первая ракетка России отдала всего 3 гейма двукратной победительнице турниров
+                «Большого шлема»."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 10:39:36 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100307</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Евгения Медведева</category>
+            <category>Алина Загитова</category>
+            <category>Eurosport</category>
+            <title>Загитова и Медведева посоревновались в переманивании собак</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8099756.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8099756.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985334-61262417-640-360.png" align="center" />]]>
+                "Фигурное катание. Медалистки Олимпийских игр 2018 года в Пхёнчхане Алина Загитова и
+                Евгения Медведева стали гостями телепередачи «Вечерний Ургант» на Первом канале в
+                преддверии командного турнира с участием фигуристов сборной России. Спортсменки
+                ответили на вопросы друг о друге и поучаствовали в забавном конкурсе."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 04:22:13 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099756</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Англии</category>
+            <category>Рио Фердинанд</category>
+            <category>Челси</category>
+            <category>Тоттенхэм</category>
+            <category>Eurosport</category>
+            <title>«Ни лидера, ни характера». Фердинанд – жестко о «Тоттенхэме»</title>
+            <link>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8100050.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8100050.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/03/24/2797784-57739699-640-360.jpg" align="center" />]]>
+                "Футбол, АПЛ. Бывший защитник «Манчестер Юнайтед» и сборной Англии Рио Фердинанд
+                прошелся по «Тоттенхэму» после поражения от «Челси» и серии в три проигранных матча.
+                Фердинанд заявил, что в отсутствие травмированного Харри Кейна у «шпор» нет
+                индивидуальности и харизмы."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 08:09:50 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100050</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>ATP Cup</category>
+            <category>Eurosport</category>
+            <title>Россия сыграет с Германией в 1/2 ATP Cup – Джокович вылетел</title>
+            <link>https://www.eurosport.ru/tennis/atp-cup/2021/story_sto8099956.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/atp-cup/2021/story_sto8099956.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985376-61263257-640-360.jpg" align="center" />]]>
+                "Теннис, ATP Cup. Российские теннисисты Даниил Медведев и Андрей Рублев поспорят за
+                выход в финал командного турнира с немцами Александром Зверевым и Ян-Леннардом
+                Штруффом. Сборная Германии в матче за выход из группы сенсационно выбила Сербию, за
+                которую выступает первая ракетка мира Новак Джокович."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 07:45:07 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099956</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>WTA Мельбурн</category>
+            <category>Eurosport</category>
+            <title>Финалистки АО-2020 зарубились вновь: Мугуруса взяла реванш</title>
+            <link>https://www.eurosport.ru/tennis/wta-melbourne/2021/video_vid1415188.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/wta-melbourne/2021/video_vid1415188.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985418-61264097-640-360.png" align="center" />]]>
+                "Гарбинье Мугуруса в двух сетах переиграла Софию Кенин. Год назад они сошлись в
+                финале Открытого чемпионата Австралии, и тогда сильнее оказался американка русского
+                происхождения."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 09:37:44 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100202</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>ATP Cup</category>
+            <category>Eurosport</category>
+            <title>Ядерная свеча и другие моменты победы Джоковича над Зверевым</title>
+            <link>https://www.eurosport.ru/tennis/atp-cup/2021/video_vid1415177.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/atp-cup/2021/video_vid1415177.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985386-61263457-640-360.png" align="center" />]]>
+                "Новак по-прежнему непобедим в одиночных матчах на ATP Cup, но в полуфинале с
+                Россией в итоге сыграют немцы."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 08:49:14 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8100129</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Англии</category>
+            <category>Джон Терри</category>
+            <category>Челси</category>
+            <category>Eurosport</category>
+            <title>Наркоторговля, доведение до суицида. Дикая семья Терри</title>
+            <link>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8098289.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/premier-league/2020-2021/story_sto8098289.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984746-61250677-640-360.jpg" align="center" />]]>
+                "Бывший капитан «Челси» и легенда «Спартака» Джон Терри часто влипал в скандалы, а
+                его семья в этом помогала. Папа Джона попадался на продаже кокаина, мама и тетя
+                воровали одежду в магазине, брат тренировал в АПЛ и параллельно лохматил
+                тотализатор. Самые дикие истории о семье экс-звезды сборной Англии – в тексте
+                Eurosport.ru."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 08:57:44 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098289</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>Australian Open</category>
+            <category>Eurosport</category>
+            <title>Павлюченкова – Осака, Серена – Зигемунд. Итоги жеребьевки AO</title>
+            <link>https://www.eurosport.ru/tennis/australian-open/2021/story_sto8099880.shtml</link>
+            <comments>
+                https://www.eurosport.ru/tennis/australian-open/2021/story_sto8099880.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985358-61262897-640-360.jpg" align="center" />]]>
+                "Теннис, Australian Open. В Мельбурне состоялась жеребьевка женской сетки Australian
+                Open – первого в сезоне турнира «Большого шлема». Всего в основную сетку попали 12
+                российских теннисисток, самая сложная соперница досталась Анастасии Павлюченковой –
+                она сыграет с Наоми Осакой, третьей ракеткой мира из Японии."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 07:06:07 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099880</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Трансферы</category>
+            <category>Саломон Рондон</category>
+            <category>Куинси Промес</category>
+            <category>Eurosport</category>
+            <title>ЦСКА хочет Рондона, Промес на паузе. Главные слухи РПЛ</title>
+            <link>https://www.eurosport.ru/football/transfers/2020-2021/story_sto8099316.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/transfers/2020-2021/story_sto8099316.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985162-61258977-640-360.jpg" align="center" />]]>
+                "Футбол. Венесуэльский нападающий Саломон Рондон может вернуться в РПЛ и перейти в
+                ЦСКА. Сам футболист, который ранее выступал в «Зените», не против перехода.
+                Управляющий директор «Спартака» Евгений Мележиков рассказал, почему задерживается
+                трансфер Куинси Промеса – дело в условиях «Аякса», которые не выгодны красно-белым."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 19:37:54 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099316</guid>
+        </item>
+        <item>
+            <category>Хоккей</category>
+            <category>НХЛ</category>
+            <category>Александр Овечкин</category>
+            <category>Вашингтон</category>
+            <category>Рейнджерс</category>
+            <category>Eurosport</category>
+            <title>Овечкин вышел на 7-е место в погоне за рекордом Гретцки</title>
+            <link>https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099766.shtml</link>
+            <comments>
+                https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099766.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985337-61262477-640-360.jpg" align="center" />]]>
+                "Хоккей, НХЛ. Российский нападающий «Вашингтона» Александр Овечкин продолжает погоню
+                за рекордом Уэйна Гретцки по заброшенным шайбам в Лиге за всю историю. Он забросил в
+                ворота «Нью Йорк Рейнджерс» в очередном матче регулярного чемипоната, шайба стала
+                709-й и помогла выйти на седьмое место, обойдя Майка Гартнера."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 05:02:21 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099766</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>ATP Мельбурн</category>
+            <category>Eurosport</category>
+            <title>Кирьос в ярости разбил ракетку и швырнул ее на трибуны</title>
+            <link>
+                https://www.eurosport.ru/tennis/wta-adelaide-international/2021/video_vid1415109.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/tennis/wta-adelaide-international/2021/video_vid1415109.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985340-61262537-640-360.jpg" align="center" />]]>
+                "Ник под ноль отдал подачу Борне Чоричу при счете 4:4 во втором сете. Австралиец
+                продержался против хорвата чуть больше часа."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 07:13:45 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099937</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Италии</category>
+            <category>Александр Кокорин</category>
+            <category>Фиорентина</category>
+            <category>Eurosport</category>
+            <title>Проблемы с документами и недовольство тренера. Когда дебют Кокорина</title>
+            <link>https://www.eurosport.ru/football/serie-a/2020-2021/story_sto8099159.shtml</link>
+            <comments>
+                https://www.eurosport.ru/football/serie-a/2020-2021/story_sto8099159.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985131-61258357-640-360.jpg" align="center" />]]>
+                "Футбол. Чемпионат Италии. Неделю назад Александр Кокорин перешел в «Фиорентину» – у
+                игрока нет травм, все ждут, когда он сыграет первый матч в Серии А. Почему
+                откладывается его дебют? На это есть несколько причин."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 17:28:24 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099159</guid>
+        </item>
+        <item>
+            <category>Киберспорт</category>
+            <category>Eurosport</category>
+            <title>Майами 70-х и релиз в 2023-м. Инсайды о GTA VI</title>
+            <link>https://www.eurosport.ru/e-sports/story_sto8099788.shtml</link>
+            <comments>https://www.eurosport.ru/e-sports/story_sto8099788.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/05/2985341-61262557-640-360.jpg" align="center" />]]>
+                "Киберспорт. В интернете завирусились инсайдерские подробности видеоигры GTA 6, дата
+                релиза которой пока не объявлена. Охарактеризована локация (Майами или Флорида
+                1970-х годов), особенности персонажа-протагониста (вопреки слухам, он будет белым
+                мужчиной, а не женщиной), а также названа приблизительная дата анонса."
+            </description>
+            <pubDate>Fri, 05 Feb 2021 05:41:00 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099788</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Италии</category>
+            <category>Криштиану Роналду</category>
+            <category>Ювентус</category>
+            <category>Eurosport</category>
+            <title>«Ювентус» хочет продлить контракт Роналду до 2023 года</title>
+            <link>https://www.eurosport.ru/football/serie-a/2020-2021/story_sto8099465.shtml</link>
+            <comments>
+                https://www.eurosport.ru/football/serie-a/2020-2021/story_sto8099465.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/11/22/2941158-60379137-640-360.jpg" align="center" />]]>
+                "Футбол. 5 февраля Криштиану Роналду исполняется 36 лет. Его контракт с «Ювентусом»
+                истекает через полтора года, но туринцы готовы продлить отношения с португальцем,
+                так как не сомневаются, что и в 38 лет футболист будет полезен для «старой синьоры».
+                Руководство пока не начало переговоры с агентом Криштиану, но контакт установлен."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 21:27:24 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099465</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Лига чемпионов УЕФА</category>
+            <category>РБ Лейпциг</category>
+            <category>Ливерпуль</category>
+            <category>Eurosport</category>
+            <title>«Ливерпуль» не пустят в Лейпциг на матч ЛЧ</title>
+            <link>
+                https://www.eurosport.ru/football/champions-league/2020-2021/story_sto8099436.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/champions-league/2020-2021/story_sto8099436.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/01/05/2965608-60868097-640-360.jpg" align="center" />]]>
+                "Футбол. Коронавирус снова вмешивается в расписание Лиги чемпионов: правительство
+                Германии опубликовало заявление, согласно которому в страну запрещено въезжать из
+                территорий, на которых был обнаружен новый вид коронавируса. Англия – в их числе, а
+                потому «Лейпцигу» придется искать другое место для матча 1/8 финала с «Ливерпулем»."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 21:04:07 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099436</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Eurosport</category>
+            <title>Кубок Первого канала с Загитовой и Медведевой – что нужно знать</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8098502.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8098502.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2019/12/02/2728676-56395539-640-360.jpg" align="center" />]]>
+                "Фигурное катание. 5-7 февраля на льду «Мегаспорта» в Москве состоится Кубок Первого
+                канала: командный турнир с участием фигуристов сборной России. В первый день женская
+                и мужская команды померятся силами на прыжковом фестивале, затем фигуристов разделят
+                на другие команды, капитанами которых станут Алина Загитова и Евгения Медведева."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 14:55:52 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098502</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат Португалии</category>
+            <category>Станислав Крицюк</category>
+            <category>Порту</category>
+            <category>Eurosport</category>
+            <title>Крицюк жестко врезался в соперника. На поле выехала скорая</title>
+            <link>https://www.eurosport.ru/football/superliga/2020-2021/story_sto8099550.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/superliga/2020-2021/story_sto8099550.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985251-61260757-640-360.jpg" align="center" />]]>
+                "Футбол. На последних минутах матча 17-го тура португальской Примейры между
+                «Белененсеш» и «Порту» Станислав Крицюк жестко врезался в соперника Нану. Оба игрока
+                рухнули на газон, но россиянин смог продолжить игру, а за футболистом из
+                Гвинеи-Бисау приехала скорая – он получил слишком серьезные повреждения."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 21:58:29 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099550</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Клубный чемпионат мира</category>
+            <category>Бавария Мюнхен</category>
+            <category>Аль Ахли</category>
+            <category>Eurosport</category>
+            <title>«Бавария» узнала соперника по полуфиналу клубного ЧМ</title>
+            <link>https://www.eurosport.ru/football/club-world-cup/2020/story_sto8099344.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/club-world-cup/2020/story_sto8099344.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/02/09/2772186-57265739-640-360.jpg" align="center" />]]>
+                "Футбол. Гол полузащитника «Аль-Ахли» Эль-Шахата позволил его команде выйти в
+                полуфинал клубного чемпионата мира, где египтянам будет противостоять победитель
+                Лиги чемпионов прошлого сезона, мюнхенская «Бавария». Немецкий клуб, как и
+                бразильский «Палмейрас», который встретится с «Тигрес», начинают турнир с
+                полуфинального этапа."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 19:54:12 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099344</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Eurosport</category>
+            <title>Клопп vs Пеп, «Ювентус» vs «Рома». Самые сочные ставки на уикенд</title>
+            <link>https://www.eurosport.ru/football/story_sto8098344.shtml</link>
+            <comments>https://www.eurosport.ru/football/story_sto8098344.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/11/09/2934026-60236497-640-360.jpg" align="center" />]]>
+                "Winline приглашает тебя принять участие в игре Х5. Миллион рублей на кону – только
+                угадай 5 исходов матчей уикенда, и главный приз будет твоим."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 11:51:19 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098344</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Елизавета Туктамышева</category>
+            <category>Михаил Коляда</category>
+            <category>Дмитрий Алиев</category>
+            <category>Анна Щербакова</category>
+            <category>Александра Трусова</category>
+            <category>Макар Игнатов</category>
+            <category>Eurosport</category>
+            <title>Стартует прыжковый турнир. Почему Коляде и Алиеву победа важнее</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8097668.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8097668.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/12/25/2961451-60784957-640-360.jpg" align="center" />]]>
+                "Фигурное катание. Командный Кубок Первого канала начнется с прыжкового турнира
+                между женской и мужской командами. Трусова, Щербакова, Валиева и Туктамышева
+                поспорят с Колядой, Алиевым, Мозалевым и Игнатовым. Я буду болеть за парней – их
+                победа принесет русской фигурке больше пользы, чем очередной успех девчонок."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 10:53:20 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8097668</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат России</category>
+            <category>ФК Москва</category>
+            <category>Eurosport</category>
+            <title>Белоус: «Прохоров говорил: футбольный клуб – обременение»</title>
+            <link>
+                https://www.eurosport.ru/football/russian-premier-league/2020-2021/story_sto8099274.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/russian-premier-league/2020-2021/story_sto8099274.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2020/09/18/2889066-59489337-640-360.jpg" align="center" />]]>
+                "Футбол. Чемпионат России. Бывший генеральный директор ФК «Москва» Юрий Белоус в
+                интервью Eurosport.ru рассказал о роли Михаила Прохорова в управлении клубом. По
+                словам Белоуса, пока бизнесмен и политик искренне интересовался футболом, дела клуба
+                шли хорошо. Все изменилось после продажи «Норникеля»."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 18:37:20 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099274</guid>
+        </item>
+        <item>
+            <category>Фигурное катание</category>
+            <category>Eurosport</category>
+            <title>Петросян – о войне в Карабахе: «Катаюсь, чтобы подбодрить мой народ»</title>
+            <link>https://www.eurosport.ru/figure-skating/story_sto8099271.shtml</link>
+            <comments>https://www.eurosport.ru/figure-skating/story_sto8099271.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985135-61258437-640-360.png" align="center" />]]>
+                "Фигурное катание. Ученица Тутберидзе Аделия Петросян после произвольной программы
+                на чемпионате России рассказала, что во время прокатов программы для нее очень важно
+                подбодрить армянский народ. Девушка отметила, что недавно Армения проиграла войну
+                Азербайджану, и она хочет одерживать победы в честь своей страны, хоть и не была в
+                Арцахе."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 19:15:44 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099271</guid>
+        </item>
+        <item>
+            <category>Хоккей</category>
+            <category>НХЛ</category>
+            <category>Здено Хара</category>
+            <category>Вашингтон</category>
+            <category>Eurosport</category>
+            <title>Фанат получил клюшки звезды НХЛ за $5000. Их отправили не туда</title>
+            <link>https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099148.shtml</link>
+            <comments>
+                https://www.eurosport.ru/ice-hockey/nhl/2020-2021/story_sto8099148.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985105-61257837-640-360.jpg" align="center" />]]>
+                "Хоккей. Жителю Нью-Джерси по ошибке достались клюшки легендарного словацкого
+                защитника Здено Хары, который в данный момент выступает за «Вашингтон Кэпиталс».
+                Клюшки стоимость 5 тысяч долларов пришли на домашний адрес Ариэля Бен-Абрахама,
+                который сообщил об этом в твиттере, отметив аккаунт клуба и самого Хары."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 18:12:29 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099148</guid>
+        </item>
+        <item>
+            <category>Снукер</category>
+            <category>Shoot Out</category>
+            <category>Eurosport</category>
+            <title>Безумие на Shoot-Out: Грейс уронил флюк с отскоком от 2-х луз</title>
+            <link>https://www.eurosport.ru/snooker/shoot-out/2020-2021/video_vid1414681.shtml</link>
+            <comments>
+                https://www.eurosport.ru/snooker/shoot-out/2020-2021/video_vid1414681.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984942-61254597-640-360.jpg" align="center" />]]>
+                "Дэвид Грэйс одержал победу в первом раунде Shoot-Out: англианин обыграл
+                соотечественника Хэйдена Станиленда. В одном из моментов Грэйсу сильно повезло."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 16:29:18 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8099116</guid>
+        </item>
+        <item>
+            <category>Футбол</category>
+            <category>Чемпионат России</category>
+            <category>Рубин</category>
+            <category>Тамбов</category>
+            <category>Eurosport</category>
+            <title>«Рубин» предложил геройский план спасения «Тамбова»</title>
+            <link>
+                https://www.eurosport.ru/football/russian-premier-league/2020-2021/story_sto8098965.shtml
+            </link>
+            <comments>
+                https://www.eurosport.ru/football/russian-premier-league/2020-2021/story_sto8098965.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2985019-61256137-640-360.jpg" align="center" />]]>
+                "Футбол. «Тамбов» рискует не продолжить сезон российской Премьер-лиги из-за
+                финансовых проблем. Генеральный директор казанского «Рубина» предложил помощь. Клуб
+                отдаст тамбовчанам несколько футболистов в бесплатную аренду, оклады игрокам также
+                будет платить «Рубин». Долги «Тамбова» на конец января составляли 130 миллионов
+                рублей."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 16:53:41 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098965</guid>
+        </item>
+        <item>
+            <category>Теннис</category>
+            <category>Eurosport</category>
+            <title>Пятничные матчи WTA в Мельбурне пройдут без третьего сета</title>
+            <link>https://www.eurosport.ru/tennis/story_sto8098720.shtml</link>
+            <comments>https://www.eurosport.ru/tennis/story_sto8098720.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984906-61253877-640-360.jpg" align="center" />]]>
+                "Женская теннисная ассоциация (WTA) изменила формат матчей на турнире в Мельбурне. В
+                случае необходимости третьего решающего сета теннисистки будут проводить тай-брейк
+                до 10 очков."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 13:28:00 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098720</guid>
+        </item>
+        <item>
+            <category>Смешанные боевые искусства</category>
+            <category>Eurosport</category>
+            <title>Боец UFC хочет подраться с Пейдж Ванзант на голых кулаках</title>
+            <link>https://www.eurosport.ru/mixed-martial-arts/story_sto8098825.shtml</link>
+            <comments>
+                https://www.eurosport.ru/mixed-martial-arts/story_sto8098825.shtml#disqus_thread
+            </comments>
+            <description>
+                <![CDATA[<img src="https://i.eurosport.com/2021/02/04/2984956-61254877-640-360.jpg" align="center" />]]>
+                "Смешанные единоборства. Пейдж Ванзант дебютирует в промоушне кулачных поединков
+                Bare Knuckle FC уже 5 февраля. Девушка не провела еще ни одной схватки в новом для
+                нее формате, а ей уже предложил подраться действующий боец UFC Майк Перри.
+                Полусредневес заявил, что подерется с Ванзант, если ему заплатят 250 тысяч
+                долларов."
+            </description>
+            <pubDate>Thu, 04 Feb 2021 14:36:26 GMT</pubDate>
+            <guid isPermaLink="false">eurosport-8098825</guid>
+        </item>
+    </channel>
+</rss>

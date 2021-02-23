@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+    xmlns:webfeeds="http://webfeeds.org/rss/1.0"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    version="2.0">
+
+    <channel>
+        <title>Android Police &#8211; Android news, reviews, apps, games, phones, tablets</title>
+        <atom:link
+            href="https://www.androidpolice.com/feed/"
+            rel="self"
+            type="application/rss+xml" />
+        <link>https://www.androidpolice.com</link>
+        <description>Looking after everything Android</description>
+        <lastBuildDate>Fri, 05 Feb 2021 12:45:26 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly
+        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1
+        </sy:updateFrequency>
+        <generator>https://wordpress.org/?v=5.6.1</generator>
+        <atom:link
+            href="https://pubsubhubbub.appspot.com"
+            rel="hub" />
+        <atom:link
+            href="https://androidpolice.superfeedr.com"
+            rel="hub" />
+        <webfeeds:cover image="https://www.androidpolice.com/wp-content/themes/ap2/images/apple-touch-icon.png" />
+        <webfeeds:logo>
+            https://www.androidpolice.com/wp-content/themes/ap2/images/apple-touch-icon.png
+        </webfeeds:logo>
+        <webfeeds:icon>
+            https://www.androidpolice.com/wp-content/themes/ap2/images/apple-touch-icon.png
+        </webfeeds:icon>
+        <webfeeds:wordmark>
+            https://www.androidpolice.com/wp-content/themes/ap2/images/ap-logo-textonly.svg
+        </webfeeds:wordmark>
+        <webfeeds:accentColor>157bda</webfeeds:accentColor>
+        <item>
+            <title>TikTok is now available for Android TV in the UK, Germany, and France (APK
+                Download)
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Scott Scrivens]]></dc:creator>
+            <pubDate>Fri, 05 Feb 2021 12:45:00 +0000</pubDate>
+            <category><![CDATA[Android TV]]></category>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Chromecast with Google TV]]></category>
+            <category><![CDATA[Downloads]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[TikTok]]></category>
+            <category><![CDATA[android tv]]></category>
+            <category><![CDATA[apk]]></category>
+            <category><![CDATA[chromecast]]></category>
+            <category><![CDATA[download]]></category>
+            <category><![CDATA[google play]]></category>
+            <category><![CDATA[google tv]]></category>
+            <category><![CDATA[tiktok]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=756793&#038;uniqid=601d3df5735e7</guid>
+
+            <description><![CDATA[Works on Chromecast with Google TV
+<ul class="list-unstyled list-banners"><li>
+        <a class="banner banner-update" title="View the 2021/02/05 4:45am PST Update" href="https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/#1">
+        <span class="update-header">Update</span>
+        <div class="ellipsize">
+        <span class="update-title">
+Updated to include official availability information.
+</span>
+        </div>
+        </a>
+        </li></ul><p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-756800" src="https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-728x410.png" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-728x410.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-329x185.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-668x376.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-161x91.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922-217x122.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/Screenshot_20210203-132922.png 1920w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>The internet is generally a great place to waste time, but TikTok is the current king in this respect. I've resisted installing it on my phone since I get enough secondhand short video smoke from my girlfriend, but this new development is a worrying one. TikTok for Android TV is now available <a href="https://play.google.com/store/apps/details?id=com.tiktok.tv">on the Play Store</a>, which could put an end to any semblance of productivity we were pretending to still be capable of.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/'>TikTok is now available for Android TV in the UK, Germany, and France (APK Download)</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/05/goodbye-productivity-tiktok-is-now-available-for-android-tv/feed/
+            </wfw:commentRss>
+            <slash:comments>21</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Xiaomi&#039;s latest concept phone maximizes screen real estate... and accidental
+                touches
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/05/xiaomis-latest-concept-phone-maximizes-screen-real-estate-and-accidental-touches/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/05/xiaomis-latest-concept-phone-maximizes-screen-real-estate-and-accidental-touches/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Manuel Vonau]]></dc:creator>
+            <pubDate>Fri, 05 Feb 2021 12:13:54 +0000</pubDate>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Videos]]></category>
+            <category><![CDATA[Xiaomi]]></category>
+            <category><![CDATA[concept]]></category>
+            <category><![CDATA[concept phone]]></category>
+            <category><![CDATA[curved display]]></category>
+            <category><![CDATA[display]]></category>
+            <category><![CDATA[no buttons]]></category>
+            <category><![CDATA[no ports]]></category>
+            <category><![CDATA[quad-curved display]]></category>
+            <category><![CDATA[video]]></category>
+            <category><![CDATA[xiaomi]]></category>
+            <category><![CDATA[xiaomi concept phone]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757213</guid>
+
+            <description><![CDATA[It clearly didn&#039;t get the memo about curved screens being out of fashion
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-757215" src="https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-728x485.jpg" alt="" width="728" height="485" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-728x485.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-329x219.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-668x445.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-161x107.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05-217x145.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/05/Quad-curved-display-concept-smartphone05.jpg 1732w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Xiaomi is known for its <a href="https://www.androidpolice.com/2020/08/14/xiaomi-redmi-9-review/">affordable but powerful handsets</a>, but the company also loves to push the boundaries of what's possible with its concept phones. It introduced the <a href="https://www.androidpolice.com/2020/01/03/xiaomi-mi-mix-alpha-surround-screen-concept-108-mp/">Mi Mix Alpha</a> in 2019 with a wrap-around screen, only interrupted by a small strip with the camera. And today, the company is back with another interesting concept sporting a quad-curved waterfall display &#8212; i.e., tons of space for accidental touch input.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/05/xiaomis-latest-concept-phone-maximizes-screen-real-estate-and-accidental-touches/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/05/xiaomis-latest-concept-phone-maximizes-screen-real-estate-and-accidental-touches/'>Xiaomi's latest concept phone maximizes screen real estate... and accidental touches</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/05/xiaomis-latest-concept-phone-maximizes-screen-real-estate-and-accidental-touches/feed/
+            </wfw:commentRss>
+            <slash:comments>1</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Google will pay some Australian publishers after threat to leave market
+                boomerangs
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/google-will-pay-some-australian-publishers-after-threat-to-leave-market-boomerangs/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/google-will-pay-some-australian-publishers-after-threat-to-leave-market-boomerangs/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Ryne Hager]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 23:14:21 +0000</pubDate>
+            <category><![CDATA[Google]]></category>
+            <category><![CDATA[Legal]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[australia]]></category>
+            <category><![CDATA[google search]]></category>
+            <category><![CDATA[law]]></category>
+            <category><![CDATA[publishers]]></category>
+            <category><![CDATA[search]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757180</guid>
+
+            <description><![CDATA[New Aussie names are joining the News Showcase program
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-756155" src="https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-728x409.jpg" alt="" width="728" height="409" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-728x409.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/01/australia-hero-217x122.jpg 217w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Google is starting to back down on its <a href="https://www.androidpolice.com/2021/01/22/google-will-disable-search-in-australia-if-government-insists-that-it-pays-publishers/">threat to leave the Australian market</a>. In a <a href="https://blog.google/products/news/google-news-showcase-launches-australia/">blog post</a> today, the company extended an olive branch, highlighting Australian publishers that would be joining the News Showcase program, which pays publishers as part of a licensing program to refer traffic to their stories.</p>
+<p><span id="more-757180"></span></p>
+<p>In case you missed the context, Previously Google <a href="https://www.androidpolice.com/2021/01/22/google-will-disable-search-in-australia-if-government-insists-that-it-pays-publishers/">threatened to pull Search out of the Australian market</a> in response to <a href="https://www.accc.gov.au/focus-areas/digital-platforms/draft-news-media-bargaining-code">new legislation</a> requiring that referral sources like Google and Facebook pay organizations to link to their content.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/google-will-pay-some-australian-publishers-after-threat-to-leave-market-boomerangs/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/google-will-pay-some-australian-publishers-after-threat-to-leave-market-boomerangs/'>Google will pay some Australian publishers after threat to leave market boomerangs</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/google-will-pay-some-australian-publishers-after-threat-to-leave-market-boomerangs/feed/
+            </wfw:commentRss>
+            <slash:comments>17</slash:comments>
+
+
+        </item>
+        <item>
+            <title>TicWatch Pro 3 gets chunky update with plenty of new features and fixes</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/ticwatch-pro-3-gets-chunky-update-with-plenty-of-new-features-and-fixes/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/ticwatch-pro-3-gets-chunky-update-with-plenty-of-new-features-and-fixes/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Ryne Hager]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 22:08:44 +0000</pubDate>
+            <category><![CDATA[Device Updates]]></category>
+            <category><![CDATA[Mobvoi]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Smartwatches & Wearables]]></category>
+            <category><![CDATA[TicWatch Pro 3]]></category>
+            <category><![CDATA[mobvoi ticwatch pro 3]]></category>
+            <category><![CDATA[ticwatch pro 3]]></category>
+            <category><![CDATA[update]]></category>
+            <category><![CDATA[wear os]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757164</guid>
+
+            <description><![CDATA[<p><a href="https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1.jpg" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-715044" src="https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-728x410.jpg" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-728x410.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1-217x122.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2020/10/08/mobvoi-ticwatch-pro-3-review-1.jpg 2048w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>The Mobvoi TicWatch Pro 3 is still the only Wear OS watch with Qualcomm's 4100 chip, and it just picked up a new update. Rolling out now, the new firmware delivers a handful of improvements to things like touch screen response, better pairing speed, and faster tilt-to-wake, plus a handful of new features for the watch's unique power-saving "essential" mode.</p>
+<p><span id="more-757164"></span></p>
+<p>The full changelog for this update (PYDA.200427.080.MRB.210114.001) is surprisingly chunky, and just below:</p>
+<div class="note-wrapper"><div class="note note-note"><div class="note-heading"><i class="icon-note"></i></div>
+<p><strong>Features</strong>:<br />
+1.</p></div></div><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/ticwatch-pro-3-gets-chunky-update-with-plenty-of-new-features-and-fixes/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/ticwatch-pro-3-gets-chunky-update-with-plenty-of-new-features-and-fixes/'>TicWatch Pro 3 gets chunky update with plenty of new features and fixes</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/ticwatch-pro-3-gets-chunky-update-with-plenty-of-new-features-and-fixes/feed/
+            </wfw:commentRss>
+            <slash:comments>7</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Get this 85&quot; Android TV for $1,000 ($400 off) in time for the Super Bowl
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/get-this-85-android-tv-for-1000-400-off-in-time-for-the-super-bowl/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/get-this-85-android-tv-for-1000-400-off-in-time-for-the-super-bowl/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Taylor Kerns]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 22:05:48 +0000</pubDate>
+            <category><![CDATA[Android TV]]></category>
+            <category><![CDATA[Deals]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[deals]]></category>
+            <category><![CDATA[Hisense]]></category>
+            <category><![CDATA[super bowl TV deals]]></category>
+            <category><![CDATA[tv deals]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757165</guid>
+
+            <description><![CDATA[With same-day local pickup
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-757166" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-728x468.jpg" alt="" width="728" height="468" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-728x468.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-329x211.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-668x429.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-161x103.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch-217x139.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/hisense-85-inch.jpg 1891w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Hopefully you&#160;<em>won't</em> be hosting a Super Bowl party this year, but if you want an absolutely gigantic TV to watch it on anyway, Best Buy's got a deal for you. Today, you can nab an 85-inch Hisense Android TV for $1,000, $400 off its normal street price.</p>
+<p><span id="more-757165"></span></p>
+<p>The mondo screen is 4K and HDR-compatible, including the Dolby Vision standard, and built in Android TV means you don't need any boxes or dongles to stream from your content provider of choice.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/get-this-85-android-tv-for-1000-400-off-in-time-for-the-super-bowl/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/get-this-85-android-tv-for-1000-400-off-in-time-for-the-super-bowl/'>Get this 85" Android TV for $1,000 ($400 off) in time for the Super Bowl</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/get-this-85-android-tv-for-1000-400-off-in-time-for-the-super-bowl/feed/
+            </wfw:commentRss>
+            <slash:comments>8</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Samsung DeX now works wirelessly on PCs, if you have a Galaxy S21</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/samsung-dex-now-works-wirelessly-on-pcs-if-you-have-a-galaxy-s21/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/samsung-dex-now-works-wirelessly-on-pcs-if-you-have-a-galaxy-s21/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Zachary Kew-Denniss]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 20:45:46 +0000</pubDate>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Galaxy S21]]></category>
+            <category><![CDATA[Galaxy S21 Ultra]]></category>
+            <category><![CDATA[Galaxy S21+]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Samsung]]></category>
+            <category><![CDATA[dex]]></category>
+            <category><![CDATA[One UI 3.1]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757033</guid>
+
+            <description><![CDATA[The S Pen still isn&#039;t utilized properly, though
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero.png" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-757104" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-728x410.png" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-728x410.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-329x185.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-668x376.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-161x91.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero-217x122.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/DeX-Hero.png 1920w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>When Samsung announced that DeX would be going wireless in One UI 2.5, which was introduced on the Note20, I was excited. Until that point, I'd hardly touched the app because of the requirement to plug my phone into my PC. Sadly, wireless DeX only worked with compatible TVs and monitors, leaving most computers in the cold. Now with One UI 3.1 on the Galaxy S21, that's finally changed.<br />
+<span id="more-757033"></span></p>
+<p>The first thing you'll need to do to get started with wireless connectivity is to update to the latest version of the DeX client on your PC.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/samsung-dex-now-works-wirelessly-on-pcs-if-you-have-a-galaxy-s21/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/samsung-dex-now-works-wirelessly-on-pcs-if-you-have-a-galaxy-s21/'>Samsung DeX now works wirelessly on PCs, if you have a Galaxy S21</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/samsung-dex-now-works-wirelessly-on-pcs-if-you-have-a-galaxy-s21/feed/
+            </wfw:commentRss>
+            <slash:comments>25</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Google&#039;s terrible Drive desktop client will soon be replaced by enterprise
+                version
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/googles-terrible-drive-desktop-client-will-soon-be-replaced-by-g-suite-version/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/googles-terrible-drive-desktop-client-will-soon-be-replaced-by-g-suite-version/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Corbin Davenport]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 20:09:32 +0000</pubDate>
+            <category><![CDATA[Google]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[backup and sync]]></category>
+            <category><![CDATA[google drive]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757144</guid>
+
+            <description><![CDATA[Ding dong, the wi...Backup and Sync client... is dead.
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-716247" src="https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-728x410.png" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-728x410.png 728w, https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-329x185.png 329w, https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-668x376.png 668w, https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-161x91.png 161w, https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero-217x122.png 217w, https://www.androidpolice.com/wp-content/uploads/2020/10/14/google-drive-new-icon-hero.png 1440w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Google Drive is a decent service on its own, but one aspect of it is absolutely dreadful: the desktop sync client for Mac and Windows. 'Backup and Sync,' as it has been called <a href="https://www.androidpolice.com/2017/06/14/google-announces-backup-sync-windows-mac-will-replace-desktop-google-drive-client/">since 2017</a>, is so buggy and slow that it makes Cyberpunk 2077 look like a flawless creation. At long last, Google is phasing out the client in favor of the syncing software developed for Google Workspace enterprise customers.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/googles-terrible-drive-desktop-client-will-soon-be-replaced-by-g-suite-version/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/googles-terrible-drive-desktop-client-will-soon-be-replaced-by-g-suite-version/'>Google's terrible Drive desktop client will soon be replaced by enterprise version</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/googles-terrible-drive-desktop-client-will-soon-be-replaced-by-g-suite-version/feed/
+            </wfw:commentRss>
+            <slash:comments>35</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Huawei may have realized it&#039;s doing folding screens backwards, could switch
+                to inward fold for the Mate X2
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/huawei-may-have-realized-its-doing-folding-screens-backwards-could-switch-to-inward-fold-for-the-mate-x2/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/huawei-may-have-realized-its-doing-folding-screens-backwards-could-switch-to-inward-fold-for-the-mate-x2/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Karandeep Singh]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 20:08:20 +0000</pubDate>
+            <category><![CDATA[Huawei]]></category>
+            <category><![CDATA[Leaks]]></category>
+            <category><![CDATA[Mate X2]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Rumors]]></category>
+            <category><![CDATA[foldable]]></category>
+            <category><![CDATA[foldable phones]]></category>
+            <category><![CDATA[huawei]]></category>
+            <category><![CDATA[Huawei Mate X]]></category>
+            <category><![CDATA[Huawei Mate X2]]></category>
+            <category><![CDATA[mate x]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757044</guid>
+
+            <description><![CDATA[The leaked renders show an impediment-free inward folding screen
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders.jpg" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-757049" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-728x410.jpg" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-728x410.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders-217x122.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Huawei-Mate-X2-leaked-renders.jpg 1440w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Flexible screens are probably among the most delicate pieces of tech out in the real world, and Huawei&#8217;s decision to put one on the outside of its <a href="https://www.androidpolice.com/2019/02/24/huaweis-mate-x-is-a-foldable-phone-that-looks-like-its-from-the-future/">first foldable</a> was surely a risky venture. With the follow-up Mate X2, the company will allegedly make an about-face and settle on an inward folding design, and the resulting device looks <em>a lot</em> like the Galaxy Z Fold2 in these leaked renders.</p>
+<p><span id="more-757044"></span></p>
+<p>The Mate X2 may opt for a two-screen form factor, with a smaller screen on the outside accompanying the main foldable panel on the interior.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/huawei-may-have-realized-its-doing-folding-screens-backwards-could-switch-to-inward-fold-for-the-mate-x2/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/huawei-may-have-realized-its-doing-folding-screens-backwards-could-switch-to-inward-fold-for-the-mate-x2/'>Huawei may have realized it's doing folding screens backwards, could switch to inward fold for the Mate X2</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/huawei-may-have-realized-its-doing-folding-screens-backwards-could-switch-to-inward-fold-for-the-mate-x2/feed/
+            </wfw:commentRss>
+            <slash:comments>26</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Samsung Clock gets bedtime mode with Digital Wellbeing integration (APK
+                Download)
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/samsung-clock-gets-bedtime-mode-with-digital-wellbeing-integration-apk-download/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/samsung-clock-gets-bedtime-mode-with-digital-wellbeing-integration-apk-download/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Zachary Kew-Denniss]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 19:44:24 +0000</pubDate>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Downloads]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Samsung]]></category>
+            <category><![CDATA[clock]]></category>
+            <category><![CDATA[Digital Wellbeing]]></category>
+            <category><![CDATA[s health]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757004</guid>
+
+            <description><![CDATA[Now I can visualize my insomnia
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-757009" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-728x409.jpg" alt="" width="728" height="409" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-728x409.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing-217x122.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/SmartSelect_20210204-142336_Digital-Wellbeing.jpg 932w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Samsung has been updating <a href="https://www.androidpolice.com/2021/02/03/samsung-notes-gets-better-folder-organization-and-image-cropping-apk-download/">a lot of its apps recently</a>, adding plenty of new features and further refining the software experience it offers. The latest such update is for the One UI Clock app, which has picked up a new bedtime mode that helps keep track of your sleep patterns and integrates with Digital Wellbeing.<span id="more-757004"></span></p>
+<p style="text-align: center;" class="text-center side-by-side-images images-3 "><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock.jpg" style="flex:0.4502;" data-ratio="0.4502" class="image-container  no-style"><img loading="lazy" class="alignnone wp-image-757010 size-smallish-size" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-217x482.jpg" alt="" width="217" height="482" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-217x482.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-329x731.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-668x1484.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-161x358.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock-728x1618.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140749_Clock.jpg 1080w" sizes="(max-width: 217px) 100vw, 217px"/></a> <a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock.jpg" style="flex:0.4502;" data-ratio="0.4502" class="image-container  no-style"><img loading="lazy" class="alignnone wp-image-757011 size-smallish-size" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-217x482.jpg" alt="" width="217" height="482" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-217x482.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-329x731.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-668x1484.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-161x358.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock-728x1618.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-140809_Clock.jpg 1080w" sizes="(max-width: 217px) 100vw, 217px"/></a><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock.jpg" style="flex:0.4502;" data-ratio="0.4502" class="image-container  no-style"><img loading="lazy" class="alignnone wp-image-757021 size-smallish-size" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-217x482.jpg" alt="" width="217" height="482" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-217x482.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-329x731.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-668x1484.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-161x358.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock-728x1618.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Screenshot_20210204-144543_Clock.jpg 1080w" sizes="(max-width: 217px) 100vw, 217px"/></a></p><p class="text-center"></p>
+<p>There's an option to "Set bedtime" in the overflow menu in the Clock app's alarm screen.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/samsung-clock-gets-bedtime-mode-with-digital-wellbeing-integration-apk-download/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/samsung-clock-gets-bedtime-mode-with-digital-wellbeing-integration-apk-download/'>Samsung Clock gets bedtime mode with Digital Wellbeing integration (APK Download)</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/samsung-clock-gets-bedtime-mode-with-digital-wellbeing-integration-apk-download/feed/
+            </wfw:commentRss>
+            <slash:comments>12</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Google remotely deletes The Great Suspender Chrome extension after malware
+                accusations
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/google-remotely-disables-the-great-suspender-chrome-extension-after-malware-accusations/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/google-remotely-disables-the-great-suspender-chrome-extension-after-malware-accusations/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Ryne Hager]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 19:38:02 +0000</pubDate>
+            <category><![CDATA[Chrome]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[chrome]]></category>
+            <category><![CDATA[chrome web store]]></category>
+            <category><![CDATA[extension]]></category>
+            <category><![CDATA[the great suspender]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757123</guid>
+
+            <description><![CDATA[And it&#039;s gone from the Chrome Web Store, too
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-757134" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-728x410.png" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-728x410.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-329x185.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-668x376.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-161x91.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero-217x122.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/The-Great-Suspender-guy-Chrome-hero.png 1280w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>The popular Chrome extension The Great Suspender has been&#160;<em>itself</em> <a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en">suspended from Google's Chrome Web Store</a>. The extension is also being remotely disabled on customer's devices, with a warning that it is "dangerous" and "may contain malware." Reportedly, this is because of some <a href="https://www.theregister.com/2021/01/07/great_suspender_malware/">sketchy changes that happened when the extension traded hands last year</a>, including tracking code discovered in the extension.</p>
+<p><span id="more-757123"></span></p>
+<p>For those who are unfamiliar, The Great Suspender was an open-source Chrome extension that automatically suspends open tabs that haven't been used for a while.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/google-remotely-disables-the-great-suspender-chrome-extension-after-malware-accusations/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/google-remotely-disables-the-great-suspender-chrome-extension-after-malware-accusations/'>Google remotely deletes The Great Suspender Chrome extension after malware accusations</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/google-remotely-disables-the-great-suspender-chrome-extension-after-malware-accusations/feed/
+            </wfw:commentRss>
+            <slash:comments>26</slash:comments>
+
+
+        </item>
+        <item>
+            <title>B&#038;H selling OnePlus 8 5G UW unlocked for $450 ($350 off)</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/bh-selling-oneplus-8-5g-uw-unlocked-for-450-350-off/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/bh-selling-oneplus-8-5g-uw-unlocked-for-450-350-off/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Jules Wang]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 19:18:59 +0000</pubDate>
+            <category><![CDATA[Deals]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[OnePlus]]></category>
+            <category><![CDATA[OnePlus 8]]></category>
+            <category><![CDATA[b&h]]></category>
+            <category><![CDATA[deals]]></category>
+            <category><![CDATA[oneplus]]></category>
+            <category><![CDATA[oneplus 8]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757118</guid>
+
+            <description><![CDATA[Ultrawide Band or not, you&#039;ll get good use of it
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-scaled.jpg" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-674728" src="https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-728x485.jpg" alt="" width="728" height="485" srcset="https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-728x485.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-329x219.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-668x445.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-161x107.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2020/04/op8-g-1-217x145.jpg 217w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>If you've been tracking smartphone deals recently, you might have noticed a bumper crop featuring the OnePlus 8. Consider it bumped again as we have a deal out of B&#38;H for unlocked OnePlus 8 UW units just shy of a record-matching price.</p>
+<p><span id="more-757118"></span></p>
+<p>You probably know the routine by now: 90Hz display, three rear cameras with a mighty 48MP sensor leading the way, and 30W wired charging (though with a 4,300mAh, you might not need to carry around that wall wart all day).</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/bh-selling-oneplus-8-5g-uw-unlocked-for-450-350-off/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/bh-selling-oneplus-8-5g-uw-unlocked-for-450-350-off/'>B&#038;H selling OnePlus 8 5G UW unlocked for $450 ($350 off)</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/bh-selling-oneplus-8-5g-uw-unlocked-for-450-350-off/feed/
+            </wfw:commentRss>
+            <slash:comments>2</slash:comments>
+
+
+        </item>
+        <item>
+            <title>YouTube redesigns its sports page to promote highlights, athlete content, live
+                games
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/youtube-redesigns-its-sports-page-to-promote-highlights-athlete-content-live-games/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/youtube-redesigns-its-sports-page-to-promote-highlights-athlete-content-live-games/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Jules Wang]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 18:34:14 +0000</pubDate>
+            <category><![CDATA[Google]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[sports]]></category>
+            <category><![CDATA[streaming]]></category>
+            <category><![CDATA[youtube]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757096</guid>
+
+            <description><![CDATA[Sportsball, but better sorted
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-757103" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-728x392.png" alt="" width="728" height="392" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-728x392.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-329x177.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-668x359.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-161x87.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports-217x117.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/youtube-sports.png 1617w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Sports fans may flock to linear TV for the big games, but they also have a surprisingly huge appetite for off-air content from a variety of sources. YouTube, with a ton of upstart commentary and story-telling channels to cash in on, continues to fight for its share of consumers' eyes by redesigning <a href="http://youtube.com/sports" target="_blank" rel="noopener">youtube.com/sports</a>.</p>
+<p><span id="more-757096"></span></p>
+<p>The "/Sports experience," which is available via URL or through the Sports icon on the site, now includes a video carousel with top highlight reels.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/youtube-redesigns-its-sports-page-to-promote-highlights-athlete-content-live-games/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/youtube-redesigns-its-sports-page-to-promote-highlights-athlete-content-live-games/'>YouTube redesigns its sports page to promote highlights, athlete content, live games</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/youtube-redesigns-its-sports-page-to-promote-highlights-athlete-content-live-games/feed/
+            </wfw:commentRss>
+            <slash:comments>3</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Realme X7 5G and X7 Pro 5G offer dual-SIM support and super-fast charging</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/realme-x7-5g-and-x7-pro-5g-offer-dual-sim-support-and-super-fast-charging/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/realme-x7-5g-and-x7-pro-5g-offer-dual-sim-support-and-super-fast-charging/#respond
+            </comments>
+
+            <dc:creator><![CDATA[Prasham Parikh]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 18:04:55 +0000</pubDate>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Realme]]></category>
+            <category><![CDATA[Realme X7]]></category>
+            <category><![CDATA[Realme X7 Pro]]></category>
+            <category><![CDATA[5g phone]]></category>
+            <category><![CDATA[Android 10]]></category>
+            <category><![CDATA[Dimensity 1000]]></category>
+            <category><![CDATA[India]]></category>
+            <category><![CDATA[Realme X7 5G]]></category>
+            <category><![CDATA[Realme X7 Pro 5G]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=756946</guid>
+
+            <description><![CDATA[They ship with 65W chargers in the box
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-scaled.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-756949" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-728x410.jpg" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-728x410.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/Realme-X7-Pro-217x122.jpg 217w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>While 5G hasn't arrived in India yet, smartphone companies have already started selling 5G phones. The newest kids on the block are the Realme X7 5G and the X7 Pro 5G, which aim to compete with mid-rangers like the <a href="https://www.androidpolice.com/2021/01/05/the-xiaomi-mi-10i-takes-on-the-oneplus-nord-offering-quite-more-bang-for-your-buck/">Xiaomi Mi 10i</a> and the <a href="https://www.androidpolice.com/2020/07/21/oneplus-nord-finally-revealed-in-full-starts-at-379-e399/">OnePlus Nord</a>.</p>
+<p><span id="more-756946"></span></p>
+<h2>Realme X7 Pro 5G</h2>
+<p>The Realme X7 Pro 5G features MediaTek's <a href="https://www.androidpolice.com/2020/05/07/mediatek-reveals-upgraded-dimensity-1000-with-higher-refresh-rate-support-and-other-improvements/">Dimensity 1000+ SoC</a>, coupled with 8GB of RAM and 128GB of storage.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/realme-x7-5g-and-x7-pro-5g-offer-dual-sim-support-and-super-fast-charging/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/realme-x7-5g-and-x7-pro-5g-offer-dual-sim-support-and-super-fast-charging/'>Realme X7 5G and X7 Pro 5G offer dual-SIM support and super-fast charging</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/realme-x7-5g-and-x7-pro-5g-offer-dual-sim-support-and-super-fast-charging/feed/
+            </wfw:commentRss>
+            <slash:comments>0</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Google paid independent researchers $6.7 million last year to make its products
+                more secure
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/google-paid-independent-researchers-6-7-million-last-year-to-make-its-products-more-secure/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/google-paid-independent-researchers-6-7-million-last-year-to-make-its-products-more-secure/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Ryne Hager]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 18:00:00 +0000</pubDate>
+            <category><![CDATA[Google]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Security]]></category>
+            <category><![CDATA[2020]]></category>
+            <category><![CDATA[bug bounty]]></category>
+            <category><![CDATA[google vunlerability rewards program]]></category>
+            <category><![CDATA[payouts]]></category>
+            <category><![CDATA[Vulnerability Rewards Program]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757053</guid>
+
+            <description><![CDATA[Just barely up from $6.5 million last year
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-524455" src="https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-728x485.jpg" alt="" width="728" height="485" srcset="https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-728x485.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-329x219.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-768x512.jpg 768w, https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-668x445.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-161x107.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2018/10/Google-logo-in-with-a-shelf-of-stuff-at-the-hardware-store-217x145.jpg 217w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Google, like many big tech companies, runs a bug bounty program that allows independent researchers (and anyone, really) to spot issues, submit details, and get some money for their trouble. Google even publishes its numbers yearly as proof for the cash being doled out, and the company just published its 2020 numbers.</p>
+<p><span id="more-757053"></span></p>
+<p>Folks hoping to get in on the bug bounty action can dive into Google's full numbers (which break things out by category), but the short version is that Google paid out $6.7 million in 2020, up around $200 grand since last year.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/google-paid-independent-researchers-6-7-million-last-year-to-make-its-products-more-secure/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/google-paid-independent-researchers-6-7-million-last-year-to-make-its-products-more-secure/'>Google paid independent researchers $6.7 million last year to make its products more secure</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/google-paid-independent-researchers-6-7-million-last-year-to-make-its-products-more-secure/feed/
+            </wfw:commentRss>
+            <slash:comments>1</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Google Fit&#039;s bringing heart-rate monitoring to Pixel phones without the need
+                for any extra hardware
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/google-fits-bringing-heart-rate-monitoring-to-pixel-phones-without-the-need-for-any-extra-hardware/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/google-fits-bringing-heart-rate-monitoring-to-pixel-phones-without-the-need-for-any-extra-hardware/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Ryne Hager]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 17:50:57 +0000</pubDate>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Google]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[fit]]></category>
+            <category><![CDATA[google fit]]></category>
+            <category>
+                <![CDATA[Google Fit is getting two new ways to tell you you're out of shape]]></category>
+            <category><![CDATA[heart rate]]></category>
+            <category><![CDATA[pixel]]></category>
+            <category><![CDATA[respiratory rate]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757085</guid>
+
+            <description><![CDATA[Plus a respiratory rate monitor — both coming to other phones later
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-693924" src="https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-728x485.png" alt="" width="728" height="485" srcset="https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-728x485.png 728w, https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-329x219.png 329w, https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-668x445.png 668w, https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-161x107.png 161w, https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero-217x145.png 217w, https://www.androidpolice.com/wp-content/uploads/2020/07/10/google-fit-hero.png 1440w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Google Fit already has plenty of ways to tell you that you're out of shape &#8212; a common issue during the ongoing pandemic. But it's picking up a new way to measure both your heart rate and respiratory rate, using just your smartphone's camera. The feature is expected to land next month, and though it's a Pixel-exclusive to start, it should be coming to other Android phones later.</p>
+<p><span id="more-757085"></span></p>
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/ezgif.com-gif-maker-6.gif" class=" no-style"><img loading="lazy" class="size-full wp-image-757091" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/ezgif.com-gif-maker-6.gif" alt="" width="400" height="794"/></a></p>
+<p>Beyond simple utility, the features are honestly pretty impressive when it comes to the overall "geek factor" behind how they work, and we can't wait to try it for ourselves.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/google-fits-bringing-heart-rate-monitoring-to-pixel-phones-without-the-need-for-any-extra-hardware/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/google-fits-bringing-heart-rate-monitoring-to-pixel-phones-without-the-need-for-any-extra-hardware/'>Google Fit's bringing heart-rate monitoring to Pixel phones without the need for any extra hardware</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/google-fits-bringing-heart-rate-monitoring-to-pixel-phones-without-the-need-for-any-extra-hardware/feed/
+            </wfw:commentRss>
+            <slash:comments>12</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Chrome 88 rolls out dino-themed QR codes on Android and desktop</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Rita El Khoury]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 16:46:00 +0000</pubDate>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Chrome]]></category>
+            <category><![CDATA[Chrome OS]]></category>
+            <category><![CDATA[Downloads]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[chrome 84]]></category>
+            <category><![CDATA[chrome 88]]></category>
+            <category><![CDATA[QR code]]></category>
+            <category><![CDATA[QR code generator]]></category>
+            <category><![CDATA[share page via qr code]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=697090&#038;uniqid=601c25006dd87</guid>
+
+            <description><![CDATA[They popped up in stable starting in version 84, but you had to enable them in a flag
+<ul class="list-unstyled list-banners"><li>
+        <a class="banner banner-update" title="View the 2021/02/04 8:46am PST Update" href="https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/#1">
+        <span class="update-header">Update</span>
+        <div class="ellipsize">
+        <span class="update-title">Rolling out widely in Chrome 88</span>
+        </div>
+        </a>
+        </li></ul><p><a href="https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero.png" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-697110" src="https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-728x410.png" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-728x410.png 728w, https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-329x185.png 329w, https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-668x376.png 668w, https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-161x91.png 161w, https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero-217x122.png 217w, https://www.androidpolice.com/wp-content/uploads/2020/07/27/chrome-qr-code-hero.png 1440w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>We've known about Google Chrome's quick page-sharing through dino-themed QR codes <a href="https://www.androidpolice.com/2019/12/06/chrome-working-on-qr-code-based-page-sharing-featuring-the-offline-dino/">since 2019</a>. After an <a href="https://www.androidpolice.com/2020/04/16/chrome-qr-code-sharing-feature-goes-live-in-canary-with-a-little-dino-help/">initial release in Canary</a> and more development, the feature first became available in Chrome 84. It's been working properly on both Android and desktops since then, but you had to manually enable the flag to get it going. With Chrome 88, QR codes are starting to roll out widely as part of a server-side change, as reported by <a href="https://www.smartdroid.de/qr-google-bringt-neue-taste-in-die-adressleiste-seines-browsers/">SmartDroid</a>.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/'>Chrome 88 rolls out dino-themed QR codes on Android and desktop</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/chrome-84-brings-new-dino-themed-qr-codes-to-android-and-desktops/feed/
+            </wfw:commentRss>
+            <slash:comments>7</slash:comments>
+
+
+        </item>
+        <item>
+            <title>CTL Chromebox CBx2 Review: Refined excellence</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/ctl-chromebox-cbx2-review-refined-excellence/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/ctl-chromebox-cbx2-review-refined-excellence/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Kent Duke]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 16:30:00 +0000</pubDate>
+            <category><![CDATA[Chrome OS]]></category>
+            <category><![CDATA[Chromebook Reviews]]></category>
+            <category><![CDATA[Reviews]]></category>
+            <category><![CDATA[chrome os]]></category>
+            <category><![CDATA[chromebox]]></category>
+            <category><![CDATA[chromebox reviews]]></category>
+            <category><![CDATA[chromeboxes]]></category>
+            <category><![CDATA[ctl]]></category>
+            <category><![CDATA[Google]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=756908</guid>
+
+            <description><![CDATA[CTL’s next-generation Chromebox is a good value for the money
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero.jpg" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-756917" src="https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-728x410.jpg" alt="" width="728" height="410" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-728x410.jpg 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-329x185.jpg 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-668x376.jpg 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-161x91.jpg 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero-217x122.jpg 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/03/cbx2_hero.jpg 1920w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>It&#8217;s been over two years since CTL released the Chromebox CBx1, its first Chrome OS desktop designed for the classroom and corporate use. That Chromebox exceeded our expectations when we reviewed it, offering good performance at a low price. Now, the Oregon-based company offers the CBx2, upgrading the processor, storage, and networking performance, making the CBx2 a solid upgrade at an affordable price.</p>
+<p><span id="more-756908"></span></p>
+<div class="primary-widget specs table">
+    <header class="section-header">
+    <h2 class="header-bg blue-bg">Specs</h2>
+    </header><div class="table-wrapper"><table class="ap-table specs" width="100%">
+          <tr>
+          <td valign="top" width="30%" class="column-1">Model</td>
+          <td valign="top" width="70%" class="column-2">CTL Chromebox CBx2</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">SKU</td>
+          <td valign="top" width="70%" class="column-2">CBXUS190003</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Software</td>
+          <td valign="top" width="70%" class="column-2">Chrome OS (ships with version 86)</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Board</td>
+          <td valign="top" width="70%" class="column-2">Puff</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Auto Update Expiration (AUE)</td>
+          <td valign="top" width="70%" class="column-2">June 2028</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">CPU</td>
+          <td valign="top" width="70%" class="column-2"><a href="https://ark.intel.com/content/www/us/en/ark/products/197890/intel-celeron-processor-5205u-2m-cache-1-90-ghz.html"><span style="font-weight: 400;">Intel Dual-Core Celeron 5205U Comet Lake Processor</span></a> clocked at 1.90 GHz (64-bit)</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">GPU</td>
+          <td valign="top" width="70%" class="column-2">Intel UHD Graphics (up to three displays, maximum 4096x2304@24Hz over HDMI)</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">RAM</td>
+          <td valign="top" width="70%" class="column-2">4-16GB DDR4</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Storage</td>
+          <td valign="top" width="70%" class="column-2">64GB eMMC flash memory</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Network</td>
+          <td valign="top" width="70%" class="column-2">Intel Wi-Fi 6 AX201 802.11AX + Bluetooth 5.1</td>
+          </tr>
+
+          <tr>
+          <td valign="top" width="30%" class="column-1">Ports</td>
+          <td valign="top" width="70%" class="column-2">Front: 2x USB 3.0, 1x headphone jack, 1x Micro SD card.</td></tr></table></div></div><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/ctl-chromebox-cbx2-review-refined-excellence/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/ctl-chromebox-cbx2-review-refined-excellence/'>CTL Chromebox CBx2 Review: Refined excellence</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/ctl-chromebox-cbx2-review-refined-excellence/feed/
+            </wfw:commentRss>
+            <slash:comments>9</slash:comments>
+
+
+        </item>
+        <item>
+            <title>There&#039;s a Cobra Kai fighting game coming to Android, and you can
+                pre-register right now
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/theres-a-cobra-kai-fighting-game-coming-to-android-and-you-can-pre-register-right-now/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/theres-a-cobra-kai-fighting-game-coming-to-android-and-you-can-pre-register-right-now/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Matthew Sholtz]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 16:22:53 +0000</pubDate>
+            <category><![CDATA[Games]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Videos]]></category>
+            <category><![CDATA[Boss Team Games]]></category>
+            <category><![CDATA[card game]]></category>
+            <category><![CDATA[Cobra Kai]]></category>
+            <category><![CDATA[Cobra Kai: Card Fighter]]></category>
+            <category><![CDATA[fighting game]]></category>
+            <category><![CDATA[Gamaga]]></category>
+            <category><![CDATA[pre-registration]]></category>
+            <category><![CDATA[upcoming release]]></category>
+            <category><![CDATA[video]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757031</guid>
+
+            <description><![CDATA[No, it&#039;s not the recently-released console fighter, this is a card game
+<p><a href="https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER.png" class=" no-style"><img loading="lazy" class="alignnone size-hero-size wp-image-757032" src="https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-728x382.png" alt="" width="728" height="382" srcset="https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-728x382.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-329x173.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-668x351.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-161x85.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER-217x114.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/02/04/COBRA-KAI-CARD-FIGHTER.png 1200w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p><span data-preserver-spaces="true">We've just learned that&#160;</span><a class="editor-rtfLink" href="https://bossteamgames.com/" target="_blank" rel="noopener"><span data-preserver-spaces="true">Boss Team Games</span></a><span data-preserver-spaces="true">&#160;will be bringing an all-new Cobra Kai fighting game to mobile. It's called&#160;</span><a class="editor-rtfLink" href="https://play.google.com/store/apps/details?id=com.btg.cobra.kai.action.fight.card.game" target="_blank" rel="noopener"><span data-preserver-spaces="true">Cobra Kai: Card Fighter</span></a><span data-preserver-spaces="true">, and as you can guess, it's a card-based fighting game. It's being developed by&#160;</span><a class="editor-rtfLink" href="https://www.gamaga.com/" target="_blank" rel="noopener"><span data-preserver-spaces="true">Gamaga</span></a><span data-preserver-spaces="true">&#160;and is already available for pre-registration. The game will be free-to-play (as if there was any question), and it will be officially released on March 19th.</span></p>
+<p><span id="more-757031"></span></p>
+<p><span class="ap-fluid-container"><iframe title="Cobra Kai: Card Fighter Announcement Trailer" width="728" height="410" src="https://www.youtube.com/embed/VCCr5Pqgg3Q?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-aspectratio="padding-bottom: 56.32%"></iframe></span></p>
+<p><span data-preserver-spaces="true">Boss Team Games has been kind enough to publish an announcement trailer for Cobra Kai: Card Fighter, and it actually shows off gameplay.</span></p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/theres-a-cobra-kai-fighting-game-coming-to-android-and-you-can-pre-register-right-now/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/theres-a-cobra-kai-fighting-game-coming-to-android-and-you-can-pre-register-right-now/'>There's a Cobra Kai fighting game coming to Android, and you can pre-register right now</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/theres-a-cobra-kai-fighting-game-coming-to-android-and-you-can-pre-register-right-now/feed/
+            </wfw:commentRss>
+            <slash:comments>4</slash:comments>
+
+
+        </item>
+        <item>
+            <title>Wink slowly starts coming back online following week-long outage</title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/wink-slowly-starts-coming-back-online-following-week-long-outage/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/wink-slowly-starts-coming-back-online-following-week-long-outage/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Manuel Vonau]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 15:57:04 +0000</pubDate>
+            <category><![CDATA[Bug Watch]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[Smart Home]]></category>
+            <category><![CDATA[automation]]></category>
+            <category><![CDATA[hub]]></category>
+            <category><![CDATA[i.am+]]></category>
+            <category><![CDATA[outage]]></category>
+            <category><![CDATA[smart home]]></category>
+            <category><![CDATA[will.i.am]]></category>
+            <category><![CDATA[wink]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=757005</guid>
+
+            <description><![CDATA[The company is trying desperately trying to retain customers
+<p style="text-align: center;"><a href="https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-680159" src="https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-728x324.png" alt="" width="728" height="324" srcset="https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-728x324.png 728w, https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-329x146.png 329w, https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-668x297.png 668w, https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-161x72.png 161w, https://www.androidpolice.com/wp-content/uploads/2020/05/wink-logo-knockout-217x96.png 217w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Wink has been battling a severe outage for <a href="https://www.androidpolice.com/2021/02/01/wink-has-been-down-for-a-week-and-counting/">about a week and a half now</a>, but it finally looks like its servers are slowly coming back online. The company has updated its <a href="https://status.winkapp.com/">status page</a>, saying, "A fix has been implemented and we are monitoring the results. Most Hubs are back online." However, many customers are ready to cancel their mandatory subscriptions due to the events, and there's not much the cash-strapped company can do about it.</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/wink-slowly-starts-coming-back-online-following-week-long-outage/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/wink-slowly-starts-coming-back-online-following-week-long-outage/'>Wink slowly starts coming back online following week-long outage</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/wink-slowly-starts-coming-back-online-following-week-long-outage/feed/
+            </wfw:commentRss>
+            <slash:comments>10</slash:comments>
+
+
+        </item>
+        <item>
+            <title>WhatsApp has returned to the Google Camera&#039;s social sharing shortcuts
+            </title>
+            <link>
+                https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/
+            </link>
+            <comments>
+                https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/#comments
+            </comments>
+
+            <dc:creator><![CDATA[Rita El Khoury]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 13:09:00 +0000</pubDate>
+            <category><![CDATA[Applications]]></category>
+            <category><![CDATA[Downloads]]></category>
+            <category><![CDATA[News]]></category>
+            <category><![CDATA[WhatsApp]]></category>
+            <category><![CDATA[apk download]]></category>
+            <category><![CDATA[app update]]></category>
+            <category><![CDATA[google camera]]></category>
+            <category><![CDATA[sharing images]]></category>
+            <category><![CDATA[social share]]></category>
+            <category><![CDATA[whatsapp]]></category>
+            <guid isPermaLink="false">https://www.androidpolice.com/?p=755342&#038;uniqid=601bf23df0b8f</guid>
+
+            <description><![CDATA[The bug has been fixed
+<ul class="list-unstyled list-banners"><li>
+        <a class="banner banner-update" title="View the 2021/02/04 5:10am PST Update" href="https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/#1">
+        <span class="update-header">Update</span>
+        <div class="ellipsize">
+        <span class="update-title">The bug has been fixed</span>
+        </div>
+        </a>
+        </li></ul><p><a href="https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone.png" class=" no-style"><img loading="lazy" class="size-hero-size wp-image-755346" src="https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-728x485.png" alt="" width="728" height="485" srcset="https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-728x485.png 728w, https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-329x219.png 329w, https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-668x445.png 668w, https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-161x107.png 161w, https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone-217x145.png 217w, https://www.androidpolice.com/wp-content/uploads/2021/01/28/google-camera-social-share-whatsapp-gone.png 1080w" sizes="(max-width: 728px) 100vw, 728px"/></a></p>
+<p>Another day, another WhatsApp misstep. The messaging service, which has <a href="https://www.androidpolice.com/2021/01/12/whatsapps-new-terms-of-service-are-a-facebook-or-die-ultimatum/">invaded tech headlines</a> over <a href="https://www.androidpolice.com/2021/01/16/whatsapp-extends-deadline-to-accept-new-privacy-policy-after-people-fled-to-other-platforms/">the past weeks</a> for <a href="https://www.androidpolice.com/2021/01/17/whatsapp-is-trying-its-best-to-keep-users-from-switching-to-signal-and-telegram/">all the wrong reasons</a>, has made one more boo-boo, this one though arguably a lot less significant than everything else. The app's latest update causes it to disappear from the Google Camera's nifty social sharing menu. I know, it's minor &#8212; why else would I use "boo-boo" in a serious article?</p><div class=clear></div> <a href="https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/" class="read-more">Read More </a><p><a href='https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/'>WhatsApp has returned to the Google Camera's social sharing shortcuts</a> was written by the awesome team at <a href='http://www.androidpolice.com'>Android Police</a>.</p>]]></description>
+
+            <wfw:commentRss>
+                https://www.androidpolice.com/2021/02/04/whatsapp-has-disappeared-from-the-google-cameras-social-sharing-shortcuts/feed/
+            </wfw:commentRss>
+            <slash:comments>9</slash:comments>
+
+
+        </item>
+    </channel>
+</rss>
+
+    <!--
+    Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+    Object Caching 454/488 objects using memcached
+    Page Caching using memcached (Page is feed)
+    Fragment Caching 57/63 fragments using memcached
+
+    Served from: www.androidpolice.com @ 2021-02-05 05:36:37 by W3 Total Cache
+    -->

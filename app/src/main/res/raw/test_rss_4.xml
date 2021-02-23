@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    version="2.0">
+
+    <channel>
+        <title>Humble Bundle Blog</title>
+        <atom:link
+            href="https://blog.humblebundle.com/feed/"
+            rel="self"
+            type="application/rss+xml" />
+        <link>https://blog.humblebundle.com</link>
+        <description>The official blog of Humble Bundle</description>
+        <lastBuildDate>Mon, 01 Feb 2021 16:43:16 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly
+        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1
+        </sy:updateFrequency>
+
+
+        <image>
+            <url>
+                https://i0.wp.com/blog.humblebundle.com/wp-content/uploads/2019/09/cropped-avatar_35dd6178bb08_128-3.png?fit=32%2C32&#038;ssl=1
+            </url>
+            <title>Humble Bundle Blog</title>
+            <link>https://blog.humblebundle.com</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <site xmlns="com-wordpress:feed-additions:1">167274263</site>
+        <item>
+            <title>Space, swords, and science!</title>
+            <link>https://blog.humblebundle.com/2021/02/04/space-swords-and-science/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=space-swords-and-science</link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Thu, 04 Feb 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Game Bundle]]></category>
+            <category><![CDATA[Digital Boardgames]]></category>
+            <category><![CDATA[humble tabletop bundle]]></category>
+            <category><![CDATA[table top games]]></category>
+            <category><![CDATA[tabletop gaming]]></category>
+            <category><![CDATA[the lord of the rings]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8297</guid>
+
+            <description><![CDATA[<p>The official blog for Humble Asmodee Tabletop 2gether Bundle includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/02/04/space-swords-and-science/">Space, swords, and science!</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8297</post-id>
+        </item>
+        <item>
+            <title>Explore the dark world of Warhammer</title>
+            <link>
+                https://blog.humblebundle.com/2021/02/03/explore-the-dark-world-of-warhammer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=explore-the-dark-world-of-warhammer
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Wed, 03 Feb 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Book Bundle]]></category>
+            <category><![CDATA[black library]]></category>
+            <category><![CDATA[games workshop]]></category>
+            <category><![CDATA[warhammer]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8292</guid>
+
+            <description><![CDATA[<p>The official blog for Multi-Language Tales of Warhammer 2021 by Black Library includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/02/03/explore-the-dark-world-of-warhammer/">Explore the dark world of Warhammer</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8292</post-id>
+        </item>
+        <item>
+            <title>Create a world that’s more&#8230;you.</title>
+            <link>
+                https://blog.humblebundle.com/2021/02/01/create-a-world-thats-more-you/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=create-a-world-thats-more-you
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Mon, 01 Feb 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Book Bundle]]></category>
+            <category><![CDATA[arduino]]></category>
+            <category><![CDATA[cosplay]]></category>
+            <category><![CDATA[costume making]]></category>
+            <category><![CDATA[craft]]></category>
+            <category><![CDATA[crafting]]></category>
+            <category><![CDATA[make]]></category>
+            <category><![CDATA[make: magazine]]></category>
+            <category><![CDATA[makered]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8288</guid>
+
+            <description><![CDATA[<p>The official blog for Make Your Own Magic &#038; Inventions by Make Co. includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/02/01/create-a-world-thats-more-you/">Create a world that’s more&#8230;you.</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8288</post-id>
+        </item>
+        <item>
+            <title>Celebrate Black History Month With Humble</title>
+            <link>
+                https://blog.humblebundle.com/2021/02/01/celebrate-black-history-month-with-humble/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=celebrate-black-history-month-with-humble
+            </link>
+
+            <dc:creator><![CDATA[Kamini Tiwari]]></dc:creator>
+            <pubDate>Mon, 01 Feb 2021 17:30:00 +0000</pubDate>
+            <category><![CDATA[Uncategorized]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8283</guid>
+
+            <description><![CDATA[<p>At Humble, our mission is to be a force for good in the world through gaming. Black History Month is</p>
+<p class="read-more"><a href="https://blog.humblebundle.com/2021/02/01/celebrate-black-history-month-with-humble/" class="more-link">Continue reading</a></p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/02/01/celebrate-black-history-month-with-humble/">Celebrate Black History Month With Humble</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8283</post-id>
+        </item>
+        <item>
+            <title>Bring your group on new 5e adventures!</title>
+            <link>
+                https://blog.humblebundle.com/2021/01/27/bring-your-group-on-new-5e-adventures/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=bring-your-group-on-new-5e-adventures
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Wed, 27 Jan 2021 19:05:00 +0000</pubDate>
+            <category><![CDATA[Book Bundle]]></category>
+            <category><![CDATA[5e]]></category>
+            <category><![CDATA[dungeons and dragons]]></category>
+            <category><![CDATA[tabletop gaming]]></category>
+            <category><![CDATA[tabletop rpg]]></category>
+            <category><![CDATA[tabletop rpg bundle]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8276</guid>
+
+            <description><![CDATA[<p>The official blog for Humble RPG Book Bundle: 5th Edition Dungeon Extravaganza includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/27/bring-your-group-on-new-5e-adventures/">Bring your group on new 5e adventures!</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8276</post-id>
+        </item>
+        <item>
+            <title>Don’t just play games, make them!</title>
+            <link>
+                https://blog.humblebundle.com/2021/01/27/dont-just-play-games-make-them/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dont-just-play-games-make-them
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Wed, 27 Jan 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Software Bundle]]></category>
+            <category><![CDATA[game dev]]></category>
+            <category><![CDATA[game development]]></category>
+            <category><![CDATA[unity]]></category>
+            <category><![CDATA[video game development]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8271</guid>
+
+            <description><![CDATA[<p>The official blog for Humble Learn to Create Games in Unity includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/27/dont-just-play-games-make-them/">Don’t just play games, make them!</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8271</post-id>
+        </item>
+        <item>
+            <title>Math x Programming = Computational Magic</title>
+            <link>
+                https://blog.humblebundle.com/2021/01/25/math-x-programming-computational-magic/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=math-x-programming-computational-magic
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Mon, 25 Jan 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Book Bundle]]></category>
+            <category><![CDATA[book bundle]]></category>
+            <category><![CDATA[books]]></category>
+            <category><![CDATA[humble book bundle]]></category>
+            <category><![CDATA[math for programmers]]></category>
+            <category><![CDATA[programming]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8263</guid>
+
+            <description><![CDATA[<p>The official blog for Math for Programmers by Manning Publications includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/25/math-x-programming-computational-magic/">Math x Programming = Computational Magic</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8263</post-id>
+        </item>
+        <item>
+            <title>Survive to build, build to survive&#8230;</title>
+            <link>
+                https://blog.humblebundle.com/2021/01/21/survive-to-build-build-to-survive/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=survive-to-build-build-to-survive
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Thu, 21 Jan 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Game Bundle]]></category>
+            <category><![CDATA[game bundle]]></category>
+            <category><![CDATA[humble game bundle]]></category>
+            <category><![CDATA[survival games]]></category>
+            <category><![CDATA[zombies]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8253</guid>
+
+            <description><![CDATA[<p>The official blog for Humble Built to Survive Bundle includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/21/survive-to-build-build-to-survive/">Survive to build, build to survive&#8230;</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8253</post-id>
+        </item>
+        <item>
+            <title>Legendary comics you won&#8217;t want to miss</title>
+            <link>
+                https://blog.humblebundle.com/2021/01/20/legendary-comics-you-wont-want-to-miss/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=legendary-comics-you-wont-want-to-miss
+            </link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Wed, 20 Jan 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Comic Bundle]]></category>
+            <category><![CDATA[comics]]></category>
+            <category><![CDATA[comics bundle]]></category>
+            <category><![CDATA[humble comics bundle]]></category>
+            <category><![CDATA[legendary comics]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8248</guid>
+
+            <description><![CDATA[<p>The official blog for Discover Legendary Comics includes all the details about what’s inside. Check it out! </p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/20/legendary-comics-you-wont-want-to-miss/">Legendary comics you won&#8217;t want to miss</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8248</post-id>
+        </item>
+        <item>
+            <title>Express yourself!</title>
+            <link>https://blog.humblebundle.com/2021/01/19/express-yourself/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=express-yourself</link>
+
+            <dc:creator><![CDATA[brpw]]></dc:creator>
+            <pubDate>Tue, 19 Jan 2021 19:00:00 +0000</pubDate>
+            <category><![CDATA[Software Bundle]]></category>
+            <category><![CDATA[corel]]></category>
+            <category><![CDATA[corel painter]]></category>
+            <category><![CDATA[creative]]></category>
+            <category><![CDATA[Digital Art]]></category>
+            <guid isPermaLink="false">https://blog.humblebundle.com/?p=8243</guid>
+
+            <description><![CDATA[<p>The official blog for Design Expression Powerhouse includes all the details about what’s inside. Check it out!</p>
+<p>The post <a rel="nofollow" href="https://blog.humblebundle.com/2021/01/19/express-yourself/">Express yourself!</a> appeared first on <a rel="nofollow" href="https://blog.humblebundle.com">Humble Bundle Blog</a>.</p>
+]]></description>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">8243</post-id>
+        </item>
+    </channel>
+</rss>

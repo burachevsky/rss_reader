@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.text.format.DateFormat" />
+
+        <variable
+            name="item"
+            type="com.burachevsky.rssfeedreader.data.domainobjects.NewsItem" />
+
+        <variable
+            name="viewModel"
+            type="com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/itemMenu"
+                style="?android:actionOverflowButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/more"
+                android:src="@drawable/ic_more_vertical" />
+
+            <com.burachevsky.rssfeedreader.utils.LikeButton
+                android:id="@+id/likeButton"
+                style="?android:actionOverflowButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/saveToCollection"
+                app:likeImage="@drawable/ic_like_filled"
+                app:unlikeImage="@drawable/ic_like"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemMenu" />
+
+            <TextView
+                android:id="@+id/txt_channel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@{item.channel.title}"
+                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toStartOf="@+id/itemMenu"
+                app:layout_constraintStart_toEndOf="@+id/channel_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Android Police - Android news, revievs, apps, games, phones, tablets" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                android:text='@{DateFormat.format("dd.MM hh:mm", item.pubDate)}'
+                android:textAppearance="?attr/textAppearanceCaption"
+                app:layout_constraintStart_toEndOf="@+id/channel_icon"
+                app:layout_constraintTop_toBottomOf="@+id/txt_channel"
+                tools:text="08.02 04:30" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/itemMenu"/>
+
+            <TextView
+                android:id="@+id/txt_newsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:text="@{item.title}"
+                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="16sp"
+                android:textDirection="ltr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/likeButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider"
+                tools:text="OnePlus Band review: The Mi Band 5 has nothing to sweat about" />
+
+            <ImageView
+                android:id="@+id/channel_icon"
+                android:layout_width="45dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/feed_icon"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_newsTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:setIconVisible="@{item}"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

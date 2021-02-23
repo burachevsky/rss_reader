@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/showDetails"
+        android:title="@string/showDetails"
+        android:icon="@drawable/ic_show_details"/>
+
+    <item
+        android:id="@+id/markAs"
+        android:title="@string/markAsRead" />
+
+    <item
+        android:id="@+id/goToFeed"
+        android:title="@string/go_to_feed"
+        android:icon="@drawable/ic_rss_feed"/>
+
+    <item
+        android:id="@+id/deleteFeed"
+        android:title="@string/delete_feed"
+        android:icon="@drawable/ic_delete_feed"/>
+
+    <item
+        android:id="@+id/openInBrowser"
+        android:title="@string/open_in_browser"
+        android:icon="@drawable/ic_globe"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"/>
+</menu>
