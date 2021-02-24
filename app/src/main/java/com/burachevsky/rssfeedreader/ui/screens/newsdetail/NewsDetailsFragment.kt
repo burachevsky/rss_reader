@@ -2,27 +2,29 @@ package com.burachevsky.rssfeedreader.ui.screens.newsdetail
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.appcompat.view.menu.MenuBuilder
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.FragmentNewsDetailsBinding
+import com.burachevsky.rssfeedreader.ui.base.Renderer
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.list_item_news.*
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class NewsDetailsFragment : Fragment() {
+class NewsDetailsFragment : Fragment(),
+    Renderer<NewsDetailsState, NewsDetailsEffect> {
 
     private val args: NewsDetailsFragmentArgs by navArgs()
 
@@ -51,12 +53,10 @@ class NewsDetailsFragment : Fragment() {
         return binding.root
     }
 
-
-    @SuppressLint("UseCompatLoadingForDrawables")
+    @SuppressLint("UseCompatLoadingForDrawables", "RestrictedApi")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d(TAG, "onViewCreated()")
         binding.apply {
-            viewModel = this@NewsDetailsFragment.newsDetailsViewModel
             lifecycleOwner = this@NewsDetailsFragment
             htmlViewer.linksClickable = true
             htmlViewer.movementMethod = LinkMovementMethod.getInstance()
@@ -66,50 +66,67 @@ class NewsDetailsFragment : Fragment() {
             }
 
             shareButton.setOnClickListener {
-                val newsItem = newsDetailsViewModel.item.value!!
-                val intent = Intent().apply {
-                    action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, newsItem.itemLink)
-                    type = "text/plain"
+                newsDetailsViewModel.submit(ShareItem(requireContext()))
+            }
+
+            val menu = toolbar.menu
+            if (menu is MenuBuilder) {
+                menu.setOptionalIconsVisible(true)
+            }
+
+            toolbar.setOnMenuItemClickListener {
+                when (it.itemId) {
+                    R.id.like -> {
+                        newsDetailsViewModel.submit(
+                            if (newsDetailsViewModel.state.value.item.isInCollection)
+                                UnlikeItem
+                            else LikeItem
+                        )
+                        true
+                    }
+
+                    R.id.openInBrowser -> {
+                        newsDetailsViewModel.submit(
+                            OpenInBrowser(requireContext())
+                        )
+                        true
+                    }
+
+                    R.id.shareItem -> {
+                        newsDetailsViewModel.submit(ShareItem(requireContext()))
+                        true
+                    }
+
+                    else -> false
                 }
-                startActivity(intent)
+            }
+
+            viewLifecycleOwner.lifecycleScope.launch {
+                newsDetailsViewModel.state.collect(::renderState)
             }
         }
-
-        newsDetailsViewModel.item.observe(viewLifecycleOwner) { item ->
-            /*binding.likeButton.init(item.isInCollection)
-            likeButton.onLikeListener = { value ->
-                viewModel.likeItem(item, value)
-            }*/
-            binding.toolbar.title = item.title
-            binding.apply {
-                toolbar.menu.findItem(R.id.like).icon = requireContext().getDrawable(
-                    if (item.isInCollection) R.drawable.ic_like
-                    else R.drawable.ic_like_filled
-                )
-            }
-            newsDetailsViewModel.readItem(item)
-        }
-
-        setupButtons()
 
         super.onViewCreated(view, savedInstanceState)
     }
 
-    private fun setupButtons() {
-        /*binding.back.setOnClickListener {
-            findNavController().navigateUp()
+    @SuppressLint("UseCompatLoadingForDrawables")
+    override fun renderState(state: NewsDetailsState) {
+        Log.d(TAG, "rendering state")
+
+        binding.apply {
+            if (item == null || item!!.itemLink != state.item.itemLink)
+                item = state.item
+            toolbar.menu.findItem(R.id.like).icon = requireContext().getDrawable(
+                if (state.item.isInCollection) R.drawable.ic_like_filled
+                else R.drawable.ic_like
+            )
+            executePendingBindings()
         }
-
-        binding.openInBrowser.setOnClickListener {
-            val newsItem = viewModel.item.value!!
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(newsItem.itemLink))
-            startActivity(intent)
-        }*/
-
     }
 
-
+    override fun renderEffect(effect: NewsDetailsEffect) {
+        //no effects yet
+    }
 
     override fun onResume() {
         Log.d(TAG, "onResume()")
@@ -166,4 +183,5 @@ class NewsDetailsFragment : Fragment() {
     companion object {
         val TAG = "${NewsDetailsFragment::class.simpleName}"
     }
+
 }

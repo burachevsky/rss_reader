@@ -66,7 +66,7 @@ class NewsListViewModel @Inject constructor(
         _state.value = _state.value.copy(filter = filter)
     }
 
-    fun tryGetFeed(url: String) {
+    private fun tryGetFeed(url: String) {
         viewModelScope.launch {
 
             val urlExists = withContext(Dispatchers.Default) {
@@ -90,7 +90,7 @@ class NewsListViewModel @Inject constructor(
         }
     }
 
-    fun refreshNews() {
+    private fun refreshNews() {
         viewModelScope.launch {
             _state.value = state.value.copy(isRefreshing = true)
             runSafely {

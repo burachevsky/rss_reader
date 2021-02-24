@@ -79,7 +79,7 @@ class NewsListFragment : Fragment(),
             }
         }
 
-        job = lifecycleScope.launch {
+        job = viewLifecycleOwner.lifecycleScope.launch {
             launch {
                 newsListViewModel.pendingEffect.collect(::renderEffect)
             }

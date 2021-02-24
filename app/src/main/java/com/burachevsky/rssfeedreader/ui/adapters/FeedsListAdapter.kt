@@ -39,7 +39,7 @@ class FeedsListAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
         holder.itemView.setOnClickListener {
-            viewModel.filterList(ByFeed(item))
+            viewModel.filterList(ByFeed(item))//todo replace by submit(action)
             onSelectedCallback()
         }
         holder.bind(item)
