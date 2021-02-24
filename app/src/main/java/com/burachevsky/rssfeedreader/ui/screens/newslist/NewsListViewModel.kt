@@ -10,6 +10,8 @@ import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import com.burachevsky.rssfeedreader.data.repositories.NewsRepository
 import com.burachevsky.rssfeedreader.ui.base.Actioner
+import com.burachevsky.rssfeedreader.ui.dialogs.AddDialogFragment
+import com.burachevsky.rssfeedreader.ui.dialogs.FilterFeedsDialogFragment
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
@@ -164,6 +166,22 @@ class NewsListViewModel @Inject constructor(
             ShowAll -> filterList(All)
 
             ShowFavorites -> filterList(Favorites)
+
+            is ShowAddDialog -> with (action) {
+                viewModelScope.launch {
+                    val addDialog = withContext(Dispatchers.Default) {
+                        AddDialogFragment(this@NewsListViewModel)
+                    }
+                    addDialog.show(fragmentManager, "AddDialogFragment")
+                }
+            }
+
+            is ShowFilterDialog -> with (action) {
+                viewModelScope.launch {
+                    val filterDialog = FilterFeedsDialogFragment(this@NewsListViewModel)
+                    filterDialog.show(fragmentManager, "FilterFeedsDialog")
+                }
+            }
 
             is DownloadFeed -> with (action) {
                 tryGetFeed(url)

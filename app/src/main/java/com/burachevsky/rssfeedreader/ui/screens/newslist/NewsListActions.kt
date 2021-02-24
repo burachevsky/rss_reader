@@ -2,6 +2,7 @@ package com.burachevsky.rssfeedreader.ui.screens.newslist
 
 import android.content.Context
 import android.view.View
+import androidx.fragment.app.FragmentManager
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 
@@ -10,6 +11,8 @@ sealed class NewsListAction
 object RefreshNews: NewsListAction()
 object ShowAll: NewsListAction()
 object ShowFavorites: NewsListAction()
+data class ShowAddDialog(val fragmentManager: FragmentManager): NewsListAction()
+data class ShowFilterDialog(val fragmentManager: FragmentManager): NewsListAction()
 data class DownloadFeed(val url: String): NewsListAction()
 data class ShowItemDetails(val view: View, val item: NewsItem): NewsListAction()
 data class ShowItemMenu(val view: View, val item: NewsItem): NewsListAction()

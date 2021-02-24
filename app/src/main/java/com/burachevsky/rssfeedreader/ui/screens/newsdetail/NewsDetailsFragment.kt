@@ -1,12 +1,13 @@
 package com.burachevsky.rssfeedreader.ui.screens.newsdetail
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -16,7 +17,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.FragmentNewsDetailsBinding
-import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.list_item_news.*
 import javax.inject.Inject
@@ -29,7 +29,7 @@ class NewsDetailsFragment : Fragment() {
     @Inject
     lateinit var viewModelFactory: NewsDetailsViewModelFactory
 
-    private val viewModel: NewsDetailsViewModel by viewModels {
+    private val newsDetailsViewModel: NewsDetailsViewModel by viewModels {
         NewsDetailsViewModel.provideFactory(
             viewModelFactory, args.item
         )
@@ -48,38 +48,56 @@ class NewsDetailsFragment : Fragment() {
             inflater, R.layout.fragment_news_details, container, false
         )
 
-        binding.apply {
-            viewModel = this@NewsDetailsFragment.viewModel
-            lifecycleOwner = this@NewsDetailsFragment
-            htmlViewer.linksClickable = true
-            htmlViewer.movementMethod = LinkMovementMethod.getInstance()
-        }
-
-        viewModel.item.observe(viewLifecycleOwner) { item ->
-            binding.likeButton.init(item.isInCollection)
-            likeButton.onLikeListener = { value ->
-                viewModel.likeItem(item, value)
-            }
-            viewModel.readItem(item)
-        }
-
-        /*if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            binding.scrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
-
-                binding.toolbarCard.visibility =
-                    if (scrollY <= oldScrollY)
-                        View.VISIBLE
-                    else View.GONE
-            }
-        }*/
-
-        setupButtons()
-
         return binding.root
     }
 
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        Log.d(TAG, "onViewCreated()")
+        binding.apply {
+            viewModel = this@NewsDetailsFragment.newsDetailsViewModel
+            lifecycleOwner = this@NewsDetailsFragment
+            htmlViewer.linksClickable = true
+            htmlViewer.movementMethod = LinkMovementMethod.getInstance()
+
+            toolbar.setNavigationOnClickListener {
+                findNavController().navigateUp()
+            }
+
+            shareButton.setOnClickListener {
+                val newsItem = newsDetailsViewModel.item.value!!
+                val intent = Intent().apply {
+                    action = Intent.ACTION_SEND
+                    putExtra(Intent.EXTRA_TEXT, newsItem.itemLink)
+                    type = "text/plain"
+                }
+                startActivity(intent)
+            }
+        }
+
+        newsDetailsViewModel.item.observe(viewLifecycleOwner) { item ->
+            /*binding.likeButton.init(item.isInCollection)
+            likeButton.onLikeListener = { value ->
+                viewModel.likeItem(item, value)
+            }*/
+            binding.toolbar.title = item.title
+            binding.apply {
+                toolbar.menu.findItem(R.id.like).icon = requireContext().getDrawable(
+                    if (item.isInCollection) R.drawable.ic_like
+                    else R.drawable.ic_like_filled
+                )
+            }
+            newsDetailsViewModel.readItem(item)
+        }
+
+        setupButtons()
+
+        super.onViewCreated(view, savedInstanceState)
+    }
+
     private fun setupButtons() {
-        binding.back.setOnClickListener {
+        /*binding.back.setOnClickListener {
             findNavController().navigateUp()
         }
 
@@ -87,18 +105,10 @@ class NewsDetailsFragment : Fragment() {
             val newsItem = viewModel.item.value!!
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(newsItem.itemLink))
             startActivity(intent)
-        }
+        }*/
 
-        binding.share.setOnClickListener {
-            val newsItem = viewModel.item.value!!
-            val intent = Intent().apply {
-                action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, newsItem.itemLink)
-                type = "text/plain"
-            }
-            startActivity(intent)
-        }
     }
+
 
 
     override fun onResume() {
@@ -146,10 +156,6 @@ class NewsDetailsFragment : Fragment() {
         super.onDetach()
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.d(TAG, "onViewCreated()")
-        super.onViewCreated(view, savedInstanceState)
-    }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d(TAG, "onActivityCreated()")

@@ -70,6 +70,10 @@ class NewsListFragment : Fragment(),
                 )
             }
 
+            filterButton.setOnClickListener {
+                newsListViewModel.submit(ShowFilterDialog(parentFragmentManager))
+            }
+
             refreshLayout.setOnRefreshListener {
                 newsListViewModel.submit(RefreshNews)
             }

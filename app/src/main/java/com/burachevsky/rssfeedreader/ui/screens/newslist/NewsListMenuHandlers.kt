@@ -77,12 +77,7 @@ fun handleOptionsMenuItemSelected(
     return when (itemId) {
 
         R.id.addFeed -> {
-            viewModel.viewModelScope.launch {
-                val addDialog = withContext(Dispatchers.Default) {
-                    AddDialogFragment(viewModel)
-                }
-                addDialog.show(activity.supportFragmentManager, "AddDialogFragment")
-            }
+            viewModel.submit(ShowAddDialog(activity.supportFragmentManager))
             true
         }
 
@@ -92,8 +87,7 @@ fun handleOptionsMenuItemSelected(
         }
 
         R.id.filter -> {
-            val filterDialog = FilterFeedsDialogFragment(viewModel)
-            filterDialog.show(activity.supportFragmentManager, "FilterFeedsDialog")
+            viewModel.submit(ShowFilterDialog(activity.supportFragmentManager))
             true
         }
 
