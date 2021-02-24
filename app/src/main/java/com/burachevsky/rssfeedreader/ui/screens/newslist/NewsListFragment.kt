@@ -3,6 +3,7 @@ package com.burachevsky.rssfeedreader.ui.screens.newslist
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import android.view.*
 import androidx.appcompat.view.menu.MenuBuilder
@@ -32,11 +33,14 @@ class NewsListFragment : Fragment(),
 
     private var job: Job? = null
 
+    private var rvSavedState: Parcelable? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate()")
         newsAdapter = NewsListAdapter(newsListViewModel)
         newsAdapter.stateRestorationPolicy = RecyclerView
             .Adapter.StateRestorationPolicy.ALLOW
+
         super.onCreate(savedInstanceState)
     }
 
@@ -50,6 +54,10 @@ class NewsListFragment : Fragment(),
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_news_list, container, false
         )
+
+        if (savedInstanceState != null) {
+            rvSavedState = savedInstanceState.getParcelable(RECYCLER_VIEW_STATE)
+        }
 
         setHasOptionsMenu(true)
         return binding.root
@@ -97,6 +105,7 @@ class NewsListFragment : Fragment(),
 
             newsListViewModel.subscribe()
         }
+
         super.onViewCreated(view, savedInstanceState)
     }
 
@@ -133,6 +142,11 @@ class NewsListFragment : Fragment(),
                     }
 
                     newsAdapter.submitList(displayData)
+
+                    if (rvSavedState != null) {
+                        binding.recyclerView.layoutManager?.onRestoreInstanceState(rvSavedState)
+                        rvSavedState = null
+                    }
                 }
             }
         }
@@ -148,6 +162,15 @@ class NewsListFragment : Fragment(),
                     .show()
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        Log.d(TAG, "onSaveInstanceState()")
+        outState.putParcelable(
+            RECYCLER_VIEW_STATE,
+            binding.recyclerView.layoutManager?.onSaveInstanceState()
+        )
+        super.onSaveInstanceState(outState)
     }
 
     override fun onStart() {
@@ -192,5 +215,6 @@ class NewsListFragment : Fragment(),
 
     companion object {
         val TAG ="${NewsListFragment::class.simpleName}"
+        val RECYCLER_VIEW_STATE = "recycler_view_state"
     }
 }
