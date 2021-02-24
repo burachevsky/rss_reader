@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.ListItemFeedBinding
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
@@ -57,6 +58,8 @@ class FeedsListAdapter(
                 }
                 Glide.with(binding.root)
                     .load(feed.channel.logo)
+                    .error(R.drawable.ic_feed)
+                    .transition(DrawableTransitionOptions.withCrossFade())
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .into(channelIcon)
             }
