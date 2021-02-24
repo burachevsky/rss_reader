@@ -1,6 +1,6 @@
 package com.burachevsky.rssfeedreader.utils.parser
 
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import org.xmlpull.v1.XmlPullParserException
 import java.io.IOException
 import java.io.InputStream
@@ -11,7 +11,7 @@ interface RssParser {
     fun parse(
         inputStream: InputStream,
         feedUrl: String
-    ): NewsFeed
+    ): FeedWithItems
 
     companion object {
         fun create() = RssParserImpl()

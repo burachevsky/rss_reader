@@ -62,7 +62,7 @@
                     android:id="@+id/channelTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{item.channel.title}"
+                    android:text="@{item.feed.title}"
                     android:textAppearance="?attr/textAppearanceCaption"
                     tools:text="Android Police - Android news, reviews, apps, games, phones, tablets" />
 

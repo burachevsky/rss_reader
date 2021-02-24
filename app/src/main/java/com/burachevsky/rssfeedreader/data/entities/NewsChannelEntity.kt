@@ -2,7 +2,7 @@ package com.burachevsky.rssfeedreader.data.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsChannel
+import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 
 @Entity(tableName = "news_channels")
 data class NewsChannelEntity(
@@ -14,10 +14,10 @@ data class NewsChannelEntity(
     val logo: String?
 )
 
-fun NewsChannelEntity.asDomain(): NewsChannel {
-    return NewsChannel(feedUrl, title, link, description, logo)
+fun NewsChannelEntity.asDomain(): NewsFeed {
+    return NewsFeed(feedUrl, title, link, description, logo)
 }
 
-fun NewsChannel.asEntity(): NewsChannelEntity {
+fun NewsFeed.asEntity(): NewsChannelEntity {
     return NewsChannelEntity(feedUrl, title, link, description, logo)
 }

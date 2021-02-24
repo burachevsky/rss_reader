@@ -8,10 +8,10 @@ import com.burachevsky.rssfeedreader.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_news)
 
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.navHostFragment) as NavHostFragment
@@ -23,32 +23,36 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onStart() {
-        Log.d("news:MainActivity", "onStart()")
+        Log.d(TAG, "onStart()")
         super.onStart()
     }
 
     override fun onResume() {
-        Log.d("news:MainActivity", "onResume()")
+        Log.d(TAG, "onResume()")
         super.onResume()
     }
 
     override fun onPause() {
-        Log.d("news:MainActivity", "onPause()")
+        Log.d(TAG, "onPause()")
         super.onPause()
     }
 
     override fun onStop() {
-        Log.d("news:MainActivity", "onStop()")
+        Log.d(TAG, "onStop()")
         super.onStop()
     }
 
     override fun onRestart() {
-        Log.d("news:MainActivity", "onRestart()")
+        Log.d(TAG, "onRestart()")
         super.onRestart()
     }
 
     override fun onDestroy() {
-        Log.d("news:MainActivity", "onDestroy()")
+        Log.d(TAG, "onDestroy()")
         super.onDestroy()
+    }
+
+    companion object {
+        val TAG = "${NewsActivity::class.simpleName}"
     }
 }

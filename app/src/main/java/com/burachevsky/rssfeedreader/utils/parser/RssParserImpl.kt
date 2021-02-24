@@ -10,15 +10,15 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsChannel
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import javax.inject.Inject
 
 class RssParserImpl @Inject constructor() : RssParser {
 
     @Throws(XmlPullParserException::class, IOException::class)
-    override fun parse(inputStream: InputStream, feedUrl: String): NewsFeed {
+    override fun parse(inputStream: InputStream, feedUrl: String): FeedWithItems {
         return inputStream.use { `in` ->
             Xml.newPullParser().run {
                 setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false)
@@ -30,25 +30,25 @@ class RssParserImpl @Inject constructor() : RssParser {
     }
 
     @Throws(XmlPullParserException::class, IOException::class)
-    private fun XmlPullParser.readRss(feedUrl: String): NewsFeed {
+    private fun XmlPullParser.readRss(feedUrl: String): FeedWithItems {
         require(XmlPullParser.START_TAG, null, "rss")
-        var feed: NewsFeed? = null
+        var feedWithItems: FeedWithItems? = null
 
         while (next() != XmlPullParser.END_TAG) {
             if (eventType != XmlPullParser.START_TAG)
                 continue
 
             when (name) {
-                "channel" -> feed = readFeed(feedUrl)
+                "channel" -> feedWithItems = readFeed(feedUrl)
                 else -> skip()
             }
         }
 
-        return feed ?: throw XmlPullParserException("null channel")
+        return feedWithItems ?: throw XmlPullParserException("null channel")
     }
 
     @Throws(XmlPullParserException::class, IOException::class)
-    private fun XmlPullParser.readFeed(feedUrl: String): NewsFeed {
+    private fun XmlPullParser.readFeed(feedUrl: String): FeedWithItems {
 
         require(XmlPullParser.START_TAG, null, "channel")
 
@@ -56,7 +56,7 @@ class RssParserImpl @Inject constructor() : RssParser {
         var link: String? = null
         var description: String? = null
         var logo: String? = null
-        val itemGenerators: MutableList<(NewsChannel) -> NewsItem> = ArrayList()
+        val itemGenerators: MutableList<(NewsFeed) -> NewsItem> = ArrayList()
 
         while (next() != XmlPullParser.END_TAG) {
             if (eventType != XmlPullParser.START_TAG)
@@ -73,7 +73,7 @@ class RssParserImpl @Inject constructor() : RssParser {
             }
         }
 
-        val channel = NewsChannel(
+        val channel = NewsFeed(
             title = title ?: throw XmlPullParserException("null title"),
             link = link ?: throw XmlPullParserException("null link"),
             description = description ?: throw XmlPullParserException("null description"),
@@ -81,11 +81,11 @@ class RssParserImpl @Inject constructor() : RssParser {
             logo = logo
         )
 
-        return NewsFeed(channel, itemGenerators.map { it(channel) })
+        return FeedWithItems(channel, itemGenerators.map { it(channel) })
     }
 
     @Throws(XmlPullParserException::class, IOException::class)
-    private fun XmlPullParser.readItem(): (NewsChannel) -> NewsItem {
+    private fun XmlPullParser.readItem(): (NewsFeed) -> NewsItem {
         require(XmlPullParser.START_TAG, null, "item")
 
         var title: String? = null
@@ -119,7 +119,7 @@ class RssParserImpl @Inject constructor() : RssParser {
                 pubDate = pubDate ?: throw XmlPullParserException("null pubDate"),
                 categories = categories,
                 author = author,
-                channel = chan
+                feed = chan
             )
         }
     }

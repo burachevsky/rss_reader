@@ -1,10 +1,8 @@
 package com.burachevsky.rssfeedreader.network
 
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.utils.parser.RssParser
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.IOException
 import java.io.InputStream
@@ -19,7 +17,7 @@ class NewsWebserviceImpl @Inject constructor(
 ) : NewsWebservice {
 
     @Suppress("BlockingMethodInNonBlockingContext")
-    override suspend fun getNewsFeed(url: String): NewsFeed =
+    override suspend fun getNewsFeed(url: String): FeedWithItems =
         withContext(Dispatchers.IO) {
             val input = downloadUrl(url) ?: throw IOException("never happens")
             withContext(Dispatchers.Default) {

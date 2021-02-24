@@ -6,7 +6,7 @@ import java.util.*
 
 @Parcelize
 data class NewsItem(
-    val channel: NewsChannel,
+    val feed: NewsFeed,
     val title: String,
     val description: String,
     val pubDate: Date,

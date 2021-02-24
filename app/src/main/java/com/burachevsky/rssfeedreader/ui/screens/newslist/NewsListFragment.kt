@@ -215,6 +215,6 @@ class NewsListFragment : Fragment(),
 
     companion object {
         val TAG ="${NewsListFragment::class.simpleName}"
-        val RECYCLER_VIEW_STATE = "recycler_view_state"
+        const val RECYCLER_VIEW_STATE = "recycler_view_state"
     }
 }

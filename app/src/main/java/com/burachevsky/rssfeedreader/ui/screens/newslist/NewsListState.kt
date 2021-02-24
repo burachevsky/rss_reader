@@ -2,6 +2,7 @@ package com.burachevsky.rssfeedreader.ui.screens.newslist
 
 import android.content.Context
 import com.burachevsky.rssfeedreader.R
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 
@@ -42,14 +43,15 @@ object Favorites : ListFilter() {
         return items.filter { it.isInCollection }
     }
 }
+
 class ByFeed(val feed: NewsFeed) : ListFilter() {
     override fun titleString(context: Context): String {
-        return feed.channel.title
+        return feed.title
     }
 
     override operator fun invoke(items: List<NewsItem>): List<NewsItem> {
         return items.filter {
-            it.channel.feedUrl == feed.channel.feedUrl
+            it.feed.feedUrl == feed.feedUrl
         }
     }
 }

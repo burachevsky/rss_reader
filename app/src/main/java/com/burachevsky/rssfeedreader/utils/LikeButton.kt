@@ -54,12 +54,9 @@ class LikeButton constructor(
         }
     }
 
-    fun init(value: Boolean/*, onLiked: ((Boolean) -> Unit)?*/) {
+    fun init(value: Boolean) {
         _isLiked = value
         setImageResource(if (value) likeImage else unlikeImage)
-        /*onLikeListener = null
-        isLiked = value
-        onLikeListener = onLiked*/
     }
 }
 

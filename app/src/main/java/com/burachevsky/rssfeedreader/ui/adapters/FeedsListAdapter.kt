@@ -12,8 +12,8 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.ListItemFeedBinding
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
-import com.burachevsky.rssfeedreader.ui.screens.newslist.ByFeed
 import com.burachevsky.rssfeedreader.ui.screens.newslist.DeleteFeed
+import com.burachevsky.rssfeedreader.ui.screens.newslist.GoToFeed
 import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel
 
 class FeedsListAdapter(
@@ -40,7 +40,7 @@ class FeedsListAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
         holder.itemView.setOnClickListener {
-            viewModel.filterList(ByFeed(item))//todo replace by submit(action)
+            viewModel.submit(GoToFeed(item))
             onSelectedCallback()
         }
         holder.bind(item)
@@ -52,12 +52,12 @@ class FeedsListAdapter(
 
         fun bind(feed: NewsFeed) {
             binding.apply {
-                title.text = feed.channel.title
+                title.text = feed.title
                 imageButton.setOnClickListener {
-                    viewModel.deleteFeed(feed) //todo: replace to submit(action)
+                    viewModel.submit(DeleteFeed(feed))
                 }
                 Glide.with(binding.root)
-                    .load(feed.channel.logo)
+                    .load(feed.logo)
                     .error(R.drawable.ic_feed)
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -68,7 +68,7 @@ class FeedsListAdapter(
 
     companion object DiffCallback : DiffUtil.ItemCallback<NewsFeed>() {
         override fun areItemsTheSame(oldItem: NewsFeed, newItem: NewsFeed): Boolean {
-            return oldItem.channel.feedUrl == newItem.channel.feedUrl
+            return oldItem.feedUrl == newItem.feedUrl
         }
 
         override fun areContentsTheSame(oldItem: NewsFeed, newItem: NewsFeed): Boolean {

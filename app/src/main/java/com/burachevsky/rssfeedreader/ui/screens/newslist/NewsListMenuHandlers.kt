@@ -6,14 +6,8 @@ import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.view.menu.MenuPopupHelper
 import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.viewModelScope
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
-import com.burachevsky.rssfeedreader.ui.dialogs.AddDialogFragment
-import com.burachevsky.rssfeedreader.ui.dialogs.FilterFeedsDialogFragment
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 @SuppressLint("RestrictedApi", "UseCompatLoadingForDrawables")
 fun showNewsItemMenu(view: View, item: NewsItem, viewModel: NewsListViewModel) {
@@ -43,11 +37,11 @@ fun showNewsItemMenu(view: View, item: NewsItem, viewModel: NewsListViewModel) {
             )
 
             R.id.goToFeed -> viewModel.submit(
-                GoToFeed(item)
+                GoToFeed(item.feed)
             )
 
             R.id.deleteFeed -> viewModel.submit(
-                DeleteFeed(item)
+                DeleteFeed(item.feed)
             )
 
             R.id.openInBrowser -> viewModel.submit(

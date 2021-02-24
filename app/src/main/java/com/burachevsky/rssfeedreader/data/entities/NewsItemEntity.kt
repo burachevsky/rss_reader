@@ -22,7 +22,7 @@ fun List<NewsItem>.asEntities(): List<NewsItemEntity> {
         NewsItemEntity(
             it.itemLink, it.title, it.description,
             it.pubDate, it.categories, it.author,
-            it.channel.feedUrl
+            it.feed.feedUrl
         )
     }
 }

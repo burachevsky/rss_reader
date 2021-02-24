@@ -5,6 +5,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class NewsFeed(
-    val channel: NewsChannel,
-    val items: List<NewsItem>
+    val feedUrl: String,
+    val title: String,
+    val link: String,
+    val description: String,
+    val logo: String?
 ) : Parcelable

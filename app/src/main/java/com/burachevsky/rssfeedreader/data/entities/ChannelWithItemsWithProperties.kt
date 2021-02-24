@@ -2,7 +2,7 @@ package com.burachevsky.rssfeedreader.data.entities
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 
 data class ChannelWithItemsWithProperties(
@@ -23,7 +23,7 @@ fun ChannelWithItemsWithProperties.asDomainItemList(): List<NewsItem> {
     return items.map { itemWithProperties ->
         val item = itemWithProperties.item
         NewsItem(
-            channel = channel,
+            feed = channel,
             title = item.title,
             description = item.description,
             pubDate = item.pubDate,
@@ -36,14 +36,14 @@ fun ChannelWithItemsWithProperties.asDomainItemList(): List<NewsItem> {
     }
 }
 
-fun ChannelWithItemsWithProperties.asDomain(): NewsFeed {
+fun ChannelWithItemsWithProperties.asDomain(): FeedWithItems {
     val channel = this.channel.asDomain()
-    return NewsFeed(
+    return FeedWithItems(
         channel,
         items.map { itemWithProperties ->
             val item = itemWithProperties.item
             NewsItem(
-                channel = channel,
+                feed = channel,
                 title = item.title,
                 description = item.description,
                 pubDate = item.pubDate,

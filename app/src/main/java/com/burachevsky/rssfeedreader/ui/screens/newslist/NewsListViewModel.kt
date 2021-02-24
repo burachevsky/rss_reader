@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.lifecycle.*
 import androidx.navigation.findNavController
 import com.burachevsky.rssfeedreader.R
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import com.burachevsky.rssfeedreader.data.repositories.NewsRepository
@@ -51,22 +52,25 @@ class NewsListViewModel @Inject constructor(
         }
     }
 
-    private fun update(feeds: List<NewsFeed>) {
+    private fun update(feedWithItems: List<FeedWithItems>) {
         viewModelScope.launch {
             Log.d(TAG, "update news list")
             val allItems = withContext(Dispatchers.Default) {
-                feeds.flatMap { it.items }.sortedByDescending { it.pubDate }
+                feedWithItems.flatMap { it.items }.sortedByDescending { it.pubDate }
+            }
+            val allFeeds = withContext(Dispatchers.Default) {
+                feedWithItems.map { it.feed }
             }
             _state.value = _state.value.copy(
                 isInitializing = false,
                 isRefreshing = false,
                 data = allItems,
-                feeds = feeds
+                feeds = allFeeds
             )
         }
     }
 
-    fun filterList(filter: ListFilter) {
+    private fun filterList(filter: ListFilter) {
         _state.value = _state.value.copy(filter = filter)
     }
 
@@ -75,7 +79,7 @@ class NewsListViewModel @Inject constructor(
 
             val urlExists = withContext(Dispatchers.Default) {
                 state.value.feeds.any {
-                    it.channel.feedUrl == url
+                    it.feedUrl == url
                 }
             }
 
@@ -104,16 +108,23 @@ class NewsListViewModel @Inject constructor(
         }
     }
 
-    fun deleteFeed(feed: NewsFeed) {
+    private fun deleteFeed(feed: NewsFeed) {
         viewModelScope.launch {
             runSafely {
-                repository.deleteFeed(feed)
+                repository.deleteFeed(
+                    findFeedWithItems(feed)
+                )
             }
         }
     }
 
-    private fun findFeed(item: NewsItem): NewsFeed {
-        return state.value.feeds.find { it.channel.feedUrl == item.channel.feedUrl }!!
+    private suspend fun findFeedWithItems(feed: NewsFeed): FeedWithItems {
+        return withContext(Dispatchers.Default) {
+            FeedWithItems(
+                feed,
+                _state.value.data.filter { it.feed.feedUrl == feed.feedUrl }
+            )
+        }
     }
 
     private fun setRead(item: NewsItem, value: Boolean) {
@@ -163,6 +174,7 @@ class NewsListViewModel @Inject constructor(
             }
         }
     }
+
     override fun submit(action: NewsListAction) {
         when (action) {
             RefreshNews -> refreshNews()
@@ -171,7 +183,7 @@ class NewsListViewModel @Inject constructor(
 
             ShowFavorites -> filterList(Favorites)
 
-            is ShowAddDialog -> with (action) {
+            is ShowAddDialog -> with(action) {
                 viewModelScope.launch {
                     val addDialog = withContext(Dispatchers.Default) {
                         AddDialogFragment(this@NewsListViewModel)
@@ -180,67 +192,57 @@ class NewsListViewModel @Inject constructor(
                 }
             }
 
-            is ShowFilterDialog -> with (action) {
+            is ShowFilterDialog -> with(action) {
                 viewModelScope.launch {
                     val filterDialog = FilterFeedsDialogFragment(this@NewsListViewModel)
                     filterDialog.show(fragmentManager, "FilterFeedsDialog")
                 }
             }
 
-            is DownloadFeed -> with (action) {
+            is DownloadFeed -> with(action) {
                 tryGetFeed(url)
             }
 
-            is ShowItemDetails -> with (action) {
+            is ShowItemDetails -> with(action) {
                 view.findNavController().navigate(
                     NewsListFragmentDirections
                         .actionNewsFragmentToNewsDetailsFragment(item)
                 )
             }
 
-            is ShowItemMenu -> with (action) {
+            is ShowItemMenu -> with(action) {
                 showNewsItemMenu(view, item, this@NewsListViewModel)
             }
 
-            is MarkItemAsRead -> with (action) {
+            is MarkItemAsRead -> with(action) {
                 setRead(item, true)
             }
 
-            is MarkItemAsUnread -> with (action) {
+            is MarkItemAsUnread -> with(action) {
                 setRead(item, false)
             }
 
-            is LikeItem -> with (action) {
+            is LikeItem -> with(action) {
                 setLiked(item, true)
             }
 
-            is UnlikeItem -> with (action) {
+            is UnlikeItem -> with(action) {
                 setLiked(item, false)
             }
 
-            is GoToFeed -> with (action) {
+            is GoToFeed -> with(action) {
                 viewModelScope.launch {
-                    filterList(
-                        ByFeed(
-                            withContext (Dispatchers.Default) {
-                                findFeed(item)
-                            }
-                        )
-                    )
+                    filterList(ByFeed(feed))
                 }
             }
 
-            is DeleteFeed -> with (action) {
+            is DeleteFeed -> with(action) {
                 viewModelScope.launch {
-                    deleteFeed(
-                        withContext (Dispatchers.Default) {
-                            findFeed(item)
-                        }
-                    )
+                    deleteFeed(feed)
                 }
             }
 
-            is OpenDetailsInBrowser -> with (action) {
+            is OpenDetailsInBrowser -> with(action) {
                 runSafely {
                     ctx.startActivity(
                         Intent(Intent.ACTION_VIEW, Uri.parse(item.itemLink))
@@ -248,7 +250,7 @@ class NewsListViewModel @Inject constructor(
                 }
             }
 
-            is ShareItem -> with (action) {
+            is ShareItem -> with(action) {
                 runSafely {
                     ctx.startActivity(
                         Intent().apply {

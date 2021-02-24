@@ -7,6 +7,7 @@ import com.burachevsky.rssfeedreader.data.daos.NewsChannelDao
 import com.burachevsky.rssfeedreader.data.daos.NewsItemDao
 import com.burachevsky.rssfeedreader.data.daos.ReadItemDao
 import com.burachevsky.rssfeedreader.data.entities.*
+import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import com.burachevsky.rssfeedreader.network.NewsWebservice
@@ -24,18 +25,10 @@ class NewsRepository @Inject constructor (
     private val readItemDao: ReadItemDao
 ) {
 
-    fun observeFeeds(): Flow<List<NewsFeed>> {
+    fun observeFeeds(): Flow<List<FeedWithItems>> {
         return newsChannelDao
             .getChannelsWithItemsFlow()
             .map { entities -> entities.map { it.asDomain() } }
-    }
-
-    fun observeReadItems(): Flow<List<String>> {
-        return readItemDao.getReadItemsFlow()
-    }
-
-    fun observeFavoriteItems(): Flow<List<String>> {
-        return favoriteItemDao.getFavoritesFlow()
     }
 
     suspend fun setLiked(item: NewsItem, value: Boolean) {
@@ -54,38 +47,36 @@ class NewsRepository @Inject constructor (
             readItemDao.deleteReadItem(readItem)
     }
 
-    suspend fun fetchFeed(url: String): NewsFeed {
+    suspend fun fetchFeed(url: String) {
         return withContext(Dispatchers.IO) {
             val feed = webservice.getNewsFeed(url)
             Log.d("NewsRepository", "items reveived: ${feed.items.size}")
             database.runInTransaction {
                 runBlocking {
-                    newsChannelDao.insertChannel(feed.channel.asEntity())
+                    newsChannelDao.insertChannel(feed.feed.asEntity())
                     newsItemDao.insertItems(feed.items.asEntities())
                 }
             }
-            feed
         }
     }
 
-    suspend fun fetchNewsFromFeeds(feeds: List<NewsFeed>): List<NewsItem> {
+    suspend fun fetchNewsFromFeeds(feeds: List<NewsFeed>) {
         return withContext(Dispatchers.IO) {
             val freshItems = feeds.flatMap {
-                webservice.getNewsFeed(it.channel.feedUrl)
+                webservice.getNewsFeed(it.feedUrl)
                     .items
             }
             newsItemDao.insertItems(freshItems.asEntities())
-            freshItems
         }
     }
 
-    suspend fun deleteFeed(feed: NewsFeed) {
+    suspend fun deleteFeed(feedWithItems: FeedWithItems) {
         withContext(Dispatchers.IO) {
             database.runInTransaction {
                 runBlocking {
-                    newsChannelDao.deleteChannel(feed.channel.asEntity())
-                    newsItemDao.deleteItemsFromFeed(feed.channel.feedUrl)
-                    feed.items.forEach { item ->
+                    newsChannelDao.deleteChannel(feedWithItems.feed.asEntity())
+                    newsItemDao.deleteItemsFromFeed(feedWithItems.feed.feedUrl)
+                    feedWithItems.items.forEach { item ->
                         setRead(item, false)
                         setLiked(item, false)
                     }
