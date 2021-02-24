@@ -15,6 +15,6 @@
 
     <item
         android:id="@+id/filter"
-        android:icon="@drawable/ic_filter"
-        android:title="@string/filtering_news" />
+        android:icon="@drawable/ic_filter_list"
+        android:title="@string/filter_news" />
 </menu>
