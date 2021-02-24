@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.ListItemNewsBinding
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
-import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel
+import com.burachevsky.rssfeedreader.ui.screens.newslist.*
 
 class NewsListAdapter (
     val newsListViewModel: NewsListViewModel
@@ -44,13 +44,17 @@ class NewsListAdapter (
            binding.apply {
                viewModel = newsListViewModel
                root.setOnClickListener {
-                   newsListViewModel.showItemDetails(binding.item)
+                   newsListViewModel.submit(
+                       ShowItemDetails(root, item!!)
+                   )
                }
                likeButton.onLikeListener = { value ->
-                   newsListViewModel.setLiked(item, value)
+                   newsListViewModel.submit(
+                       if (value) LikeItem(item!!) else UnlikeItem(item!!)
+                   )
                }
                itemMenu.setOnClickListener {
-                   newsListViewModel.showItemMenu(itemMenu, item)
+                   newsListViewModel.submit(ShowItemMenu(itemMenu, item!!))
                }
            }
         }

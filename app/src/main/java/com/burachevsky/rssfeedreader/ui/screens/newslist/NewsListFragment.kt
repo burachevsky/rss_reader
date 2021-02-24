@@ -8,13 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.ui.adapters.NewsListAdapter
 import com.burachevsky.rssfeedreader.databinding.FragmentNewsListBinding
-import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import com.burachevsky.rssfeedreader.ui.base.Renderer
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
@@ -23,9 +20,9 @@ import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class NewsListFragment : Fragment(),
-    Renderer<NewsListState, NewsListEffect, NewsListAction> {
+    Renderer<NewsListState, NewsListEffect> {
 
-    private val viewModel: NewsListViewModel by viewModels()
+    private val newsListViewModel: NewsListViewModel by viewModels()
 
     private lateinit var newsAdapter: NewsListAdapter
 
@@ -33,7 +30,13 @@ class NewsListFragment : Fragment(),
 
     private var job: Job? = null
 
-    //private var scrollSavedState: Parcelable? = null
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "onCreate()")
+        newsAdapter = NewsListAdapter(newsListViewModel)
+        newsAdapter.stateRestorationPolicy = RecyclerView
+            .Adapter.StateRestorationPolicy.ALLOW
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,50 +45,58 @@ class NewsListFragment : Fragment(),
 
         Log.d(TAG, "onCreateView()")
 
-
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_news_list, container, false
         )
 
-
-
-        newsAdapter = NewsListAdapter(viewModel)
-
-        binding.lifecycleOwner = this
-
-        binding.toolbar.setOnMenuItemClickListener { menuItem ->
-            handleOptionsMenuItemSelected(menuItem.itemId, viewModel, requireActivity())
-        }
-
-        binding.viewModel = viewModel
-
-        binding.refreshLayout.setOnRefreshListener(viewModel::refreshNews)
-
-        binding.recyclerView.layoutManager = LinearLayoutManager(this.context)
-        binding.recyclerView.adapter = newsAdapter
-        newsAdapter.stateRestorationPolicy = RecyclerView.Adapter.StateRestorationPolicy.ALLOW
-
-
-        job = lifecycleScope.launch {
-            launch {
-                viewModel.pendingEffect.collect(::renderEffect)
-            }
-            launch {
-                viewModel.state.collect(::renderState)
-            }
-
-            viewModel.subscribe()
-        }
-
         setHasOptionsMenu(true)
-
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        Log.d(TAG, "onViewCreated()")
+
+        binding.apply {
+            lifecycleOwner = this@NewsListFragment
+            viewModel = this@NewsListFragment.newsListViewModel
+
+            recyclerView.adapter = newsAdapter
+
+            toolbar.setOnMenuItemClickListener { menuItem ->
+                handleOptionsMenuItemSelected(
+                    menuItem.itemId,
+                    newsListViewModel,
+                    requireActivity()
+                )
+            }
+
+            refreshLayout.setOnRefreshListener {
+                newsListViewModel.submit(RefreshNews)
+            }
+        }
+
+        job = lifecycleScope.launch {
+            launch {
+                newsListViewModel.pendingEffect.collect(::renderEffect)
+            }
+            launch {
+                newsListViewModel.state.collect(::renderState)
+            }
+
+            newsListViewModel.subscribe()
+        }
+        super.onViewCreated(view, savedInstanceState)
+    }
+
+    override fun onDestroyView() {
+        Log.d(TAG, "onDestroyView()")
+        job?.cancel()
+        super.onDestroyView()
+    }
 
     override fun renderState(state: NewsListState) {
         Log.d(TAG, "rendering state: ${state.asString()}")
-        lifecycleScope.launch {
+        viewLifecycleOwner.lifecycleScope.launch {
             binding.apply {
 
                 refreshLayout.isRefreshing = state.isRefreshing
@@ -124,48 +135,17 @@ class NewsListFragment : Fragment(),
                     .setAnimationMode(Snackbar.ANIMATION_MODE_SLIDE)
                     .show()
             }
-
-            is ShowDetails -> with (effect) {
-                navigateToDetails(item)
-            }
-
-            is ShowNewsItemMenu -> with(effect) {
-                showNewsItemMenu(view, item, viewModel)
-            }
         }
     }
 
-    private fun navigateToDetails(item: NewsItem?) {
-        if (item != null) {
-            findNavController().navigate(
-                NewsListFragmentDirections
-                    .actionNewsFragmentToNewsDetailsFragment(item)
-            )
-        }
+    override fun onStart() {
+        Log.d(TAG, "onStart()")
+        super.onStart()
     }
 
     override fun onResume() {
         Log.d(TAG, "onResume()")
-        /*binding.recyclerView.layoutManager?.apply {
-            onRestoreInstanceState(scrollSavedState)
-            onLayoutChildren(binding.recyclerView.Recycler(), RecyclerView.State())
-        }*/
-        /* if (scrollSavedState != null) {
-             val state = scrollSavedState as LinearLayoutManager.SavedState
-             val mAnchorPosition = state::class.java
-                 .getDeclaredField("mAnchorPosition")
-             mAnchorPosition.isAccessible = true
-             val position = mAnchorPosition.get(state) as Int
-             binding.recyclerView.layoutManager?.scrollToPosition(position)
-
-         }*/
         super.onResume()
-    }
-
-    override fun onDestroyView() {
-        Log.d(TAG, "onDestroyView()")
-        job?.cancel()
-        super.onDestroyView()
     }
 
     override fun onDestroy() {
@@ -178,20 +158,9 @@ class NewsListFragment : Fragment(),
         super.onPause()
     }
 
-    override fun onStart() {
-        Log.d(TAG, "onStart()")
-        super.onStart()
-    }
-
     override fun onStop() {
         Log.d(TAG, "onStop()")
         super.onStop()
-    }
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d(TAG, "onCreate()")
-        super.onCreate(savedInstanceState)
     }
 
     override fun onAttach(context: Context) {
@@ -200,24 +169,16 @@ class NewsListFragment : Fragment(),
     }
 
     override fun onDetach() {
-        Log.d("news:NewsListFragment", "onDetach()")
+        Log.d(TAG, "onDetach()")
         super.onDetach()
     }
 
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.d("news:NewsListFragment", "onViewCreated()")
-        super.onViewCreated(view, savedInstanceState)
-    }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
-        Log.d("news:NewsListFragment", "onActivityCreated()")
+        Log.d(TAG, "onActivityCreated()")
         super.onActivityCreated(savedInstanceState)
     }
 
-
     companion object {
-        val TAG = "news:NewsListFragment"
+        val TAG ="${NewsListFragment::class.simpleName}"
     }
 }

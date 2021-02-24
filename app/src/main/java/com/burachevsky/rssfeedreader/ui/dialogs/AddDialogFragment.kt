@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.DialogAddFeedBinding
+import com.burachevsky.rssfeedreader.ui.screens.newslist.DownloadFeed
 import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel
 
 class AddDialogFragment(
@@ -23,11 +24,11 @@ class AddDialogFragment(
             val dialog = AlertDialog.Builder(it)
                 .setView(binding.root)
                 .setNegativeButton(R.string.cancel) { dialog, _ ->
-                        dialog.cancel()
+                    dialog.cancel()
                 }
                 .setPositiveButton(R.string.add_feed) { _, _ ->
                     val url = binding.inputText.text.toString()
-                    viewModel.tryGetFeed(url)
+                    viewModel.submit(DownloadFeed(url))
                 }
                 .create()
 

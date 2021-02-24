@@ -8,9 +8,7 @@ import androidx.fragment.app.DialogFragment
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.ui.adapters.FeedsListAdapter
 import com.burachevsky.rssfeedreader.databinding.DialogFilterNewsBinding
-import com.burachevsky.rssfeedreader.ui.screens.newslist.All
-import com.burachevsky.rssfeedreader.ui.screens.newslist.Favorites
-import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel
+import com.burachevsky.rssfeedreader.ui.screens.newslist.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -39,12 +37,12 @@ class FilterFeedsDialogFragment(
 
         binding.apply {
             all.setOnClickListener {
-                viewModel.filterList(All)
+                viewModel.submit(ShowAll)
                 dialog.cancel()
             }
 
             favorites.setOnClickListener {
-                viewModel.filterList(Favorites)
+                viewModel.submit(ShowFavorites)
                 dialog.cancel()
             }
 

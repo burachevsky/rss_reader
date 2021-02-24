@@ -12,6 +12,7 @@ import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.databinding.ListItemFeedBinding
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.ui.screens.newslist.ByFeed
+import com.burachevsky.rssfeedreader.ui.screens.newslist.DeleteFeed
 import com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel
 
 class FeedsListAdapter(
@@ -52,7 +53,7 @@ class FeedsListAdapter(
             binding.apply {
                 title.text = feed.channel.title
                 imageButton.setOnClickListener {
-                    viewModel.deleteFeed(feed)
+                    viewModel.deleteFeed(feed) //todo: replace to submit(action)
                 }
                 Glide.with(binding.root)
                     .load(feed.channel.logo)

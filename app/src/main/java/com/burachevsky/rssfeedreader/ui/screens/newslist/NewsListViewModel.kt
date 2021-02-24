@@ -1,12 +1,15 @@
 package com.burachevsky.rssfeedreader.ui.screens.newslist
 
+import android.content.Intent
+import android.net.Uri
 import android.util.Log
-import android.view.View
 import androidx.lifecycle.*
+import androidx.navigation.findNavController
 import com.burachevsky.rssfeedreader.R
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsItem
 import com.burachevsky.rssfeedreader.data.repositories.NewsRepository
+import com.burachevsky.rssfeedreader.ui.base.Actioner
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
@@ -18,7 +21,7 @@ import javax.inject.Inject
 @HiltViewModel
 class NewsListViewModel @Inject constructor(
     private val repository: NewsRepository
-) : ViewModel() {
+) : ViewModel(), Actioner<NewsListAction> {
 
     init {
         Log.d(TAG, "viewModel created")
@@ -103,11 +106,11 @@ class NewsListViewModel @Inject constructor(
         }
     }
 
-    fun findFeed(item: NewsItem): NewsFeed {
+    private fun findFeed(item: NewsItem): NewsFeed {
         return state.value.feeds.find { it.channel.feedUrl == item.channel.feedUrl }!!
     }
 
-    fun setRead(item: NewsItem, value: Boolean) {
+    private fun setRead(item: NewsItem, value: Boolean) {
         if (item.isRead == value)
             return
 
@@ -118,29 +121,13 @@ class NewsListViewModel @Inject constructor(
         }
     }
 
-    fun setLiked(item: NewsItem?, value: Boolean) {
+    private fun setLiked(item: NewsItem?, value: Boolean) {
         if (item == null || item.isInCollection == value)
             return
 
         viewModelScope.launch {
             runSafely {
                 repository.setLiked(item, value)
-            }
-        }
-    }
-
-    fun showItemDetails(newsItem: NewsItem?) {
-        if (newsItem != null) {
-            viewModelScope.launch {
-                _pendingEffect.emit(ShowDetails(newsItem))
-            }
-        }
-    }
-
-    fun showItemMenu(view: View, item: NewsItem?) {
-        if (item != null) {
-            viewModelScope.launch {
-                _pendingEffect.emit(ShowNewsItemMenu(view, item))
             }
         }
     }
@@ -170,8 +157,90 @@ class NewsListViewModel @Inject constructor(
             }
         }
     }
+    override fun submit(action: NewsListAction) {
+        when (action) {
+            RefreshNews -> refreshNews()
+
+            ShowAll -> filterList(All)
+
+            ShowFavorites -> filterList(Favorites)
+
+            is DownloadFeed -> with (action) {
+                tryGetFeed(url)
+            }
+
+            is ShowItemDetails -> with (action) {
+                view.findNavController().navigate(
+                    NewsListFragmentDirections
+                        .actionNewsFragmentToNewsDetailsFragment(item)
+                )
+            }
+
+            is ShowItemMenu -> with (action) {
+                showNewsItemMenu(view, item, this@NewsListViewModel)
+            }
+
+            is MarkItemAsRead -> with (action) {
+                setRead(item, true)
+            }
+
+            is MarkItemAsUnread -> with (action) {
+                setRead(item, false)
+            }
+
+            is LikeItem -> with (action) {
+                setLiked(item, true)
+            }
+
+            is UnlikeItem -> with (action) {
+                setLiked(item, false)
+            }
+
+            is GoToFeed -> with (action) {
+                viewModelScope.launch {
+                    filterList(
+                        ByFeed(
+                            withContext (Dispatchers.Default) {
+                                findFeed(item)
+                            }
+                        )
+                    )
+                }
+            }
+
+            is DeleteFeed -> with (action) {
+                viewModelScope.launch {
+                    deleteFeed(
+                        withContext (Dispatchers.Default) {
+                            findFeed(item)
+                        }
+                    )
+                }
+            }
+
+            is OpenDetailsInBrowser -> with (action) {
+                runSafely {
+                    ctx.startActivity(
+                        Intent(Intent.ACTION_VIEW, Uri.parse(item.itemLink))
+                    )
+                }
+            }
+
+            is ShareItem -> with (action) {
+                runSafely {
+                    ctx.startActivity(
+                        Intent().apply {
+                            this.action = Intent.ACTION_SEND
+                            putExtra(Intent.EXTRA_TEXT, item.itemLink)
+                            type = "text/plain"
+                        }
+                    )
+                }
+            }
+        }
+    }
 
     companion object {
-        val TAG = "news:${NewsListFragment::class.simpleName}"
+        val TAG = "${NewsListViewModel::class.simpleName}"
     }
 }

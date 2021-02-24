@@ -1,8 +1,6 @@
 package com.burachevsky.rssfeedreader.ui.screens.newslist
 
 import android.annotation.SuppressLint
-import android.content.Intent
-import android.net.Uri
 import android.view.View
 import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.view.menu.MenuPopupHelper
@@ -35,55 +33,29 @@ fun showNewsItemMenu(view: View, item: NewsItem, viewModel: NewsListViewModel) {
 
     menu.setOnMenuItemClickListener { menuItem ->
         when (menuItem.itemId) {
-            R.id.showDetails -> {
-                viewModel.showItemDetails(item)
-            }
+            R.id.showDetails -> viewModel.submit(
+                ShowItemDetails(view, item)
+            )
 
-            R.id.markAs -> {
-                viewModel.setRead(item, !item.isRead)
-            }
+            R.id.markAs -> viewModel.submit(
+                if (item.isRead) MarkItemAsUnread(item)
+                else MarkItemAsRead(item)
+            )
 
-            R.id.goToFeed -> {
-                viewModel.apply {
-                    viewModelScope.launch {
-                        filterList(
-                            ByFeed(
-                                withContext(Dispatchers.Default) {
-                                    findFeed(item)
-                                }
-                            )
-                        )
-                    }
-                }
-            }
+            R.id.goToFeed -> viewModel.submit(
+                GoToFeed(item)
+            )
 
-            R.id.deleteFeed -> {
-                viewModel.apply {
-                    viewModelScope.launch {
-                        deleteFeed(
-                            withContext(Dispatchers.Default) {
-                                findFeed(item)
-                            }
-                        )
-                    }
-                }
-            }
+            R.id.deleteFeed -> viewModel.submit(
+                DeleteFeed(item)
+            )
 
-            R.id.openInBrowser -> {
-                ctx.startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(item.itemLink))
-                )
-            }
-
-            R.id.share -> {
-                ctx.startActivity(
-                    Intent().apply {
-                        action = Intent.ACTION_SEND
-                        putExtra(Intent.EXTRA_TEXT, item.itemLink)
-                        type = "text/plain"
-                    }
-                )
-            }
+            R.id.openInBrowser -> viewModel.submit(
+                OpenDetailsInBrowser(item, ctx)
+            )
+            R.id.share -> viewModel.submit(
+                ShareItem(item, ctx)
+            )
         }
         true
     }
@@ -115,7 +87,7 @@ fun handleOptionsMenuItemSelected(
         }
 
         R.id.refresh -> {
-            viewModel.refreshNews()
+            viewModel.submit(RefreshNews)
             true
         }
 
