@@ -1,9 +1,11 @@
 package com.burachevsky.rssfeedreader.ui.screens.newslist
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import androidx.appcompat.view.menu.MenuBuilder
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
@@ -53,6 +55,7 @@ class NewsListFragment : Fragment(),
         return binding.root
     }
 
+    @SuppressLint("RestrictedApi")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d(TAG, "onViewCreated()")
 
@@ -61,6 +64,11 @@ class NewsListFragment : Fragment(),
             viewModel = this@NewsListFragment.newsListViewModel
 
             recyclerView.adapter = newsAdapter
+
+            val menu = toolbar.menu
+            if (menu is MenuBuilder) {
+                menu.setOptionalIconsVisible(true)
+            }
 
             toolbar.setOnMenuItemClickListener { menuItem ->
                 handleOptionsMenuItemSelected(
