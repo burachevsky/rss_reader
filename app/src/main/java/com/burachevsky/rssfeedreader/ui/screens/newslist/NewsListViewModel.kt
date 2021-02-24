@@ -41,6 +41,10 @@ class NewsListViewModel @Inject constructor(
 
     suspend fun subscribe() {
         Log.d(TAG, "subscribing")
+
+        if (!_state.value.isInitializing)
+            _state.emit(_state.value.copy(isInitializing = true))
+
         feedsFlow.collect {
             Log.d(TAG, "collecting feedsFlow")
             update(it)
