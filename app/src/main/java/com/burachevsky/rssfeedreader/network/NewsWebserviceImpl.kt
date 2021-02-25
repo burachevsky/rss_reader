@@ -21,7 +21,9 @@ class NewsWebserviceImpl @Inject constructor(
         withContext(Dispatchers.IO) {
             val input = downloadUrl(url) ?: throw IOException("never happens")
             withContext(Dispatchers.Default) {
-                parser.parse(input, url)
+                input.use {
+                    parser.parse(input, url)
+                }
             }
         }
 
