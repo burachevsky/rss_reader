@@ -12,6 +12,7 @@ import com.bumptech.glide.request.Request
 import com.bumptech.glide.request.target.SizeReadyCallback
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.transition.Transition
+import com.burachevsky.rssfeedreader.R
 
 class GlideImageGetter (
     private val textView: TextView
@@ -52,15 +53,19 @@ class GlideImageGetter (
                     drawable.setBounds(0, 0, maxWidth, calculatedHeight)
                     setBounds(0, 0, maxWidth, calculatedHeight)
                 } else {
-                    drawable.setBounds(0, 0, drawableWidth, drawableHeight)
-                    setBounds(0, 0, drawableWidth, drawableHeight)
+                    drawable.setBounds(0, 0, maxWidth, drawableHeight)
+                    setBounds(0, 0, maxWidth, drawableHeight)
                 }
                 textView.text = textView.text
             }
 
         override fun draw(canvas: Canvas) {
             if (drawable != null) {
-                drawable?.draw(canvas)
+                try {
+                    drawable?.draw(canvas)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
             }
         }
 

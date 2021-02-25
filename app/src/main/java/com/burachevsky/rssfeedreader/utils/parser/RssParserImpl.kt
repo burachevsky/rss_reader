@@ -102,6 +102,7 @@ class RssParserImpl @Inject constructor() : RssParser {
             when (name) {
                 "title" -> title = readContent("title")
                 "description" -> description = readContent("description")
+                "content:encoded" -> description = readContent("content:encoded")
                 "link" -> link = readContent("link")
                 "pubDate" -> pubDate = readContent("pubDate") { it.toDate() }
                 "category" -> categories.add(readContent("category"))
