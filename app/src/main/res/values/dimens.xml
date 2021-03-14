@@ -6,7 +6,7 @@
     <dimen name="filter_news_image_margin_start">8dp</dimen>
     <dimen name="filter_news_image_margin_top">8dp</dimen>
     <dimen name="filter_news_image_margin_bottom">8dp</dimen>
-    <dimen name="filter_news_image_margin_end">0dp</dimen>
+    <dimen name="filter_news_image_margin_end">8dp</dimen>
     <dimen name="filter_news_text_width">0dp</dimen>
     <dimen name="filter_news_text_margin_start" >16dp</dimen>
     <dimen name="filter_news_text_margin_top">8dp</dimen>
@@ -26,5 +26,6 @@
     <dimen name="news_list_fab_margin">24dp</dimen>
     <dimen name="news_list_fab_elevation">12dp</dimen>
     <dimen name="news_list_toolbar_elevation">0dp</dimen>
+    <dimen name="item_feed_card_elevation">0dp</dimen>
 
 </resources>
