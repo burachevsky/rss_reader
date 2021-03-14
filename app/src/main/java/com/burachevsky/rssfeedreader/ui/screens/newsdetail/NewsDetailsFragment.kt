@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.view.*
+import android.widget.CheckBox
 import androidx.appcompat.view.menu.MenuBuilder
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -74,17 +76,22 @@ class NewsDetailsFragment : Fragment(),
                 menu.setOptionalIconsVisible(true)
             }
 
+            val likeCheckBox = menu.findItem(R.id.like).actionView as CheckBox
+            likeCheckBox.apply {
+                buttonDrawable = ContextCompat.getDrawable(
+                    requireContext(),
+                    R.drawable.like_button_selector
+                )
+                setOnCheckedChangeListener { _, value ->
+                    newsDetailsViewModel.submit(
+                        if (value) LikeItem else UnlikeItem
+                    )
+                }
+                isChecked = args.item.isInCollection
+            }
+
             toolbar.setOnMenuItemClickListener {
                 when (it.itemId) {
-                    R.id.like -> {
-                        newsDetailsViewModel.submit(
-                            if (newsDetailsViewModel.state.value.item.isInCollection)
-                                UnlikeItem
-                            else LikeItem
-                        )
-                        true
-                    }
-
                     R.id.openInBrowser -> {
                         newsDetailsViewModel.submit(
                             OpenInBrowser(requireContext())
@@ -109,17 +116,12 @@ class NewsDetailsFragment : Fragment(),
         super.onViewCreated(view, savedInstanceState)
     }
 
-    @SuppressLint("UseCompatLoadingForDrawables")
     override fun renderState(state: NewsDetailsState) {
         Log.d(TAG, "rendering state")
 
         binding.apply {
             if (item == null || item!!.itemLink != state.item.itemLink)
                 item = state.item
-            toolbar.menu.findItem(R.id.like).icon = requireContext().getDrawable(
-                if (state.item.isInCollection) R.drawable.ic_like_filled
-                else R.drawable.ic_like
-            )
             executePendingBindings()
         }
     }
@@ -173,15 +175,12 @@ class NewsDetailsFragment : Fragment(),
         super.onDetach()
     }
 
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d(TAG, "onActivityCreated()")
         super.onActivityCreated(savedInstanceState)
     }
 
-
     companion object {
         val TAG = "${NewsDetailsFragment::class.simpleName}"
     }
-
 }

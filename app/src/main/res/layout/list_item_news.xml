@@ -30,22 +30,26 @@
                 style="?android:actionOverflowButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#FFFFFF"
                 android:contentDescription="@string/more"
-                android:src="@drawable/ic_more_vertical" />
+                android:src="@drawable/ic_more_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <com.burachevsky.rssfeedreader.utils.LikeButton
+            <CheckBox
                 android:id="@+id/likeButton"
-                style="?android:actionOverflowButtonStyle"
+                style="?attr/checkboxStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:button="@drawable/like_button_selector"
+                android:buttonTint="?attr/colorControlNormal"
                 android:contentDescription="@string/saveToCollection"
-                app:likeImage="@drawable/ic_like_filled"
-                app:unlikeImage="@drawable/ic_like"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider"
                 app:layout_constraintTop_toBottomOf="@id/itemMenu" />
 
             <TextView
