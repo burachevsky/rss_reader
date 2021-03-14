@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,11 +7,12 @@
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
             name="viewModel"
             type="com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel" />
 
-        <import type="android.view.View" />
     </data>
 
 
@@ -70,6 +72,7 @@
                 android:text="@string/list_is_empty"
                 android:textAppearance="?attr/textAppearanceHeadline5"
                 android:textColor="@color/read_text" />
+
         </LinearLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.screens.newsdetail.NewsDetailsFragment">
 
     <data>
+
         <variable
             name="item"
             type="com.burachevsky.rssfeedreader.data.domainobjects.NewsItem" />
+
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -29,6 +32,7 @@
                     setIconVisible="true"
                     android:elevation="@dimen/news_details_toolbar_elevation"
                     android:background="?attr/colorOnPrimary"/>
+
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.core.widget.NestedScrollView
@@ -53,6 +57,7 @@
                     android:textAppearance="?attr/textAppearanceHeadline5"
                     android:textIsSelectable="true"
                     tools:text="With British soccer clubs barred from traveling to Germany, the Champions League is disrupted." />
+
                 <View
                     android:id="@+id/divider"
                     android:layout_width="match_parent"
@@ -106,6 +111,7 @@
                     tools:text="Google, Nest Audio, News, google nest audio" />
 
             </LinearLayout>
+
         </androidx.core.widget.NestedScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -117,6 +123,7 @@
             android:contentDescription="@string/share"
             android:src="@drawable/ic_share"
             app:elevation="@dimen/news_details_fab_elevation" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>
