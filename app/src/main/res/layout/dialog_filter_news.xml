@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@android:color/transparent"
-            app:cardElevation="0dp">
+            app:cardElevation="@dimen/filter_news_card_elevation">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/all"
@@ -21,11 +21,12 @@
 
                 <ImageView
                     android:id="@+id/icon_all"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_width="@dimen/filter_news_image_width"
+                    android:layout_height="@dimen/filter_news_image_height"
+                    android:layout_marginEnd="@dimen/filter_news_image_margin_end"
+                    android:layout_marginStart="@dimen/filter_news_image_margin_start"
+                    android:layout_marginTop="@dimen/filter_news_image_margin_top"
+                    android:layout_marginBottom="@dimen/filter_news_image_margin_bottom"
                     android:contentDescription="@string/feed_icon"
                     android:src="@drawable/ic_rss_feed"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -33,12 +34,12 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/filter_news_text_width"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/filter_news_text_margin_start"
+                    android:layout_marginTop="@dimen/filter_news_text_margin_top"
+                    android:layout_marginEnd="@dimen/filter_news_text_margin_end"
+                    android:layout_marginBottom="@dimen/filter_news_text_margin_bottom"
                     android:text="@string/all"
                     android:textAppearance="?attr/textAppearanceBody2"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -47,13 +48,14 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@android:color/transparent"
-            app:cardElevation="0dp">
+            app:cardElevation="@dimen/filter_news_card_elevation">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/favorites"
@@ -62,11 +64,12 @@
 
                 <ImageView
                     android:id="@+id/icon_favorites"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_width="@dimen/filter_news_image_width"
+                    android:layout_height="@dimen/filter_news_image_height"
+                    android:layout_marginStart="@dimen/filter_news_image_margin_start"
+                    android:layout_marginEnd="@dimen/filter_news_image_margin_end"
+                    android:layout_marginTop="@dimen/filter_news_image_margin_top"
+                    android:layout_marginBottom="@dimen/filter_news_image_margin_bottom"
                     android:contentDescription="@string/feed_icon"
                     android:src="@drawable/ic_like_filled"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -74,12 +77,12 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/filter_news_text_width"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/filter_news_text_margin_start"
+                    android:layout_marginTop="@dimen/filter_news_text_margin_top"
+                    android:layout_marginEnd="@dimen/filter_news_text_margin_end"
+                    android:layout_marginBottom="@dimen/filter_news_text_margin_bottom"
                     android:text="@string/favorites"
                     android:textAppearance="?attr/textAppearanceBody2"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -88,6 +91,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </com.google.android.material.card.MaterialCardView>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -97,4 +101,5 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </LinearLayout>
+
 </layout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.text.format.DateFormat" />
 
         <variable
             name="item"
@@ -13,13 +13,14 @@
         <variable
             name="viewModel"
             type="com.burachevsky.rssfeedreader.ui.screens.newslist.NewsListViewModel" />
+
     </data>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="12dp">
+        android:layout_margin="@dimen/item_news_card_margin"
+        app:cardCornerRadius="@dimen/item_news_card_corner_radius">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -41,12 +42,12 @@
                 style="?attr/checkboxStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/item_news_like_button_margin_bottom"
                 android:button="@drawable/like_button_selector"
                 android:buttonTint="?attr/colorControlNormal"
                 android:contentDescription="@string/saveToCollection"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
+                android:minWidth="@dimen/item_news_like_button_min_width"
+                android:minHeight="@dimen/item_news_like_button_min_height"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/divider"
@@ -54,14 +55,14 @@
 
             <TextView
                 android:id="@+id/txt_channel"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/item_news_txt_channel_width"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/item_news_txt_channel_margin_start"
+                android:layout_marginTop="@dimen/item_news_txt_channel_margin_top"
                 android:ellipsize="end"
                 android:lines="1"
                 android:text="@{item.feed.title}"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                app:setTextColor="@{item}"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textStyle="italic"
                 app:layout_constraintEnd_toStartOf="@+id/itemMenu"
@@ -73,36 +74,35 @@
                 android:id="@+id/txt_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
-                android:text='@{DateFormat.format("dd.MM hh:mm", item.pubDate)}'
+                android:layout_marginStart="@dimen/item_news_txt_date_margin_start"
+                app:setTextColor="@{item}"
+                app:formatDate="@{item}"
                 android:textAppearance="?attr/textAppearanceCaption"
                 app:layout_constraintStart_toEndOf="@+id/channel_icon"
                 app:layout_constraintTop_toBottomOf="@+id/txt_channel"
                 tools:text="08.02 04:30" />
 
-
             <View
                 android:id="@+id/divider"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
+                android:layout_width="@dimen/item_news_divider_width"
+                android:layout_height="@dimen/item_news_divider_height"
                 android:background="?android:attr/listDivider"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/item_news_divider_margin_start"
                 app:layout_constraintTop_toBottomOf="@+id/txt_date"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/itemMenu"/>
 
             <TextView
                 android:id="@+id/txt_newsTitle"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/item_news_txt_newsTitle_width"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="@dimen/item_news_txt_newsTitle_margin_start"
+                android:layout_marginBottom="@dimen/item_news_txt_newsTitle_margin_bottom"
                 android:gravity="center_vertical"
                 android:text="@{item.title}"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                app:setTextColor="@{item}"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textSize="16sp"
+                android:textSize="@dimen/item_news_txt_newsTitle_text_size"
                 android:textDirection="ltr"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/likeButton"
@@ -112,17 +112,20 @@
 
             <ImageView
                 android:id="@+id/channel_icon"
-                android:layout_width="45dp"
-                android:layout_height="0dp"
+                android:layout_width="@dimen/item_news_channel_icon_width"
+                android:layout_height="@dimen/item_news_channel_icon_height"
                 android:contentDescription="@string/feed_icon"
-                android:paddingStart="8dp"
-                android:paddingTop="8dp"
-                android:paddingEnd="0dp"
-                android:paddingBottom="8dp"
+                android:paddingStart="@dimen/item_news_channel_icon_padding_start"
+                android:paddingTop="@dimen/item_news_channel_icon_padding_top"
+                android:paddingEnd="@dimen/item_news_channel_icon_padding_end"
+                android:paddingBottom="@dimen/item_news_channel_icon_padding_bottom"
                 app:layout_constraintBottom_toTopOf="@+id/txt_newsTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:setIconVisible="@{item}"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </com.google.android.material.card.MaterialCardView>
+
 </layout>
