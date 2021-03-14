@@ -26,6 +26,30 @@
     <dimen name="news_list_fab_margin">24dp</dimen>
     <dimen name="news_list_fab_elevation">12dp</dimen>
     <dimen name="news_list_toolbar_elevation">0dp</dimen>
+
     <dimen name="item_feed_card_elevation">0dp</dimen>
+
+    <dimen name="item_news_card_margin">8dp</dimen>
+    <dimen name="item_news_card_corner_radius">12dp</dimen>
+    <dimen name="item_news_like_button_margin_bottom">8dp</dimen>
+    <dimen name="item_news_like_button_min_width">0dp</dimen>
+    <dimen name="item_news_like_button_min_height">0dp</dimen>
+    <dimen name="item_news_txt_channel_width">0dp</dimen>
+    <dimen name="item_news_txt_channel_margin_start">8dp</dimen>
+    <dimen name="item_news_txt_channel_margin_top">8dp</dimen>
+    <dimen name="item_news_txt_date_margin_start">8dp</dimen>
+    <dimen name="item_news_divider_width">0dp</dimen>
+    <dimen name="item_news_divider_height">1dp</dimen>
+    <dimen name="item_news_divider_margin_start">8dp</dimen>
+    <dimen name="item_news_txt_newsTitle_width">0dp</dimen>
+    <dimen name="item_news_txt_newsTitle_margin_start">8dp</dimen>
+    <dimen name="item_news_txt_newsTitle_margin_bottom">8dp</dimen>
+    <dimen name="item_news_txt_newsTitle_text_size">16sp</dimen>
+    <dimen name="item_news_channel_icon_width">45dp</dimen>
+    <dimen name="item_news_channel_icon_height">0dp</dimen>
+    <dimen name="item_news_channel_icon_padding_start">8dp</dimen>
+    <dimen name="item_news_channel_icon_padding_top">8dp</dimen>
+    <dimen name="item_news_channel_icon_padding_end">0dp</dimen>
+    <dimen name="item_news_channel_icon_padding_bottom">8dp</dimen>
 
 </resources>
