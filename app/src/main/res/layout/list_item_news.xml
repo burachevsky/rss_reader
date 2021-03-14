@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.text.format.DateFormat" />
-
         <variable
             name="item"
             type="com.burachevsky.rssfeedreader.data.domainobjects.NewsItem" />
@@ -61,7 +59,7 @@
                 android:ellipsize="end"
                 android:lines="1"
                 android:text="@{item.feed.title}"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                app:setTextColor="@{item}"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textStyle="italic"
                 app:layout_constraintEnd_toStartOf="@+id/itemMenu"
@@ -74,8 +72,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/item_news_txt_date_margin_start"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
-                android:text='@{DateFormat.format("dd.MM hh:mm", item.pubDate)}'
+                app:setTextColor="@{item}"
+                app:formatDate="@{item}"
                 android:textAppearance="?attr/textAppearanceCaption"
                 app:layout_constraintStart_toEndOf="@+id/channel_icon"
                 app:layout_constraintTop_toBottomOf="@+id/txt_channel"
@@ -100,7 +98,7 @@
                 android:layout_marginBottom="@dimen/item_news_txt_newsTitle_margin_bottom"
                 android:gravity="center_vertical"
                 android:text="@{item.title}"
-                android:textColor="@{item.read ? @color/read_text : @color/unread_text}"
+                app:setTextColor="@{item}"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textSize="@dimen/item_news_txt_newsTitle_text_size"
                 android:textDirection="ltr"
