@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="filter_news_card_elevation">0dp</dimen>
-
     <dimen name="filter_news_image_width">24dp</dimen>
     <dimen name="filter_news_image_height">24dp</dimen>
     <dimen name="filter_news_image_margin_start">8dp</dimen>
     <dimen name="filter_news_image_margin_top">8dp</dimen>
     <dimen name="filter_news_image_margin_bottom">8dp</dimen>
     <dimen name="filter_news_image_margin_end">0dp</dimen>
-
     <dimen name="filter_news_text_width">0dp</dimen>
     <dimen name="filter_news_text_margin_start" >16dp</dimen>
     <dimen name="filter_news_text_margin_top">8dp</dimen>
     <dimen name="filter_news_text_margin_end">8dp</dimen>
     <dimen name="filter_news_text_margin_bottom">8dp</dimen>
+
     <dimen name="news_details_toolbar_elevation">0dp</dimen>
     <dimen name="news_details_padding_top">0dp</dimen>
     <dimen name="news_details_padding_end">16dp</dimen>
@@ -23,5 +22,9 @@
     <dimen name="news_details_categories_margin_bottom">70dp</dimen>
     <dimen name="news_details_fab_margin">24dp</dimen>
     <dimen name="news_details_fab_elevation">12dp</dimen>
+
+    <dimen name="news_list_fab_margin">24dp</dimen>
+    <dimen name="news_list_fab_elevation">12dp</dimen>
+    <dimen name="news_list_toolbar_elevation">0dp</dimen>
 
 </resources>

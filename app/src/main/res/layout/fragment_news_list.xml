@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/colorOnPrimary"
-                android:elevation="0dp"
+                android:elevation="@dimen/news_list_toolbar_elevation"
                 app:menu="@menu/news_list_menu"
                 tools:title="All" />
 
@@ -77,12 +77,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/news_list_fab_margin"
             android:contentDescription="@string/filtering_news"
             android:src="@drawable/ic_filter_list"
-            app:elevation="12dp" />
+            app:elevation="@dimen/news_list_fab_elevation" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
 </layout>
