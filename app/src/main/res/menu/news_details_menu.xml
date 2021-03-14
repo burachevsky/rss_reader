@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/like"
-        android:icon="@drawable/ic_like"
+        android:icon="@drawable/like_button_selector"
         android:title="@string/add_to_collection"
+        android:checkable="true"
+        app:actionViewClass="android.widget.CheckBox"
         app:showAsAction="ifRoom"/>
 
     <item

@@ -44,7 +44,6 @@
                 android:layout_marginBottom="8dp"
                 android:button="@drawable/like_button_selector"
                 android:buttonTint="?attr/colorControlNormal"
-                android:checked="true"
                 android:contentDescription="@string/saveToCollection"
                 android:minWidth="0dp"
                 android:minHeight="0dp"
