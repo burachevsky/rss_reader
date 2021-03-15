@@ -13,6 +13,6 @@ interface NewsCategoryDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertItemCategoryCrossRef(itemCategoryCrossRef: ItemCategoryCrossRef)
 
-    @Query("DELETE FROM items_with_categories WHERE itemLink = :itemLink")
-    suspend fun deleteItemCategoryCrossRefs(itemLink: String)
+    @Query("DELETE FROM items_with_categories WHERE itemId = :itemId")
+    suspend fun deleteItemCategoryCrossRefs(itemId: Int)
 }
