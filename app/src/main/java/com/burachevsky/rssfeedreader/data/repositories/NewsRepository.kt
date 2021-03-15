@@ -2,10 +2,7 @@ package com.burachevsky.rssfeedreader.data.repositories
 
 import android.util.Log
 import com.burachevsky.rssfeedreader.data.AppDatabase
-import com.burachevsky.rssfeedreader.data.daos.FavoriteItemDao
-import com.burachevsky.rssfeedreader.data.daos.NewsChannelDao
-import com.burachevsky.rssfeedreader.data.daos.NewsItemDao
-import com.burachevsky.rssfeedreader.data.daos.ReadItemDao
+import com.burachevsky.rssfeedreader.data.daos.*
 import com.burachevsky.rssfeedreader.data.entities.*
 import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
@@ -22,7 +19,8 @@ class NewsRepository @Inject constructor (
     private val newsChannelDao: NewsChannelDao,
     private val newsItemDao: NewsItemDao,
     private val favoriteItemDao: FavoriteItemDao,
-    private val readItemDao: ReadItemDao
+    private val readItemDao: ReadItemDao,
+    private val newsCategoryDao: NewsCategoryDao
 ) {
 
     fun observeFeeds(): Flow<List<FeedWithItems>> {

@@ -3,10 +3,7 @@ package com.burachevsky.rssfeedreader.di
 import android.content.Context
 import androidx.room.Room
 import com.burachevsky.rssfeedreader.data.AppDatabase
-import com.burachevsky.rssfeedreader.data.daos.FavoriteItemDao
-import com.burachevsky.rssfeedreader.data.daos.NewsChannelDao
-import com.burachevsky.rssfeedreader.data.daos.NewsItemDao
-import com.burachevsky.rssfeedreader.data.daos.ReadItemDao
+import com.burachevsky.rssfeedreader.data.daos.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -46,5 +43,10 @@ object DatabaseModule {
     @Provides
     fun provideReadItemDao(appDatabase: AppDatabase): ReadItemDao {
         return appDatabase.readItemDao()
+    }
+
+    @Provides
+    fun provideNewsCategoryDao(appDatabase: AppDatabase): NewsCategoryDao {
+        return appDatabase.newsCategoryDao()
     }
 }

@@ -3,10 +3,7 @@ package com.burachevsky.rssfeedreader.data
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.burachevsky.rssfeedreader.data.daos.FavoriteItemDao
-import com.burachevsky.rssfeedreader.data.daos.NewsChannelDao
-import com.burachevsky.rssfeedreader.data.daos.NewsItemDao
-import com.burachevsky.rssfeedreader.data.daos.ReadItemDao
+import com.burachevsky.rssfeedreader.data.daos.*
 import com.burachevsky.rssfeedreader.data.entities.FavoriteItem
 import com.burachevsky.rssfeedreader.data.entities.NewsChannelEntity
 import com.burachevsky.rssfeedreader.data.entities.NewsItemEntity
@@ -29,4 +26,5 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun newsItemDao(): NewsItemDao
     abstract fun favoriteItemDao(): FavoriteItemDao
     abstract fun readItemDao(): ReadItemDao
+    abstract fun newsCategoryDao(): NewsCategoryDao
 }
