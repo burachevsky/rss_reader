@@ -2,10 +2,7 @@ package com.burachevsky.rssfeedreader.data.repositories
 
 import android.util.Log
 import com.burachevsky.rssfeedreader.data.AppDatabase
-import com.burachevsky.rssfeedreader.data.daos.FavoriteItemDao
-import com.burachevsky.rssfeedreader.data.daos.NewsChannelDao
-import com.burachevsky.rssfeedreader.data.daos.NewsItemDao
-import com.burachevsky.rssfeedreader.data.daos.ReadItemDao
+import com.burachevsky.rssfeedreader.data.daos.*
 import com.burachevsky.rssfeedreader.data.entities.*
 import com.burachevsky.rssfeedreader.data.domainobjects.FeedWithItems
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
@@ -22,7 +19,8 @@ class NewsRepository @Inject constructor (
     private val newsChannelDao: NewsChannelDao,
     private val newsItemDao: NewsItemDao,
     private val favoriteItemDao: FavoriteItemDao,
-    private val readItemDao: ReadItemDao
+    private val readItemDao: ReadItemDao,
+    private val newsCategoryDao: NewsCategoryDao
 ) {
 
     fun observeFeeds(): Flow<List<FeedWithItems>> {
@@ -32,7 +30,7 @@ class NewsRepository @Inject constructor (
     }
 
     suspend fun setLiked(item: NewsItem, value: Boolean) {
-        val favItem = FavoriteItem(item.itemLink)
+        val favItem = FavoriteItem(item.itemLink.hashCode())
         if (value)
             favoriteItemDao.insertFavoriteItem(favItem)
         else
@@ -40,7 +38,7 @@ class NewsRepository @Inject constructor (
     }
 
     suspend fun setRead(item: NewsItem, value: Boolean) {
-        val readItem = ReadItem(item.itemLink)
+        val readItem = ReadItem(item.itemLink.hashCode())
         if (value)
             readItemDao.insertReadItem(readItem)
         else
@@ -54,7 +52,7 @@ class NewsRepository @Inject constructor (
             database.runInTransaction {
                 runBlocking {
                     newsChannelDao.insertChannel(feed.feed.asEntity())
-                    newsItemDao.insertItems(feed.items.asEntities())
+                    insertItems(feed.items)
                 }
             }
         }
@@ -75,12 +73,36 @@ class NewsRepository @Inject constructor (
             database.runInTransaction {
                 runBlocking {
                     newsChannelDao.deleteChannel(feedWithItems.feed.asEntity())
-                    newsItemDao.deleteItemsFromFeed(feedWithItems.feed.feedUrl)
-                    feedWithItems.items.forEach { item ->
-                        setRead(item, false)
-                        setLiked(item, false)
-                    }
+                    deleteItems(feedWithItems.feed, feedWithItems.items)
                 }
+            }
+        }
+    }
+
+    private suspend fun insertItems(items: List<NewsItem>) {
+        newsItemDao.insertItems(items.asEntities())
+        items.forEach {
+            insertCategories(it)
+        }
+    }
+
+    private suspend fun deleteItems(feed: NewsFeed, items: List<NewsItem>) {
+        newsItemDao.deleteItemsFromFeed(feed.feedUrl.hashCode())
+        items.forEach { item ->
+            setRead(item, false)
+            setLiked(item, false)
+            newsCategoryDao.deleteItemCategoryCrossRefs(item.itemLink.hashCode())
+        }
+    }
+
+    private suspend fun insertCategories(item: NewsItem) {
+        item.categories.forEach {
+            val category = NewsCategoryEntity(it.hashCode(), it)
+            newsCategoryDao.run {
+                insertCategory(category)
+                insertItemCategoryCrossRef(
+                    ItemCategoryCrossRef(item.itemLink.hashCode(), category.categoryId)
+                )
             }
         }
     }

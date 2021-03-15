@@ -48,10 +48,14 @@ class NewsListAdapter (
                        ShowItemDetails(root, item!!)
                    )
                }
-               likeButton.onLikeListener = { value ->
-                   newsListViewModel.submit(
-                       if (value) LikeItem(item!!) else UnlikeItem(item!!)
-                   )
+               likeButton.setOnCheckedChangeListener { _, value ->
+                   item!!.let { item ->
+                       if (item.isInCollection != value) {
+                           newsListViewModel.submit(
+                               if (value) LikeItem(item) else UnlikeItem(item)
+                           )
+                       }
+                   }
                }
                itemMenu.setOnClickListener {
                    newsListViewModel.submit(ShowItemMenu(itemMenu, item!!))
@@ -62,7 +66,7 @@ class NewsListAdapter (
         fun bind(newsItem: NewsItem) {
             binding.apply {
                 item = newsItem
-                likeButton.init(newsItem.isInCollection)
+                likeButton.isChecked = newsItem.isInCollection
                 executePendingBindings()
             }
         }

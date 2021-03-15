@@ -16,6 +16,6 @@ interface NewsItemDao {
     @Query("DELETE FROM news_items")
     suspend fun clear()
 
-    @Query("DELETE FROM news_items WHERE channelFeedUrl = :url")
-    suspend fun deleteItemsFromFeed(url: String)
+    @Query("DELETE FROM news_items WHERE itemChannelId = :feedId")
+    suspend fun deleteItemsFromFeed(feedId: Int)
 }
