@@ -52,7 +52,7 @@ class NewsRepository @Inject constructor (
             database.runInTransaction {
                 runBlocking {
                     newsChannelDao.insertChannel(feed.feed.asEntity())
-                    newsItemDao.insertItems(feed.items.asEntities())
+                    insertItems(feed.items)
                 }
             }
         }
@@ -73,12 +73,36 @@ class NewsRepository @Inject constructor (
             database.runInTransaction {
                 runBlocking {
                     newsChannelDao.deleteChannel(feedWithItems.feed.asEntity())
-                    newsItemDao.deleteItemsFromFeed(feedWithItems.feed.feedUrl)
-                    feedWithItems.items.forEach { item ->
-                        setRead(item, false)
-                        setLiked(item, false)
-                    }
+                    deleteItems(feedWithItems.feed, feedWithItems.items)
                 }
+            }
+        }
+    }
+
+    private suspend fun insertItems(items: List<NewsItem>) {
+        newsItemDao.insertItems(items.asEntities())
+        items.forEach {
+            insertCategories(it)
+        }
+    }
+
+    private suspend fun deleteItems(feed: NewsFeed, items: List<NewsItem>) {
+        newsItemDao.deleteItemsFromFeed(feed.feedUrl)
+        items.forEach { item ->
+            setRead(item, false)
+            setLiked(item, false)
+            newsCategoryDao.deleteItemCategoryCrossRefs(item.itemLink)
+        }
+    }
+
+    private suspend fun insertCategories(item: NewsItem) {
+        item.categories.forEach {
+            val category = NewsCategoryEntity(it.hashCode(), it)
+            newsCategoryDao.run {
+                insertCategory(category)
+                insertItemCategoryCrossRef(
+                    ItemCategoryCrossRef(item.itemLink, category.categoryId)
+                )
             }
         }
     }
