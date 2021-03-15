@@ -19,7 +19,6 @@ import com.burachevsky.rssfeedreader.ui.base.Renderer
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
-import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class NewsListFragment : Fragment(),
@@ -30,8 +29,6 @@ class NewsListFragment : Fragment(),
     private lateinit var newsAdapter: NewsListAdapter
 
     private lateinit var binding: FragmentNewsListBinding
-
-    private var job: Job? = null
 
     private var rvSavedState: Parcelable? = null
 
@@ -95,24 +92,7 @@ class NewsListFragment : Fragment(),
             }
         }
 
-        job = viewLifecycleOwner.lifecycleScope.launch {
-            launch {
-                newsListViewModel.pendingEffect.collect(::renderEffect)
-            }
-            launch {
-                newsListViewModel.state.collect(::renderState)
-            }
-
-            newsListViewModel.subscribe()
-        }
-
         super.onViewCreated(view, savedInstanceState)
-    }
-
-    override fun onDestroyView() {
-        Log.d(TAG, "onDestroyView()")
-        job?.cancel()
-        super.onDestroyView()
     }
 
     override fun renderState(state: NewsListState) {
@@ -175,7 +155,23 @@ class NewsListFragment : Fragment(),
 
     override fun onStart() {
         Log.d(TAG, "onStart()")
+        newsListViewModel.subscribe(
+            viewLifecycleOwner.lifecycleScope,
+            ::renderState,
+            ::renderEffect
+        )
         super.onStart()
+    }
+
+    override fun onStop() {
+        Log.d(TAG, "onStop()")
+        newsListViewModel.unsubscribe()
+        super.onStop()
+    }
+
+    override fun onDestroyView() {
+        Log.d(TAG, "onDestroyView()")
+        super.onDestroyView()
     }
 
     override fun onResume() {
@@ -191,11 +187,6 @@ class NewsListFragment : Fragment(),
     override fun onPause() {
         Log.d(TAG, "onPause()")
         super.onPause()
-    }
-
-    override fun onStop() {
-        Log.d(TAG, "onStop()")
-        super.onStop()
     }
 
     override fun onAttach(context: Context) {

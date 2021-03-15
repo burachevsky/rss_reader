@@ -40,16 +40,36 @@ class NewsListViewModel @Inject constructor(
 
     private val feedsFlow = repository.observeFeeds()
 
-    suspend fun subscribe() {
+    private var job: Job? = null
+
+    fun subscribe(
+        scope: CoroutineScope,
+        stateRenderer: (NewsListState) -> Unit,
+        effectRenderer: (NewsListEffect) -> Unit
+    ) {
         Log.d(TAG, "subscribing")
 
-        if (!_state.value.isInitializing)
-            _state.emit(_state.value.copy(isInitializing = true))
+        job = scope.launch {
+            launch {
+                state.collect { stateRenderer(it) }
+            }
+            launch {
+                pendingEffect.collect { effectRenderer(it) }
+            }
 
-        feedsFlow.collect {
-            Log.d(TAG, "collecting feedsFlow")
-            update(it)
+            if (!_state.value.isInitializing)
+                _state.emit(_state.value.copy(isInitializing = true))
+
+            feedsFlow.collect {
+                Log.d(TAG, "collecting feedsFlow")
+                update(it)
+            }
         }
+    }
+
+    fun unsubscribe() {
+        Log.d(TAG, "unsubscribing")
+        job?.cancel()
     }
 
     private fun update(feedWithItems: List<FeedWithItems>) {
