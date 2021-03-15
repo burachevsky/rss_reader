@@ -30,7 +30,7 @@ class NewsRepository @Inject constructor (
     }
 
     suspend fun setLiked(item: NewsItem, value: Boolean) {
-        val favItem = FavoriteItem(item.itemLink)
+        val favItem = FavoriteItem(item.itemLink.hashCode())
         if (value)
             favoriteItemDao.insertFavoriteItem(favItem)
         else
@@ -38,7 +38,7 @@ class NewsRepository @Inject constructor (
     }
 
     suspend fun setRead(item: NewsItem, value: Boolean) {
-        val readItem = ReadItem(item.itemLink)
+        val readItem = ReadItem(item.itemLink.hashCode())
         if (value)
             readItemDao.insertReadItem(readItem)
         else
@@ -87,11 +87,11 @@ class NewsRepository @Inject constructor (
     }
 
     private suspend fun deleteItems(feed: NewsFeed, items: List<NewsItem>) {
-        newsItemDao.deleteItemsFromFeed(feed.feedUrl)
+        newsItemDao.deleteItemsFromFeed(feed.feedUrl.hashCode())
         items.forEach { item ->
             setRead(item, false)
             setLiked(item, false)
-            newsCategoryDao.deleteItemCategoryCrossRefs(item.itemLink)
+            newsCategoryDao.deleteItemCategoryCrossRefs(item.itemLink.hashCode())
         }
     }
 
@@ -101,7 +101,7 @@ class NewsRepository @Inject constructor (
             newsCategoryDao.run {
                 insertCategory(category)
                 insertItemCategoryCrossRef(
-                    ItemCategoryCrossRef(item.itemLink, category.categoryId)
+                    ItemCategoryCrossRef(item.itemLink.hashCode(), category.categoryId)
                 )
             }
         }
