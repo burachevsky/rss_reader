@@ -13,10 +13,6 @@ interface ReadItemDao {
     @Delete
     suspend fun deleteReadItem(item: ReadItem)
 
-    @Query("SELECT EXISTS(SELECT * FROM read_items WHERE link = :link LIMIT 1)")
-    fun isRead(link: String): Boolean
-
-    @Transaction
-    @Query("SELECT link FROM read_items")
-    fun getReadItemsFlow(): Flow<List<String>>
+    @Query("SELECT EXISTS(SELECT * FROM read_items WHERE readItemId = :itemId LIMIT 1)")
+    fun isRead(itemId: Int): Boolean
 }

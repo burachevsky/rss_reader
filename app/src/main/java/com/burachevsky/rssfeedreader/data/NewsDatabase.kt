@@ -16,7 +16,7 @@ import com.burachevsky.rssfeedreader.utils.Converters
         NewsCategoryEntity::class,
         ItemCategoryCrossRef::class
     ],
-    version = 4,
+    version = 8,
     exportSchema = false
 )
 @TypeConverters(Converters::class)

@@ -1,12 +1,14 @@
 package com.burachevsky.rssfeedreader.data.entities
 
 import androidx.room.Entity
+import androidx.room.Index
 
 @Entity(
     tableName = "items_with_categories",
-    primaryKeys = ["itemLink", "categoryId"]
+    primaryKeys = ["itemId", "categoryId"],
+    indices = [Index("itemId"), Index("categoryId")]
 )
 data class ItemCategoryCrossRef(
-    val itemLink: String,
+    val itemId: Int,
     val categoryId: Int
 )

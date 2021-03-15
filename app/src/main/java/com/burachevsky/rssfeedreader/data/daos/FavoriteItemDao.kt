@@ -13,10 +13,6 @@ interface FavoriteItemDao {
     @Delete
     suspend fun deleteFavoriteItem(item: FavoriteItem)
 
-    @Query("SELECT EXISTS(SELECT * FROM favorite_items WHERE link = :link LIMIT 1)")
-    fun isFavorite(link: String): Boolean
-
-    @Transaction
-    @Query("SELECT link FROM favorite_items")
-    fun getFavoritesFlow(): Flow<List<String>>
+    @Query("SELECT EXISTS(SELECT * FROM favorite_items WHERE favoriteItemId = :itemId LIMIT 1)")
+    fun isFavorite(itemId: Int): Boolean
 }
