@@ -4,10 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.burachevsky.rssfeedreader.data.daos.*
-import com.burachevsky.rssfeedreader.data.entities.FavoriteItem
-import com.burachevsky.rssfeedreader.data.entities.NewsChannelEntity
-import com.burachevsky.rssfeedreader.data.entities.NewsItemEntity
-import com.burachevsky.rssfeedreader.data.entities.ReadItem
+import com.burachevsky.rssfeedreader.data.entities.*
 import com.burachevsky.rssfeedreader.utils.Converters
 
 @Database(
@@ -15,9 +12,11 @@ import com.burachevsky.rssfeedreader.utils.Converters
         NewsChannelEntity::class,
         NewsItemEntity::class,
         FavoriteItem::class,
-        ReadItem::class
+        ReadItem::class,
+        NewsCategoryEntity::class,
+        ItemCategoryCrossRef::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
