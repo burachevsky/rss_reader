@@ -12,7 +12,6 @@ data class NewsItemEntity(
     val title: String,
     val description: String,
     val pubDate: Date,
-    val categories: List<String>,
     val author: String?,
     val channelFeedUrl: String,
 )
@@ -21,7 +20,7 @@ fun List<NewsItem>.asEntities(): List<NewsItemEntity> {
     return map {
         NewsItemEntity(
             it.itemLink, it.title, it.description,
-            it.pubDate, it.categories, it.author,
+            it.pubDate, it.author,
             it.feed.feedUrl
         )
     }

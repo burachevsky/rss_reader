@@ -16,26 +16,6 @@ data class ChannelWithItemsWithProperties(
     val items: List<ItemWithProperties>
 )
 
-
-fun ChannelWithItemsWithProperties.asDomainItemList(): List<NewsItem> {
-    val channel = this.channel.asDomain()
-
-    return items.map { itemWithProperties ->
-        val item = itemWithProperties.item
-        NewsItem(
-            feed = channel,
-            title = item.title,
-            description = item.description,
-            pubDate = item.pubDate,
-            itemLink = item.itemLink,
-            categories = item.categories,
-            author = item.author,
-            isInCollection = itemWithProperties.favorite != null,
-            isRead = itemWithProperties.read != null
-        )
-    }
-}
-
 fun ChannelWithItemsWithProperties.asDomain(): FeedWithItems {
     val channel = this.channel.asDomain()
     return FeedWithItems(
@@ -48,7 +28,7 @@ fun ChannelWithItemsWithProperties.asDomain(): FeedWithItems {
                 description = item.description,
                 pubDate = item.pubDate,
                 itemLink = item.itemLink,
-                categories = item.categories,
+                categories = itemWithProperties.categories.map { it.name },
                 author = item.author,
                 isInCollection = itemWithProperties.favorite != null,
                 isRead = itemWithProperties.read != null

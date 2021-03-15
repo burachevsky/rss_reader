@@ -1,6 +1,7 @@
 package com.burachevsky.rssfeedreader.data.entities
 
 import androidx.room.Embedded
+import androidx.room.Junction
 import androidx.room.Relation
 
 data class ItemWithProperties(
@@ -17,5 +18,12 @@ data class ItemWithProperties(
         parentColumn = "itemLink",
         entityColumn = "link",
     )
-    val favorite: FavoriteItem?
+    val favorite: FavoriteItem?,
+
+    @Relation(
+        parentColumn = "itemLink",
+        entityColumn = "categoryId",
+        associateBy = Junction(ItemCategoryCrossRef::class)
+    )
+    val categories: List<NewsCategoryEntity>
 )
