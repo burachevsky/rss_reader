@@ -8,6 +8,7 @@ import java.util.*
 @Entity(tableName = "news_items")
 data class NewsItemEntity(
     @PrimaryKey(autoGenerate = false)
+    val itemId: Int,
     val itemLink: String,
     val title: String,
     val description: String,
@@ -19,6 +20,7 @@ data class NewsItemEntity(
 fun List<NewsItem>.asEntities(): List<NewsItemEntity> {
     return map {
         NewsItemEntity(
+            it.itemLink.hashCode(),
             it.itemLink, it.title, it.description,
             it.pubDate, it.author,
             it.feed.feedUrl
