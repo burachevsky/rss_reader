@@ -9,19 +9,19 @@ data class ItemWithProperties(
     val item: NewsItemEntity,
 
     @Relation(
-        parentColumn = "itemLink",
-        entityColumn = "link",
+        parentColumn = "itemId",
+        entityColumn = "readItemId",
     )
     val read: ReadItem?,
 
     @Relation(
-        parentColumn = "itemLink",
-        entityColumn = "link",
+        parentColumn = "itemId",
+        entityColumn = "favoriteItemId",
     )
     val favorite: FavoriteItem?,
 
     @Relation(
-        parentColumn = "itemLink",
+        parentColumn = "itemId",
         entityColumn = "categoryId",
         associateBy = Junction(ItemCategoryCrossRef::class)
     )

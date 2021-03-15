@@ -6,7 +6,8 @@ import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 
 @Entity(tableName = "news_channels")
 data class NewsChannelEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = false)
+    val channelId: Int,
     val feedUrl: String,
     val title: String,
     val link: String,
@@ -19,5 +20,5 @@ fun NewsChannelEntity.asDomain(): NewsFeed {
 }
 
 fun NewsFeed.asEntity(): NewsChannelEntity {
-    return NewsChannelEntity(feedUrl, title, link, description, logo)
+    return NewsChannelEntity(feedUrl.hashCode(), feedUrl, title, link, description, logo)
 }

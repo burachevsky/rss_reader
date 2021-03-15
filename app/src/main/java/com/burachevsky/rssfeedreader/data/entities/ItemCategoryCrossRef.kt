@@ -4,9 +4,9 @@ import androidx.room.Entity
 
 @Entity(
     tableName = "items_with_categories",
-    primaryKeys = ["itemLink", "categoryId"]
+    primaryKeys = ["itemId", "categoryId"]
 )
 data class ItemCategoryCrossRef(
-    val itemLink: String,
+    val itemId: Int,
     val categoryId: Int
 )

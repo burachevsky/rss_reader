@@ -9,8 +9,8 @@ data class ChannelWithItemsWithProperties(
     @Embedded
     val channel: NewsChannelEntity,
     @Relation(
-        parentColumn = "feedUrl",
-        entityColumn = "channelFeedUrl",
+        parentColumn = "channelId",
+        entityColumn = "itemChannelId",
         entity = NewsItemEntity::class
     )
     val items: List<ItemWithProperties>

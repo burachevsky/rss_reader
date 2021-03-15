@@ -14,7 +14,7 @@ data class NewsItemEntity(
     val description: String,
     val pubDate: Date,
     val author: String?,
-    val channelFeedUrl: String,
+    val itemChannelId: Int,
 )
 
 fun List<NewsItem>.asEntities(): List<NewsItemEntity> {
@@ -23,7 +23,7 @@ fun List<NewsItem>.asEntities(): List<NewsItemEntity> {
             it.itemLink.hashCode(),
             it.itemLink, it.title, it.description,
             it.pubDate, it.author,
-            it.feed.feedUrl
+            it.feed.feedUrl.hashCode()
         )
     }
 }
