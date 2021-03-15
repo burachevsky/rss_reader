@@ -49,7 +49,7 @@
     <dimen name="item_news_channel_icon_height">0dp</dimen>
     <dimen name="item_news_channel_icon_padding_start">8dp</dimen>
     <dimen name="item_news_channel_icon_padding_top">8dp</dimen>
-    <dimen name="item_news_channel_icon_padding_end">0dp</dimen>
+    <dimen name="item_news_channel_icon_padding_end">16dp</dimen>
     <dimen name="item_news_channel_icon_padding_bottom">8dp</dimen>
 
 </resources>
