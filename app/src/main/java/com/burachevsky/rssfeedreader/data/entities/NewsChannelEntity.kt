@@ -1,5 +1,6 @@
 package com.burachevsky.rssfeedreader.data.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
@@ -7,6 +8,7 @@ import com.burachevsky.rssfeedreader.data.domainobjects.NewsFeed
 @Entity(tableName = "news_channels")
 data class NewsChannelEntity(
     @PrimaryKey(autoGenerate = false)
+    @ColumnInfo(index = true)
     val channelId: Int,
     val feedUrl: String,
     val title: String,
