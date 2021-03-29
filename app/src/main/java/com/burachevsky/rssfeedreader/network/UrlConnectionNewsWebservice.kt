@@ -11,8 +11,7 @@ import java.net.URL
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
-class NewsWebserviceImpl @Inject constructor(
+class UrlConnectionNewsWebservice constructor(
     private val parser: RssParser
 ) : NewsWebservice {
 
